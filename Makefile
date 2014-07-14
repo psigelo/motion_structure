@@ -1,8 +1,11 @@
-VPATH = ./src ./headers ./objects
+VPATH = ./src ./headers ./objects ./VREP/remoteApi ./VREP/include ./experiments
 CC = g++ -O3
-CFLAGS = -g -Wall -I./headers -I./objects -I./src
+CFLAGS = -g -Wall -I./headers -I./objects -I./src -I./VREP/remoteApi -I./VREP/include -I./experiments
 
-all: test.cpp motion_structure.o cinematica.o motor.o movement.o link_segment.o
+all: motion_structure.o cinematica.o motor.o movement.o link_segment.o
+
+
+test: test.cpp motion_structure.o cinematica.o motor.o movement.o link_segment.o
 	mkdir -p bin
 	$(CC) $(CFLAGS)  ./src/test.cpp ./objects/motion_structure.o ./objects/cinematica.o ./objects/movement.o ./objects/link_segment.o ./objects/motor.o  -o ./bin/test -larmadillo
 
@@ -27,4 +30,9 @@ link_segment.o: ./src/link_segment.cpp
 	$(CC) $(CFLAGS) -c ./src/link_segment.cpp -o ./objects/link_segment.o 
 
 clean:
-	rm -f ./objects/*.o ./executables/*
+	rm -f ./objects/*.o ./executables/* ./bin/*
+
+
+brazo: brazo.cpp motion_structure.o cinematica.o movement.o link_segment.o motor.o
+	@mkdir -p bin
+	$(CC) $(CFLAGS) -DNON_MATLAB_PARSING -DMAX_EXT_API_CONNECTIONS=255 ./experiments/brazo.cpp  ./objects/motion_structure.o ./objects/cinematica.o ./objects/movement.o ./objects/link_segment.o ./objects/motor.o ./VREP/remoteApi/extApi.o ./VREP/remoteApi/extApiPlatform.o -o ./bin/brazo  -larmadillo -lpthread

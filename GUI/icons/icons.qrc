@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>60px-Symbol_Hydro_motor.svg.png</file>
+        <file>1404361644_stock_draw-curved-connector-with-arrows.png</file>
+        <file>1404361647_stock_draw-line-connector-with-arrows.png</file>
+        <file>Engine.png</file>
+    </qresource>
+</RCC>

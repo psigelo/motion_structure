@@ -32,4 +32,5 @@ class Motor{
 		void 	calculate_current_matrix 	();
 		mat 	get_current_matrix 			();
 		mat 	calculate_matrix 			(double angle);
+		double	get_direction_value			();
 };

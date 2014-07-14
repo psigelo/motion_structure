@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>381</width>
+    <height>470</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Motion Structure</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>321</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Componentes agregadas</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="listadoComponentes"/>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="botonEliminar">
+         <property name="text">
+          <string>Eliminar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="botonModificar">
+         <property name="text">
+          <string>Modificar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Nombre archivo</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="nombreText"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="botonFinalizar">
+         <property name="text">
+          <string>Finalizar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionMotorRotacional"/>
+   <addaction name="separator"/>
+   <addaction name="actionMotorTranslacional"/>
+   <addaction name="separator"/>
+   <addaction name="actionConectorRotacional"/>
+   <addaction name="actionConectorTranslacional"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>381</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAgregarMotor">
+    <property name="title">
+     <string>Agregar Motor</string>
+    </property>
+    <addaction name="actionMotorRotacional"/>
+    <addaction name="actionMotorTranslacional"/>
+   </widget>
+   <widget class="QMenu" name="menuAgregarConector">
+    <property name="title">
+     <string>Agregar Conector</string>
+    </property>
+    <addaction name="actionConectorRotacional"/>
+    <addaction name="actionConectorTranslacional"/>
+   </widget>
+   <addaction name="menuAgregarMotor"/>
+   <addaction name="menuAgregarConector"/>
+  </widget>
+  <action name="actionMotorRotacional">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/60px-Symbol_Hydro_motor.svg.png</normaloff>:/60px-Symbol_Hydro_motor.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rotacional</string>
+   </property>
+  </action>
+  <action name="actionMotorTranslacional">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/Engine.png</normaloff>:/Engine.png</iconset>
+   </property>
+   <property name="text">
+    <string>Translacional</string>
+   </property>
+  </action>
+  <action name="actionConectorRotacional">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/1404361644_stock_draw-curved-connector-with-arrows.png</normaloff>:/1404361644_stock_draw-curved-connector-with-arrows.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rotacional</string>
+   </property>
+  </action>
+  <action name="actionConectorTranslacional">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/1404361647_stock_draw-line-connector-with-arrows.png</normaloff>:/1404361647_stock_draw-line-connector-with-arrows.png</iconset>
+   </property>
+   <property name="text">
+    <string>Translacional</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

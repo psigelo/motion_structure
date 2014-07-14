@@ -26,8 +26,9 @@ using namespace arma;
 
 class Motion_structure{
 	public:
-							Motion_structure			(); // motion_resolution = default
+							Motion_structure			(); // motion_resolution = default 
 							Motion_structure			(double motion_resolution);
+							Motion_structure			(char * path, double motion_resolution);
 		vector <double> 	get_initial_angles			();
 		void 				set_initial_angles			(vector <double> _initial_angles);
 		vector <double> 	get_current_angles			();
@@ -55,6 +56,8 @@ class Motion_structure{
 		Movement 			move_to_xyz_position		(vector <double> xyz_position, double velocity);
 		Movement			move_delta_xyz_position		(vector <double> delta_xyz_position, double velocity);
 		mat 				jacobiano_motores			();
+		void				print_current_xyz_position	();
+		void				load						(char * path);
 
 	
 	private:
@@ -67,7 +70,7 @@ class Motion_structure{
 		vector < double >		order;
 		mat 					current_position_matrix; // Rotational matrix 4x4 
 		mat 					matrix_initial_angles;
-		vector <double>			current_xyz_position; 
+		vector <double>			current_xyz_position;
 };
 
 
