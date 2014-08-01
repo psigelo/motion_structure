@@ -88,7 +88,7 @@ Documentación
 Para generar la documentación debe instalar doxygen:
 
 ```
-sudo apr-get install doxygen
+sudo apt-get install doxygen
 ```
 
 o puede encontrar la ultima versión en www.doxygen.org

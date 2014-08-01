@@ -41,4 +41,5 @@ brazo: brazo.cpp motion_structure.o cinematica.o movement.o link_segment.o motor
 	@mkdir -p bin
 	$(CC) $(CFLAGS) -DNON_MATLAB_PARSING -DMAX_EXT_API_CONNECTIONS=255 ./experiments/brazo.cpp  ./objects/motion_structure.o ./objects/cinematica.o ./objects/movement.o ./objects/link_segment.o ./objects/motor.o ./VREP/remoteApi/extApi.o ./VREP/remoteApi/extApiPlatform.o -o ./bin/brazo  -larmadillo -lpthread
 
-runBrazo: ./bin/brazo ./config/brazo_vrep.txt
+runBrazo: 
+	./bin/brazo ./config/brazo_vrep.txt
