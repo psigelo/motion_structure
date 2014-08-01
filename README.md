@@ -78,3 +78,25 @@ Dentro de Qt debe hacer lo siguiente:
  File->Open file or proyect -> buscar el .pro que está dentro de la carpeta GUI de motion_structure.
 
 y hacer click en run en Qt.  
+
+
+
+
+Documentación
+=============
+
+Para generar la documentación debe instalar doxygen:
+
+```
+sudo apr-get install doxygen
+```
+
+o puede encontrar la ultima versión en www.doxygen.org
+
+luego en terminal dentro de la carpeta motion_structure ejecutar:
+
+```
+make doc
+```
+
+Con esto se generará la carpeta documentacion, la documentación la puede encontrar en ./documentacion/html/index.html y la puede abrir con cualquier navegador web.

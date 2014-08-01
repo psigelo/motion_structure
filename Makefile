@@ -30,8 +30,12 @@ link_segment.o: ./src/link_segment.cpp
 	$(CC) $(CFLAGS) -c ./src/link_segment.cpp -o ./objects/link_segment.o 
 
 clean:
-	rm -f ./objects/*.o ./executables/* ./bin/*
+	rm -f ./objects/*.o ./executables/* ./bin/* 
+	rm -Rf ./Documentacion
+	rm -Rf build*
 
+doc:
+	doxygen Doxyfile
 
 brazo: brazo.cpp motion_structure.o cinematica.o movement.o link_segment.o motor.o
 	@mkdir -p bin
