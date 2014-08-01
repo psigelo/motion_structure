@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['get_5fangle',['get_angle',['../class_motor.html#af5664216f4ee9367282cb1e1986b3a13',1,'Motor']]],
+  ['get_5fcurrent_5fangles',['get_current_angles',['../class_motion__structure.html#a3f01cb966d8d700dfb32b2771956b37c',1,'Motion_structure']]],
+  ['get_5fcurrent_5fmatrix',['get_current_matrix',['../class_motion__structure.html#aaf97ea165dddcc6dc295730704c5102a',1,'Motion_structure::get_current_matrix()'],['../class_motor.html#a54cb596f4a6f050e84f6534abeb57c0c',1,'Motor::get_current_matrix()']]],
+  ['get_5fdirection',['get_direction',['../class_motor.html#afccab98ca0cef41c88889d1a230bef10',1,'Motor']]],
+  ['get_5fdirection_5fvalue',['get_direction_value',['../class_motor.html#a32e5af9c7721419fd9df29d70c2bd6b4',1,'Motor']]],
+  ['get_5ffrom_5flist_5fmotor_5fangle_5fposition',['get_from_list_motor_angle_position',['../class_movement.html#a9ecca745f7402967fc19588e0b9874dd',1,'Movement']]],
+  ['get_5ffrom_5flist_5fmotor_5fvelocities',['get_from_list_motor_velocities',['../class_movement.html#aa08feff643ab4fce576786b6cba08049',1,'Movement']]],
+  ['get_5fid',['get_id',['../class_motor.html#a88de4d6f7d85d70f75d5510cb2497d0f',1,'Motor']]],
+  ['get_5finitial_5fangles',['get_initial_angles',['../class_motion__structure.html#a25c277cf49bed7728a894a2df001847b',1,'Motion_structure']]],
+  ['get_5flength_5fposition',['get_length_position',['../class_movement.html#af617179c4f9d600397dd780553464bdc',1,'Movement']]],
+  ['get_5flength_5fvelocity',['get_length_velocity',['../class_movement.html#adba12b00ba14057471a869fc65615f66',1,'Movement']]],
+  ['get_5fmatrix',['get_matrix',['../class_link__segment.html#a0e1a089b186fc519634de6aa687144fe',1,'Link_segment']]],
+  ['get_5fmotion_5fresolution',['get_motion_resolution',['../class_motion__structure.html#a591d41b002285347d2f2f81a4ecb71ad',1,'Motion_structure']]],
+  ['get_5fmotors_5famount',['get_motors_amount',['../class_motion__structure.html#a7f36ab16180a36018516cee01ff1b666',1,'Motion_structure']]],
+  ['get_5ftime_5fbetween_5ftw0_5fpoints_5fmillisecons',['get_time_between_tw0_points_millisecons',['../class_movement.html#abdc87acab65670b1867a1ae4db77376a',1,'Movement']]],
+  ['get_5fxyz_5fcurrent_5fposition',['get_xyz_current_position',['../class_motion__structure.html#a9128b56d83680de910b5be7c78010458',1,'Motion_structure']]]
+];

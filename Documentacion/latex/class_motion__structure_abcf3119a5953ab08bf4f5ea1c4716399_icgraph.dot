@@ -1,0 +1,24 @@
+digraph "Motion_structure::calculate_position"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Motion_structure::calculate\l_position",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Motion_structure::add\l_traslational_motor_z",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_motion__structure.html#a071221988f557f8cf8fdc2c8e2df3398"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Motion_structure::load",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_motion__structure.html#a5df5dc494cfd60e8e763e06f7dc5d745"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Motion_structure::Motion\l_structure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_motion__structure.html#a957707cad2dc4ffbee3e7fe82ef963db"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Motion_structure::move\l_to_xyz_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_motion__structure.html#a26174f629c57c614bd5d5f96e8ef32eb"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Motion_structure::move\l_delta_xyz_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_motion__structure.html#a34d89e582551b6bcc4ba503e96ae1300"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$brazo_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97"];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Motion_structure::jacobiano\l_motores",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_motion__structure.html#a12a60ceb91c2b6d6c2bca49c9300e34a"];
+  Node9 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

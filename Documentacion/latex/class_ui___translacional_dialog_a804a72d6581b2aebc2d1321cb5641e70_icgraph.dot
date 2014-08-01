@@ -1,0 +1,11 @@
+digraph "Ui_TranslacionalDialog::retranslateUi"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Ui_TranslacionalDialog\l::retranslateUi",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Ui_TranslacionalDialog\l::setupUi",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ui___translacional_dialog.html#a14ff63c44f093098644e3d5e7b9bcec2"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="TranslacionalDialog\l::TranslacionalDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_translacional_dialog.html#a37eadf7a9220ee5b7dfd07702345fb80"];
+}

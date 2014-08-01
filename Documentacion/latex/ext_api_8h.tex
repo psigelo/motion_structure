@@ -1,0 +1,1502 @@
+\hypertarget{ext_api_8h}{\section{V\-R\-E\-P/remote\-Api/ext\-Api.h File Reference}
+\label{ext_api_8h}\index{V\-R\-E\-P/remote\-Api/ext\-Api.\-h@{V\-R\-E\-P/remote\-Api/ext\-Api.\-h}}
+}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef char \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char}
+\item 
+typedef unsigned char \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char}
+\item 
+typedef short \hyperlink{ext_api_8h_aa4b6043af107fc84b9b32b8bb436293d}{simx\-Short}
+\item 
+typedef unsigned short \hyperlink{ext_api_8h_a9121e76e9a374d7ab2941fa84cae9b2d}{simx\-U\-Short}
+\item 
+typedef int \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int}
+\item 
+typedef unsigned int \hyperlink{ext_api_8h_ae5e0626b6aa9349c2135145f87a6d510}{simx\-U\-Int}
+\item 
+typedef float \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float}
+\item 
+typedef void \hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void}
+\item 
+typedef double \hyperlink{ext_api_8h_a42593f501a9325aeb9730e7dd973d75c}{simx\-Double}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a3f77419c65e658adf82752d4f51532df}{simx\-Get\-Joint\-Position} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} joint\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$position, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a6e0bea6a30fd767c929509660d6112a5}{simx\-Set\-Joint\-Position} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} joint\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} position, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a551f5c252fd6bece0b31a961346c5e86}{simx\-Get\-Joint\-Matrix} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} joint\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$matrix, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_aceffe83d72c782721e37fe5f9c6674f2}{simx\-Set\-Spherical\-Joint\-Matrix} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} joint\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$matrix, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a8d7b89565d4459851749a52e7b791663}{simx\-Set\-Joint\-Target\-Velocity} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} joint\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} target\-Velocity, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a3da22c2602c9e94fce46b1bfd122557b}{simx\-Set\-Joint\-Target\-Position} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} joint\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} target\-Position, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a9c682e49f2c4ee98fc05fd2b7edbe7d9}{simx\-Joint\-Get\-Force} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} joint\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$force, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a3bbd74b44a592d70fc94822e74017f4c}{simx\-Get\-Joint\-Force} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} joint\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$force, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_aa379b99eee42323823f85bb5655ef447}{simx\-Set\-Joint\-Force} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} joint\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} force, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ace3ba1e1784863e91b612eedc8f68c6a}{simx\-Read\-Force\-Sensor} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} force\-Sensor\-Handle, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$state, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$force\-Vector, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$torque\-Vector, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ac0b1a57075a8031b5b460ba8e50affff}{simx\-Break\-Force\-Sensor} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} force\-Sensor\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a89f81d7d0d27a9c502458e4b310b414b}{simx\-Read\-Vision\-Sensor} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} sensor\-Handle, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$detection\-State, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$$\ast$aux\-Values, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$$\ast$aux\-Values\-Count, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ae2c3b5ea5407956d88edabd80e39bc7d}{simx\-Get\-Object\-Handle} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$object\-Name, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a33cfd89cf377ea515f697732b535e143}{simx\-Get\-Vision\-Sensor\-Image} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} sensor\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$resolution, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$$\ast$image, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} options, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ac77fb94bfa16740a83a381f2800e0079}{simx\-Set\-Vision\-Sensor\-Image} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} sensor\-Handle, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$image, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} buffer\-Size, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} options, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a7c25ae520b92031fa3fbcc20092f7685}{simx\-Get\-Vision\-Sensor\-Depth\-Buffer} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} sensor\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$resolution, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$$\ast$buffer, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a23626c69568852fb7f247e21c00ceb57}{simx\-Get\-Object\-Child} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} parent\-Object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} child\-Index, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$child\-Object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_abd1a9c53eced33331711762ff304fd58}{simx\-Get\-Object\-Parent} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} child\-Object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$parent\-Object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a9b28fe7f6137f494fe70c99b9a921293}{simx\-Read\-Proximity\-Sensor} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} sensor\-Handle, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$detection\-State, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$detected\-Point, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$detected\-Object\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$detected\-Surface\-Normal\-Vector, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_aba004fe8c4230080573cf6a84609cc4c}{simx\-Load\-Model} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$model\-Path\-And\-Name, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} options, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$base\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a0c14eaf2751f64cb99cc09ca40f690d1}{simx\-Load\-U\-I} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$ui\-Path\-And\-Name, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} options, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$count, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$$\ast$ui\-Handles, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a334778d7372013cf32278c35cfb1e401}{simx\-Load\-Scene} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$scene\-Path\-And\-Name, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} options, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a0a5aaad500ed97992f72d6b6b18b90ed}{simx\-Start\-Simulation} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_aa26c076bd8b7220e5986f40567b0a243}{simx\-Pause\-Simulation} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_aba781c23bfffe69b4e130e9be69239b8}{simx\-Stop\-Simulation} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a551340152d28595e77d32d0b9a5bb7ef}{simx\-Get\-U\-I\-Handle} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$ui\-Name, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_abb875286b0304981c54411406b16f405}{simx\-Get\-U\-I\-Slider} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} ui\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} ui\-Button\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$position, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_af5bc1609d373f29c92932aa8b6902faf}{simx\-Set\-U\-I\-Slider} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} ui\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} ui\-Button\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} position, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ad77400e7086119a6c2fa82227dd4d73a}{simx\-Get\-U\-I\-Event\-Button} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} ui\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$ui\-Event\-Button\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$aux\-Values, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a353a7cf43442840af0ddb5bdde794607}{simx\-Get\-U\-I\-Button\-Property} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} ui\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} ui\-Button\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$prop, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a5cbb390c549353a28ca154d5896a64aa}{simx\-Set\-U\-I\-Button\-Property} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} ui\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} ui\-Button\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} prop, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a76ab74e38042abbe5b2b0501956c39a4}{simx\-Add\-Statusbar\-Message} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$message, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_aedd27168f1c3e951070ae1fb938d0bcb}{simx\-Auxiliary\-Console\-Open} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$title, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} max\-Lines, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} mode, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$position, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$size, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$text\-Color, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$background\-Color, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$console\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_aeecb5e8eecc5515d62c58ede99949db1}{simx\-Auxiliary\-Console\-Close} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} console\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a948db12aa34f63e300bf1de7a1d89e45}{simx\-Auxiliary\-Console\-Print} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} console\-Handle, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$txt, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a8052b6077528d7f6d9c822a95a7e6eab}{simx\-Auxiliary\-Console\-Show} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} console\-Handle, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} show\-State, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a4fc54910ec82246ab349c0fd1d450f4c}{simx\-Get\-Object\-Orientation} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} relative\-To\-Object\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$euler\-Angles, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_af854d99ee1d7840343c40eaddef0a7f0}{simx\-Get\-Object\-Position} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} relative\-To\-Object\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$position, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ac4a989b4282bebdb5aed1f2c92543bf6}{simx\-Set\-Object\-Orientation} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} relative\-To\-Object\-Handle, const \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$euler\-Angles, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a1edc11093200a1ac859847bc220ec27f}{simx\-Set\-Object\-Position} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} relative\-To\-Object\-Handle, const \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$position, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_af37214dc11d5b619d1d3cbc8eb41948e}{simx\-Set\-Object\-Parent} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} parent\-Object, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} keep\-In\-Place, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ac26680d5d7a479f79490547e422360ef}{simx\-Set\-U\-I\-Button\-Label} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} ui\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} ui\-Button\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$up\-State\-Label, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$down\-State\-Label, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a265b9b6d5f02dc1ef8d3f456de6ba14f}{simx\-Get\-Last\-Errors} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$error\-Cnt, \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$$\ast$error\-Strings, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a25383da895441191ebb6395799d0c940}{simx\-Get\-Array\-Parameter} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} param\-Identifier, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$param\-Values, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ad265d209c443469823315897bd4b97df}{simx\-Set\-Array\-Parameter} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} param\-Identifier, const \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$param\-Values, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_aa0bca449fec3a0a926c03483ee515009}{simx\-Get\-Boolean\-Parameter} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} param\-Identifier, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$param\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a365801024c91e785eed0f2074807832b}{simx\-Set\-Boolean\-Parameter} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} param\-Identifier, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} param\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ad09000e94182744bce4c408dc00b2775}{simx\-Get\-Integer\-Parameter} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} param\-Identifier, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$param\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a5ef34ab73e8a45b1f2451d447450bc92}{simx\-Set\-Integer\-Parameter} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} param\-Identifier, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} param\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a2b0c867e34e487f208d24d8b034e29e9}{simx\-Get\-Floating\-Parameter} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} param\-Identifier, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$param\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ad6940058bac12c27af680d2aaf5db13e}{simx\-Set\-Floating\-Parameter} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} param\-Identifier, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} param\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a675f71f1e8a8216aa9eb62459cd79eea}{simx\-Get\-String\-Parameter} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} param\-Identifier, \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$$\ast$param\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a345bad87b5bf69f83140350561700fe0}{simx\-Get\-Collision\-Handle} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$collision\-Object\-Name, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a05ae1d4d63bfd9617e393ddc23261477}{simx\-Get\-Distance\-Handle} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$distance\-Object\-Name, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a7a043b50b10c706144f5feca70ee0ff3}{simx\-Read\-Collision} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} collision\-Object\-Handle, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$collision\-State, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ab90ecb33d809b9cc76fa3d705ed27ef4}{simx\-Read\-Distance} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} distance\-Object\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$minimum\-Distance, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a1d80e223044e1e3f5439c168cf02d744}{simx\-Remove\-Object} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a1d223af40c6754cb5d0b6dd272edc4a5}{simx\-Remove\-U\-I} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} ui\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a5be48e4f55358dc8d590b4a5dbc5d40a}{simx\-Close\-Scene} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_af16a2c26c4b5efc3dbab4d48304a3731}{simx\-Get\-Objects} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Type, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$object\-Count, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$$\ast$object\-Handles, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_aaeebfc862cb0bde3bdd5c3407b60f460}{simx\-Display\-Dialog} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$title\-Text, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$main\-Text, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} dialog\-Type, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$initial\-Text, const \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$title\-Colors, const \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$dialog\-Colors, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$dialog\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$ui\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_acbfb40d4da2c95f611a6efd3bf30c167}{simx\-End\-Dialog} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} dialog\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a3ff9ba67be6ae25b7d0b87f60832b736}{simx\-Get\-Dialog\-Input} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} dialog\-Handle, \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$$\ast$input\-Text, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a8122b1484ab783c453079ff2c118a510}{simx\-Get\-Dialog\-Result} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} dialog\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$result, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a0e25bdee3fb41f29cb732923102a5c28}{simx\-Copy\-Paste\-Objects} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$object\-Handles, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Count, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$$\ast$new\-Object\-Handles, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$new\-Object\-Count, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a54a1782a88e76582bea326066d52ee36}{simx\-Get\-Object\-Selection} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$$\ast$object\-Handles, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$object\-Count, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ad915526219e435a5b6cc80dd9b8b40af}{simx\-Set\-Object\-Selection} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$object\-Handles, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Count, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a732427cc6d34284522b6ab1c313e4165}{simx\-Clear\-Float\-Signal} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ae385e4a56317037e1b032f9361cf44be}{simx\-Clear\-Integer\-Signal} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a04bdbf1718e8f077f3de9e6c43153751}{simx\-Clear\-String\-Signal} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ab906636b88091a3eab24f30c40218050}{simx\-Get\-Float\-Signal} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$signal\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_aedb97e8c231fb265ed8b37bf40377d29}{simx\-Get\-Integer\-Signal} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$signal\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_afb0369ac6659537bc4d51f688c71ea76}{simx\-Get\-String\-Signal} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$$\ast$signal\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$signal\-Length, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ac3f225130c93f73e6a4afed33fdd7089}{simx\-Get\-And\-Clear\-String\-Signal} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$$\ast$signal\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$signal\-Length, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ab5b5b691c129977c493d487bd8cd48c2}{simx\-Read\-String\-Stream} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$$\ast$signal\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$signal\-Length, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a1b9c1eda4379002c3315097533ce473f}{simx\-Write\-String\-Stream} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, const \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$signal\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} signal\-Length, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a6674046ce12e475e1c5da4f5c3d65961}{simx\-Set\-Float\-Signal} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} signal\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a71107ed12aae713652dce57f6b6d366e}{simx\-Set\-Integer\-Signal} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} signal\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a2aa65d78032679a075752b922610dbec}{simx\-Set\-String\-Signal} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, const \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$signal\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} signal\-Length, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a123b7e3405b48d9a0ccf797064b3accd}{simx\-Append\-String\-Signal} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, const \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$signal\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} signal\-Length, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a18c917b154e1fc85777d170a59745a5a}{simx\-Get\-Object\-Float\-Parameter} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} parameter\-I\-D, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$parameter\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a8d4d2c80491c6a6b8ab5aa70c529bb18}{simx\-Set\-Object\-Float\-Parameter} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} parameter\-I\-D, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} parameter\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a38710cbf150b4fdda61888024bc4ee46}{simx\-Get\-Object\-Int\-Parameter} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} parameter\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$parameter\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a9d2b78efea2f924f805eea8fbe84325a}{simx\-Set\-Object\-Int\-Parameter} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} parameter\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} parameter\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_af2c70dd81635aebb4abe524f934eb986}{simx\-Get\-Model\-Property} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$prop, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_acfb016b71e1a1b0e402dae614aae4231}{simx\-Set\-Model\-Property} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} prop, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a82649f82fdb3aeab83e5de1be27975a2}{simx\-Create\-Dummy} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} size, const \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$colors, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a433f3a57228fb5b0416746febcbceca0}{simx\-Query} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, const \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$signal\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} signal\-Length, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$ret\-Signal\-Name, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$$\ast$ret\-Signal\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$ret\-Signal\-Length, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} time\-Out\-In\-Ms)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a66257857dd7d7b8cd2acb3db52656c8f}{simx\-Get\-Object\-Group\-Data} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Type, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} data\-Type, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$handles\-Count, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$$\ast$handles, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$int\-Data\-Count, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$$\ast$int\-Data, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$float\-Data\-Count, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$$\ast$float\-Data, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$string\-Data\-Count, \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$$\ast$string\-Data, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a0a3bf42bac51f9d1a3f53bc93607c0fc}{simx\-Get\-Object\-Velocity} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$linear\-Velocity, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$angular\-Velocity, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_af8e78f3b4698eb09fe31f59c46a4848f}{simx\-Start} (const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$connection\-Address, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} connection\-Port, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} wait\-Until\-Connected, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} do\-Not\-Reconnect\-Once\-Disconnected, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} time\-Out\-In\-Ms, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} comm\-Thread\-Cycle\-In\-Ms)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_8h_a1ef5e6857ae562f0e910d471ea683202}{simx\-Finish} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_adc22701c2f99f0106edeec758665a8a7}{simx\-Get\-Ping\-Time} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$ping\-Time)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a67b24fa0d7c88076d59fbd0701eebd33}{simx\-Get\-Last\-Cmd\-Time} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_af09861c15a7b5017d37807def9529f12}{simx\-Synchronous\-Trigger} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a0a80c37ef777948657a62b728d9431df}{simx\-Synchronous} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} enable)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a181af0b7b6fcd3f95842fc5d146dce81}{simx\-Pause\-Communication} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} pause)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a6352a865d12df85cd218fac5f8fadba8}{simx\-Get\-In\-Message\-Info} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} info\-Type, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$info)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a7c8005b2a6e38a633dab023f4bb4b849}{simx\-Get\-Out\-Message\-Info} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} info\-Type, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$info)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a9fb86e17c348a33f8a2b0f4905f38ca6}{simx\-Get\-Connection\-Id} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$ \hyperlink{ext_api_8h_a436d2219cdc6ef5b9decf8f0bbefaf05}{simx\-Create\-Buffer} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} buffer\-Size)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_8h_a58878800f03e84ca8b5e2d4048c57d6c}{simx\-Release\-Buffer} (\hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$buffer)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ab3b832d46c5823b6928d5d007778c1ab}{simx\-Transfer\-File} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$file\-Path\-And\-Name, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$file\-Name\-\_\-server\-Side, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} time\-Out, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ad55caface196cbf64f1ebdcd1954e1f9}{simx\-Erase\-File} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$file\-Name\-\_\-server\-Side, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_adbcc2d0cb51368051dedf98217855508}{mtlb\-\_\-simx\-Set\-Joint\-Position} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} joint\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$position, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a5e70c369f7863d9bdbbaed6dcc6ced58}{mtlb\-\_\-simx\-Set\-Joint\-Target\-Velocity} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} joint\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$target\-Velocity, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_af6f3631cdede48443e25eb76525b7494}{mtlb\-\_\-simx\-Set\-Joint\-Target\-Position} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} joint\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$target\-Position, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a8135587818848bfa6896d0973f16c4f9}{mtlb\-\_\-simx\-Set\-Joint\-Force} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} joint\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$force, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a06df74ea1c757a7082a5e1adbd028e4a}{mtlb\-\_\-simx\-Set\-Float\-Signal} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$signal\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_ae7f0fc7dfa535a7fbe2433d3f0f2b36b}{mtlb\-\_\-simx\-Set\-Object\-Float\-Parameter} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} parameter\-I\-D, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$parameter\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a1b30da94a175e485fbdd22eba41a3818}{mtlb\-\_\-simx\-Set\-Floating\-Parameter} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} param\-Identifier, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$param\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_adc92fb4bcf2faaf19790dca5c8150afe}{mtlb\-\_\-simx\-Create\-Dummy} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$size, const \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$colors, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a80c015184969c735abe521f7fd499df0}{mtlb\-\_\-simx\-Read\-Proximity\-Sensor} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$client\-I\-Dand\-Sensor\-Handle, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$detection\-State, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$detected\-Point, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$detected\-Object\-Handle, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$detected\-Surface\-Normal\-Vector, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a01d3c0df027a1d935df893e730127467}{mtlb\-\_\-simx\-Auxiliary\-Console\-Open} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$client\-I\-Dand\-Max\-Lines\-And\-Mode\-And\-Position\-And\-Size, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$title, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$text\-Color, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$background\-Color, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$console\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a32ebd4a4c8547cac5c6d9ea77f3fc5e8}{mtlb\-\_\-simx\-Display\-Dialog} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$client\-I\-Dand\-Dlg\-Type\-And\-Operation\-Mode, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$title\-Text, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$main\-Text, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$initial\-Text, const \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$title\-Colors\-And\-Dlg\-Colors, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$dialog\-Handle\-And\-Ui\-Handle)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_accaba236d303073e172c5f2d41e66f4e}{mtlb\-\_\-simx\-Query} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$client\-I\-Dand\-Signal\-Length\-And\-Time\-Out\-In\-Ms, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$signal\-Name, const \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$signal\-Value, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$ret\-Signal\-Name, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$$\ast$ret\-Signal\-Value, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$ret\-Signal\-Length)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_8h_a7e58511a35fed07a7af2cc98d11f901a}{mtlb\-\_\-simx\-Get\-Object\-Group\-Data} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$client\-I\-Dand\-Object\-Type\-And\-Data\-Type\-And\-Operation\-Mode, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$handles\-Count\-And\-Int\-Data\-Count\-And\-Float\-Data\-Count\-And\-String\-Data\-Count, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$$\ast$handles, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$$\ast$int\-Data, \hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} $\ast$$\ast$float\-Data, \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$$\ast$string\-Data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Char@{simx\-Char}}
+\index{simx\-Char@{simx\-Char}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Char}]{\setlength{\rightskip}{0pt plus 5cm}typedef char {\bf simx\-Char}}}\label{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}
+\hypertarget{ext_api_8h_a42593f501a9325aeb9730e7dd973d75c}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Double@{simx\-Double}}
+\index{simx\-Double@{simx\-Double}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Double}]{\setlength{\rightskip}{0pt plus 5cm}typedef double {\bf simx\-Double}}}\label{ext_api_8h_a42593f501a9325aeb9730e7dd973d75c}
+\hypertarget{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Float@{simx\-Float}}
+\index{simx\-Float@{simx\-Float}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Float}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf simx\-Float}}}\label{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}
+\hypertarget{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Int@{simx\-Int}}
+\index{simx\-Int@{simx\-Int}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Int}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf simx\-Int}}}\label{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}
+\hypertarget{ext_api_8h_aa4b6043af107fc84b9b32b8bb436293d}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Short@{simx\-Short}}
+\index{simx\-Short@{simx\-Short}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Short}]{\setlength{\rightskip}{0pt plus 5cm}typedef short {\bf simx\-Short}}}\label{ext_api_8h_aa4b6043af107fc84b9b32b8bb436293d}
+\hypertarget{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-U\-Char@{simx\-U\-Char}}
+\index{simx\-U\-Char@{simx\-U\-Char}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-U\-Char}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char {\bf simx\-U\-Char}}}\label{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}
+\hypertarget{ext_api_8h_ae5e0626b6aa9349c2135145f87a6d510}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-U\-Int@{simx\-U\-Int}}
+\index{simx\-U\-Int@{simx\-U\-Int}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-U\-Int}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int {\bf simx\-U\-Int}}}\label{ext_api_8h_ae5e0626b6aa9349c2135145f87a6d510}
+\hypertarget{ext_api_8h_a9121e76e9a374d7ab2941fa84cae9b2d}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-U\-Short@{simx\-U\-Short}}
+\index{simx\-U\-Short@{simx\-U\-Short}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-U\-Short}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short {\bf simx\-U\-Short}}}\label{ext_api_8h_a9121e76e9a374d7ab2941fa84cae9b2d}
+\hypertarget{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Void@{simx\-Void}}
+\index{simx\-Void@{simx\-Void}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Void}]{\setlength{\rightskip}{0pt plus 5cm}typedef void {\bf simx\-Void}}}\label{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}
+
+
+\subsection{Function Documentation}
+\hypertarget{ext_api_8h_a01d3c0df027a1d935df893e730127467}{\index{ext\-Api.\-h@{ext\-Api.\-h}!mtlb\-\_\-simx\-Auxiliary\-Console\-Open@{mtlb\-\_\-simx\-Auxiliary\-Console\-Open}}
+\index{mtlb\-\_\-simx\-Auxiliary\-Console\-Open@{mtlb\-\_\-simx\-Auxiliary\-Console\-Open}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{mtlb\-\_\-simx\-Auxiliary\-Console\-Open}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} mtlb\-\_\-simx\-Auxiliary\-Console\-Open (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int} $\ast$}]{client\-I\-Dand\-Max\-Lines\-And\-Mode\-And\-Position\-And\-Size, }
+\item[{const {\bf simx\-Char} $\ast$}]{title, }
+\item[{{\bf simx\-Float} $\ast$}]{text\-Color, }
+\item[{{\bf simx\-Float} $\ast$}]{background\-Color, }
+\item[{{\bf simx\-Int} $\ast$}]{console\-Handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a01d3c0df027a1d935df893e730127467}
+\hypertarget{ext_api_8h_adc92fb4bcf2faaf19790dca5c8150afe}{\index{ext\-Api.\-h@{ext\-Api.\-h}!mtlb\-\_\-simx\-Create\-Dummy@{mtlb\-\_\-simx\-Create\-Dummy}}
+\index{mtlb\-\_\-simx\-Create\-Dummy@{mtlb\-\_\-simx\-Create\-Dummy}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{mtlb\-\_\-simx\-Create\-Dummy}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} mtlb\-\_\-simx\-Create\-Dummy (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Float} $\ast$}]{size, }
+\item[{const {\bf simx\-U\-Char} $\ast$}]{colors, }
+\item[{{\bf simx\-Int} $\ast$}]{object\-Handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_adc92fb4bcf2faaf19790dca5c8150afe}
+\hypertarget{ext_api_8h_a32ebd4a4c8547cac5c6d9ea77f3fc5e8}{\index{ext\-Api.\-h@{ext\-Api.\-h}!mtlb\-\_\-simx\-Display\-Dialog@{mtlb\-\_\-simx\-Display\-Dialog}}
+\index{mtlb\-\_\-simx\-Display\-Dialog@{mtlb\-\_\-simx\-Display\-Dialog}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{mtlb\-\_\-simx\-Display\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} mtlb\-\_\-simx\-Display\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int} $\ast$}]{client\-I\-Dand\-Dlg\-Type\-And\-Operation\-Mode, }
+\item[{const {\bf simx\-Char} $\ast$}]{title\-Text, }
+\item[{const {\bf simx\-Char} $\ast$}]{main\-Text, }
+\item[{const {\bf simx\-Char} $\ast$}]{initial\-Text, }
+\item[{const {\bf simx\-Float} $\ast$}]{title\-Colors\-And\-Dlg\-Colors, }
+\item[{{\bf simx\-Int} $\ast$}]{dialog\-Handle\-And\-Ui\-Handle}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a32ebd4a4c8547cac5c6d9ea77f3fc5e8}
+\hypertarget{ext_api_8h_a7e58511a35fed07a7af2cc98d11f901a}{\index{ext\-Api.\-h@{ext\-Api.\-h}!mtlb\-\_\-simx\-Get\-Object\-Group\-Data@{mtlb\-\_\-simx\-Get\-Object\-Group\-Data}}
+\index{mtlb\-\_\-simx\-Get\-Object\-Group\-Data@{mtlb\-\_\-simx\-Get\-Object\-Group\-Data}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{mtlb\-\_\-simx\-Get\-Object\-Group\-Data}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} mtlb\-\_\-simx\-Get\-Object\-Group\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int} $\ast$}]{client\-I\-Dand\-Object\-Type\-And\-Data\-Type\-And\-Operation\-Mode, }
+\item[{{\bf simx\-Int} $\ast$}]{handles\-Count\-And\-Int\-Data\-Count\-And\-Float\-Data\-Count\-And\-String\-Data\-Count, }
+\item[{{\bf simx\-Int} $\ast$$\ast$}]{handles, }
+\item[{{\bf simx\-Int} $\ast$$\ast$}]{int\-Data, }
+\item[{{\bf simx\-Float} $\ast$$\ast$}]{float\-Data, }
+\item[{{\bf simx\-Char} $\ast$$\ast$}]{string\-Data}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a7e58511a35fed07a7af2cc98d11f901a}
+\hypertarget{ext_api_8h_accaba236d303073e172c5f2d41e66f4e}{\index{ext\-Api.\-h@{ext\-Api.\-h}!mtlb\-\_\-simx\-Query@{mtlb\-\_\-simx\-Query}}
+\index{mtlb\-\_\-simx\-Query@{mtlb\-\_\-simx\-Query}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{mtlb\-\_\-simx\-Query}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} mtlb\-\_\-simx\-Query (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int} $\ast$}]{client\-I\-Dand\-Signal\-Length\-And\-Time\-Out\-In\-Ms, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{const {\bf simx\-U\-Char} $\ast$}]{signal\-Value, }
+\item[{const {\bf simx\-Char} $\ast$}]{ret\-Signal\-Name, }
+\item[{{\bf simx\-U\-Char} $\ast$$\ast$}]{ret\-Signal\-Value, }
+\item[{{\bf simx\-Int} $\ast$}]{ret\-Signal\-Length}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_accaba236d303073e172c5f2d41e66f4e}
+\hypertarget{ext_api_8h_a80c015184969c735abe521f7fd499df0}{\index{ext\-Api.\-h@{ext\-Api.\-h}!mtlb\-\_\-simx\-Read\-Proximity\-Sensor@{mtlb\-\_\-simx\-Read\-Proximity\-Sensor}}
+\index{mtlb\-\_\-simx\-Read\-Proximity\-Sensor@{mtlb\-\_\-simx\-Read\-Proximity\-Sensor}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{mtlb\-\_\-simx\-Read\-Proximity\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} mtlb\-\_\-simx\-Read\-Proximity\-Sensor (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int} $\ast$}]{client\-I\-Dand\-Sensor\-Handle, }
+\item[{{\bf simx\-U\-Char} $\ast$}]{detection\-State, }
+\item[{{\bf simx\-Float} $\ast$}]{detected\-Point, }
+\item[{{\bf simx\-Int} $\ast$}]{detected\-Object\-Handle, }
+\item[{{\bf simx\-Float} $\ast$}]{detected\-Surface\-Normal\-Vector, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a80c015184969c735abe521f7fd499df0}
+\hypertarget{ext_api_8h_a1b30da94a175e485fbdd22eba41a3818}{\index{ext\-Api.\-h@{ext\-Api.\-h}!mtlb\-\_\-simx\-Set\-Floating\-Parameter@{mtlb\-\_\-simx\-Set\-Floating\-Parameter}}
+\index{mtlb\-\_\-simx\-Set\-Floating\-Parameter@{mtlb\-\_\-simx\-Set\-Floating\-Parameter}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{mtlb\-\_\-simx\-Set\-Floating\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} mtlb\-\_\-simx\-Set\-Floating\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{param\-Identifier, }
+\item[{{\bf simx\-Float} $\ast$}]{param\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a1b30da94a175e485fbdd22eba41a3818}
+\hypertarget{ext_api_8h_a06df74ea1c757a7082a5e1adbd028e4a}{\index{ext\-Api.\-h@{ext\-Api.\-h}!mtlb\-\_\-simx\-Set\-Float\-Signal@{mtlb\-\_\-simx\-Set\-Float\-Signal}}
+\index{mtlb\-\_\-simx\-Set\-Float\-Signal@{mtlb\-\_\-simx\-Set\-Float\-Signal}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{mtlb\-\_\-simx\-Set\-Float\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} mtlb\-\_\-simx\-Set\-Float\-Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{{\bf simx\-Float} $\ast$}]{signal\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a06df74ea1c757a7082a5e1adbd028e4a}
+\hypertarget{ext_api_8h_a8135587818848bfa6896d0973f16c4f9}{\index{ext\-Api.\-h@{ext\-Api.\-h}!mtlb\-\_\-simx\-Set\-Joint\-Force@{mtlb\-\_\-simx\-Set\-Joint\-Force}}
+\index{mtlb\-\_\-simx\-Set\-Joint\-Force@{mtlb\-\_\-simx\-Set\-Joint\-Force}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{mtlb\-\_\-simx\-Set\-Joint\-Force}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} mtlb\-\_\-simx\-Set\-Joint\-Force (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{joint\-Handle, }
+\item[{{\bf simx\-Float} $\ast$}]{force, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a8135587818848bfa6896d0973f16c4f9}
+\hypertarget{ext_api_8h_adbcc2d0cb51368051dedf98217855508}{\index{ext\-Api.\-h@{ext\-Api.\-h}!mtlb\-\_\-simx\-Set\-Joint\-Position@{mtlb\-\_\-simx\-Set\-Joint\-Position}}
+\index{mtlb\-\_\-simx\-Set\-Joint\-Position@{mtlb\-\_\-simx\-Set\-Joint\-Position}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{mtlb\-\_\-simx\-Set\-Joint\-Position}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} mtlb\-\_\-simx\-Set\-Joint\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{joint\-Handle, }
+\item[{{\bf simx\-Float} $\ast$}]{position, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_adbcc2d0cb51368051dedf98217855508}
+\hypertarget{ext_api_8h_af6f3631cdede48443e25eb76525b7494}{\index{ext\-Api.\-h@{ext\-Api.\-h}!mtlb\-\_\-simx\-Set\-Joint\-Target\-Position@{mtlb\-\_\-simx\-Set\-Joint\-Target\-Position}}
+\index{mtlb\-\_\-simx\-Set\-Joint\-Target\-Position@{mtlb\-\_\-simx\-Set\-Joint\-Target\-Position}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{mtlb\-\_\-simx\-Set\-Joint\-Target\-Position}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} mtlb\-\_\-simx\-Set\-Joint\-Target\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{joint\-Handle, }
+\item[{{\bf simx\-Float} $\ast$}]{target\-Position, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_af6f3631cdede48443e25eb76525b7494}
+\hypertarget{ext_api_8h_a5e70c369f7863d9bdbbaed6dcc6ced58}{\index{ext\-Api.\-h@{ext\-Api.\-h}!mtlb\-\_\-simx\-Set\-Joint\-Target\-Velocity@{mtlb\-\_\-simx\-Set\-Joint\-Target\-Velocity}}
+\index{mtlb\-\_\-simx\-Set\-Joint\-Target\-Velocity@{mtlb\-\_\-simx\-Set\-Joint\-Target\-Velocity}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{mtlb\-\_\-simx\-Set\-Joint\-Target\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} mtlb\-\_\-simx\-Set\-Joint\-Target\-Velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{joint\-Handle, }
+\item[{{\bf simx\-Float} $\ast$}]{target\-Velocity, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a5e70c369f7863d9bdbbaed6dcc6ced58}
+\hypertarget{ext_api_8h_ae7f0fc7dfa535a7fbe2433d3f0f2b36b}{\index{ext\-Api.\-h@{ext\-Api.\-h}!mtlb\-\_\-simx\-Set\-Object\-Float\-Parameter@{mtlb\-\_\-simx\-Set\-Object\-Float\-Parameter}}
+\index{mtlb\-\_\-simx\-Set\-Object\-Float\-Parameter@{mtlb\-\_\-simx\-Set\-Object\-Float\-Parameter}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{mtlb\-\_\-simx\-Set\-Object\-Float\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} mtlb\-\_\-simx\-Set\-Object\-Float\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{{\bf simx\-Int}}]{parameter\-I\-D, }
+\item[{{\bf simx\-Float} $\ast$}]{parameter\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ae7f0fc7dfa535a7fbe2433d3f0f2b36b}
+\hypertarget{ext_api_8h_a76ab74e38042abbe5b2b0501956c39a4}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Add\-Statusbar\-Message@{simx\-Add\-Statusbar\-Message}}
+\index{simx\-Add\-Statusbar\-Message@{simx\-Add\-Statusbar\-Message}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Add\-Statusbar\-Message}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Add\-Statusbar\-Message (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{message, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a76ab74e38042abbe5b2b0501956c39a4}
+\hypertarget{ext_api_8h_a123b7e3405b48d9a0ccf797064b3accd}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Append\-String\-Signal@{simx\-Append\-String\-Signal}}
+\index{simx\-Append\-String\-Signal@{simx\-Append\-String\-Signal}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Append\-String\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Append\-String\-Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{const {\bf simx\-U\-Char} $\ast$}]{signal\-Value, }
+\item[{{\bf simx\-Int}}]{signal\-Length, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a123b7e3405b48d9a0ccf797064b3accd}
+\hypertarget{ext_api_8h_aeecb5e8eecc5515d62c58ede99949db1}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Auxiliary\-Console\-Close@{simx\-Auxiliary\-Console\-Close}}
+\index{simx\-Auxiliary\-Console\-Close@{simx\-Auxiliary\-Console\-Close}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Auxiliary\-Console\-Close}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Auxiliary\-Console\-Close (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{console\-Handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_aeecb5e8eecc5515d62c58ede99949db1}
+\hypertarget{ext_api_8h_aedd27168f1c3e951070ae1fb938d0bcb}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Auxiliary\-Console\-Open@{simx\-Auxiliary\-Console\-Open}}
+\index{simx\-Auxiliary\-Console\-Open@{simx\-Auxiliary\-Console\-Open}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Auxiliary\-Console\-Open}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Auxiliary\-Console\-Open (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{title, }
+\item[{{\bf simx\-Int}}]{max\-Lines, }
+\item[{{\bf simx\-Int}}]{mode, }
+\item[{{\bf simx\-Int} $\ast$}]{position, }
+\item[{{\bf simx\-Int} $\ast$}]{size, }
+\item[{{\bf simx\-Float} $\ast$}]{text\-Color, }
+\item[{{\bf simx\-Float} $\ast$}]{background\-Color, }
+\item[{{\bf simx\-Int} $\ast$}]{console\-Handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_aedd27168f1c3e951070ae1fb938d0bcb}
+\hypertarget{ext_api_8h_a948db12aa34f63e300bf1de7a1d89e45}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Auxiliary\-Console\-Print@{simx\-Auxiliary\-Console\-Print}}
+\index{simx\-Auxiliary\-Console\-Print@{simx\-Auxiliary\-Console\-Print}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Auxiliary\-Console\-Print}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Auxiliary\-Console\-Print (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{console\-Handle, }
+\item[{const {\bf simx\-Char} $\ast$}]{txt, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a948db12aa34f63e300bf1de7a1d89e45}
+\hypertarget{ext_api_8h_a8052b6077528d7f6d9c822a95a7e6eab}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Auxiliary\-Console\-Show@{simx\-Auxiliary\-Console\-Show}}
+\index{simx\-Auxiliary\-Console\-Show@{simx\-Auxiliary\-Console\-Show}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Auxiliary\-Console\-Show}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Auxiliary\-Console\-Show (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{console\-Handle, }
+\item[{{\bf simx\-U\-Char}}]{show\-State, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a8052b6077528d7f6d9c822a95a7e6eab}
+\hypertarget{ext_api_8h_ac0b1a57075a8031b5b460ba8e50affff}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Break\-Force\-Sensor@{simx\-Break\-Force\-Sensor}}
+\index{simx\-Break\-Force\-Sensor@{simx\-Break\-Force\-Sensor}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Break\-Force\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Break\-Force\-Sensor (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{force\-Sensor\-Handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ac0b1a57075a8031b5b460ba8e50affff}
+\hypertarget{ext_api_8h_a732427cc6d34284522b6ab1c313e4165}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Clear\-Float\-Signal@{simx\-Clear\-Float\-Signal}}
+\index{simx\-Clear\-Float\-Signal@{simx\-Clear\-Float\-Signal}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Clear\-Float\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Clear\-Float\-Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a732427cc6d34284522b6ab1c313e4165}
+\hypertarget{ext_api_8h_ae385e4a56317037e1b032f9361cf44be}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Clear\-Integer\-Signal@{simx\-Clear\-Integer\-Signal}}
+\index{simx\-Clear\-Integer\-Signal@{simx\-Clear\-Integer\-Signal}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Clear\-Integer\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Clear\-Integer\-Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ae385e4a56317037e1b032f9361cf44be}
+\hypertarget{ext_api_8h_a04bdbf1718e8f077f3de9e6c43153751}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Clear\-String\-Signal@{simx\-Clear\-String\-Signal}}
+\index{simx\-Clear\-String\-Signal@{simx\-Clear\-String\-Signal}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Clear\-String\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Clear\-String\-Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a04bdbf1718e8f077f3de9e6c43153751}
+\hypertarget{ext_api_8h_a5be48e4f55358dc8d590b4a5dbc5d40a}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Close\-Scene@{simx\-Close\-Scene}}
+\index{simx\-Close\-Scene@{simx\-Close\-Scene}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Close\-Scene}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Close\-Scene (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a5be48e4f55358dc8d590b4a5dbc5d40a}
+\hypertarget{ext_api_8h_a0e25bdee3fb41f29cb732923102a5c28}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Copy\-Paste\-Objects@{simx\-Copy\-Paste\-Objects}}
+\index{simx\-Copy\-Paste\-Objects@{simx\-Copy\-Paste\-Objects}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Copy\-Paste\-Objects}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Copy\-Paste\-Objects (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Int} $\ast$}]{object\-Handles, }
+\item[{{\bf simx\-Int}}]{object\-Count, }
+\item[{{\bf simx\-Int} $\ast$$\ast$}]{new\-Object\-Handles, }
+\item[{{\bf simx\-Int} $\ast$}]{new\-Object\-Count, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a0e25bdee3fb41f29cb732923102a5c28}
+\hypertarget{ext_api_8h_a436d2219cdc6ef5b9decf8f0bbefaf05}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Create\-Buffer@{simx\-Create\-Buffer}}
+\index{simx\-Create\-Buffer@{simx\-Create\-Buffer}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Create\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-U\-Char}$\ast$ simx\-Create\-Buffer (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{buffer\-Size}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a436d2219cdc6ef5b9decf8f0bbefaf05}
+\hypertarget{ext_api_8h_a82649f82fdb3aeab83e5de1be27975a2}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Create\-Dummy@{simx\-Create\-Dummy}}
+\index{simx\-Create\-Dummy@{simx\-Create\-Dummy}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Create\-Dummy}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Create\-Dummy (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Float}}]{size, }
+\item[{const {\bf simx\-U\-Char} $\ast$}]{colors, }
+\item[{{\bf simx\-Int} $\ast$}]{object\-Handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a82649f82fdb3aeab83e5de1be27975a2}
+\hypertarget{ext_api_8h_aaeebfc862cb0bde3bdd5c3407b60f460}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Display\-Dialog@{simx\-Display\-Dialog}}
+\index{simx\-Display\-Dialog@{simx\-Display\-Dialog}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Display\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Display\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{title\-Text, }
+\item[{const {\bf simx\-Char} $\ast$}]{main\-Text, }
+\item[{{\bf simx\-Int}}]{dialog\-Type, }
+\item[{const {\bf simx\-Char} $\ast$}]{initial\-Text, }
+\item[{const {\bf simx\-Float} $\ast$}]{title\-Colors, }
+\item[{const {\bf simx\-Float} $\ast$}]{dialog\-Colors, }
+\item[{{\bf simx\-Int} $\ast$}]{dialog\-Handle, }
+\item[{{\bf simx\-Int} $\ast$}]{ui\-Handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_aaeebfc862cb0bde3bdd5c3407b60f460}
+\hypertarget{ext_api_8h_acbfb40d4da2c95f611a6efd3bf30c167}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-End\-Dialog@{simx\-End\-Dialog}}
+\index{simx\-End\-Dialog@{simx\-End\-Dialog}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-End\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-End\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{dialog\-Handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_acbfb40d4da2c95f611a6efd3bf30c167}
+\hypertarget{ext_api_8h_ad55caface196cbf64f1ebdcd1954e1f9}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Erase\-File@{simx\-Erase\-File}}
+\index{simx\-Erase\-File@{simx\-Erase\-File}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Erase\-File}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Erase\-File (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{file\-Name\-\_\-server\-Side, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ad55caface196cbf64f1ebdcd1954e1f9}
+\hypertarget{ext_api_8h_a1ef5e6857ae562f0e910d471ea683202}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Finish@{simx\-Finish}}
+\index{simx\-Finish@{simx\-Finish}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Finish}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Void} simx\-Finish (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a1ef5e6857ae562f0e910d471ea683202}
+\hypertarget{ext_api_8h_ac3f225130c93f73e6a4afed33fdd7089}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-And\-Clear\-String\-Signal@{simx\-Get\-And\-Clear\-String\-Signal}}
+\index{simx\-Get\-And\-Clear\-String\-Signal@{simx\-Get\-And\-Clear\-String\-Signal}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-And\-Clear\-String\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-And\-Clear\-String\-Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{{\bf simx\-U\-Char} $\ast$$\ast$}]{signal\-Value, }
+\item[{{\bf simx\-Int} $\ast$}]{signal\-Length, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ac3f225130c93f73e6a4afed33fdd7089}
+\hypertarget{ext_api_8h_a25383da895441191ebb6395799d0c940}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Array\-Parameter@{simx\-Get\-Array\-Parameter}}
+\index{simx\-Get\-Array\-Parameter@{simx\-Get\-Array\-Parameter}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Array\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Array\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{param\-Identifier, }
+\item[{{\bf simx\-Float} $\ast$}]{param\-Values, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a25383da895441191ebb6395799d0c940}
+\hypertarget{ext_api_8h_aa0bca449fec3a0a926c03483ee515009}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Boolean\-Parameter@{simx\-Get\-Boolean\-Parameter}}
+\index{simx\-Get\-Boolean\-Parameter@{simx\-Get\-Boolean\-Parameter}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Boolean\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Boolean\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{param\-Identifier, }
+\item[{{\bf simx\-U\-Char} $\ast$}]{param\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_aa0bca449fec3a0a926c03483ee515009}
+\hypertarget{ext_api_8h_a345bad87b5bf69f83140350561700fe0}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Collision\-Handle@{simx\-Get\-Collision\-Handle}}
+\index{simx\-Get\-Collision\-Handle@{simx\-Get\-Collision\-Handle}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Collision\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Collision\-Handle (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{collision\-Object\-Name, }
+\item[{{\bf simx\-Int} $\ast$}]{handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a345bad87b5bf69f83140350561700fe0}
+\hypertarget{ext_api_8h_a9fb86e17c348a33f8a2b0f4905f38ca6}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Connection\-Id@{simx\-Get\-Connection\-Id}}
+\index{simx\-Get\-Connection\-Id@{simx\-Get\-Connection\-Id}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Connection\-Id}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Connection\-Id (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a9fb86e17c348a33f8a2b0f4905f38ca6}
+\hypertarget{ext_api_8h_a3ff9ba67be6ae25b7d0b87f60832b736}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Dialog\-Input@{simx\-Get\-Dialog\-Input}}
+\index{simx\-Get\-Dialog\-Input@{simx\-Get\-Dialog\-Input}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Dialog\-Input}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Dialog\-Input (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{dialog\-Handle, }
+\item[{{\bf simx\-Char} $\ast$$\ast$}]{input\-Text, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a3ff9ba67be6ae25b7d0b87f60832b736}
+\hypertarget{ext_api_8h_a8122b1484ab783c453079ff2c118a510}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Dialog\-Result@{simx\-Get\-Dialog\-Result}}
+\index{simx\-Get\-Dialog\-Result@{simx\-Get\-Dialog\-Result}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Dialog\-Result}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Dialog\-Result (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{dialog\-Handle, }
+\item[{{\bf simx\-Int} $\ast$}]{result, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a8122b1484ab783c453079ff2c118a510}
+\hypertarget{ext_api_8h_a05ae1d4d63bfd9617e393ddc23261477}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Distance\-Handle@{simx\-Get\-Distance\-Handle}}
+\index{simx\-Get\-Distance\-Handle@{simx\-Get\-Distance\-Handle}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Distance\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Distance\-Handle (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{distance\-Object\-Name, }
+\item[{{\bf simx\-Int} $\ast$}]{handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a05ae1d4d63bfd9617e393ddc23261477}
+\hypertarget{ext_api_8h_a2b0c867e34e487f208d24d8b034e29e9}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Floating\-Parameter@{simx\-Get\-Floating\-Parameter}}
+\index{simx\-Get\-Floating\-Parameter@{simx\-Get\-Floating\-Parameter}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Floating\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Floating\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{param\-Identifier, }
+\item[{{\bf simx\-Float} $\ast$}]{param\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a2b0c867e34e487f208d24d8b034e29e9}
+\hypertarget{ext_api_8h_ab906636b88091a3eab24f30c40218050}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Float\-Signal@{simx\-Get\-Float\-Signal}}
+\index{simx\-Get\-Float\-Signal@{simx\-Get\-Float\-Signal}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Float\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Float\-Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{{\bf simx\-Float} $\ast$}]{signal\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ab906636b88091a3eab24f30c40218050}
+\hypertarget{ext_api_8h_a6352a865d12df85cd218fac5f8fadba8}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-In\-Message\-Info@{simx\-Get\-In\-Message\-Info}}
+\index{simx\-Get\-In\-Message\-Info@{simx\-Get\-In\-Message\-Info}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-In\-Message\-Info}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-In\-Message\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{info\-Type, }
+\item[{{\bf simx\-Int} $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a6352a865d12df85cd218fac5f8fadba8}
+\hypertarget{ext_api_8h_ad09000e94182744bce4c408dc00b2775}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Integer\-Parameter@{simx\-Get\-Integer\-Parameter}}
+\index{simx\-Get\-Integer\-Parameter@{simx\-Get\-Integer\-Parameter}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Integer\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Integer\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{param\-Identifier, }
+\item[{{\bf simx\-Int} $\ast$}]{param\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ad09000e94182744bce4c408dc00b2775}
+\hypertarget{ext_api_8h_aedb97e8c231fb265ed8b37bf40377d29}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Integer\-Signal@{simx\-Get\-Integer\-Signal}}
+\index{simx\-Get\-Integer\-Signal@{simx\-Get\-Integer\-Signal}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Integer\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Integer\-Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{{\bf simx\-Int} $\ast$}]{signal\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_aedb97e8c231fb265ed8b37bf40377d29}
+\hypertarget{ext_api_8h_a3bbd74b44a592d70fc94822e74017f4c}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Joint\-Force@{simx\-Get\-Joint\-Force}}
+\index{simx\-Get\-Joint\-Force@{simx\-Get\-Joint\-Force}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Joint\-Force}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Joint\-Force (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{joint\-Handle, }
+\item[{{\bf simx\-Float} $\ast$}]{force, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a3bbd74b44a592d70fc94822e74017f4c}
+\hypertarget{ext_api_8h_a551f5c252fd6bece0b31a961346c5e86}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Joint\-Matrix@{simx\-Get\-Joint\-Matrix}}
+\index{simx\-Get\-Joint\-Matrix@{simx\-Get\-Joint\-Matrix}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Joint\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Joint\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{joint\-Handle, }
+\item[{{\bf simx\-Float} $\ast$}]{matrix, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a551f5c252fd6bece0b31a961346c5e86}
+\hypertarget{ext_api_8h_a3f77419c65e658adf82752d4f51532df}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Joint\-Position@{simx\-Get\-Joint\-Position}}
+\index{simx\-Get\-Joint\-Position@{simx\-Get\-Joint\-Position}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Joint\-Position}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Joint\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{joint\-Handle, }
+\item[{{\bf simx\-Float} $\ast$}]{position, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a3f77419c65e658adf82752d4f51532df}
+\hypertarget{ext_api_8h_a67b24fa0d7c88076d59fbd0701eebd33}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Last\-Cmd\-Time@{simx\-Get\-Last\-Cmd\-Time}}
+\index{simx\-Get\-Last\-Cmd\-Time@{simx\-Get\-Last\-Cmd\-Time}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Last\-Cmd\-Time}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Last\-Cmd\-Time (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a67b24fa0d7c88076d59fbd0701eebd33}
+\hypertarget{ext_api_8h_a265b9b6d5f02dc1ef8d3f456de6ba14f}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Last\-Errors@{simx\-Get\-Last\-Errors}}
+\index{simx\-Get\-Last\-Errors@{simx\-Get\-Last\-Errors}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Last\-Errors}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Last\-Errors (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int} $\ast$}]{error\-Cnt, }
+\item[{{\bf simx\-Char} $\ast$$\ast$}]{error\-Strings, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a265b9b6d5f02dc1ef8d3f456de6ba14f}
+\hypertarget{ext_api_8h_af2c70dd81635aebb4abe524f934eb986}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Model\-Property@{simx\-Get\-Model\-Property}}
+\index{simx\-Get\-Model\-Property@{simx\-Get\-Model\-Property}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Model\-Property}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Model\-Property (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{{\bf simx\-Int} $\ast$}]{prop, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_af2c70dd81635aebb4abe524f934eb986}
+\hypertarget{ext_api_8h_a23626c69568852fb7f247e21c00ceb57}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Object\-Child@{simx\-Get\-Object\-Child}}
+\index{simx\-Get\-Object\-Child@{simx\-Get\-Object\-Child}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Object\-Child}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Object\-Child (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{parent\-Object\-Handle, }
+\item[{{\bf simx\-Int}}]{child\-Index, }
+\item[{{\bf simx\-Int} $\ast$}]{child\-Object\-Handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a23626c69568852fb7f247e21c00ceb57}
+\hypertarget{ext_api_8h_a18c917b154e1fc85777d170a59745a5a}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Object\-Float\-Parameter@{simx\-Get\-Object\-Float\-Parameter}}
+\index{simx\-Get\-Object\-Float\-Parameter@{simx\-Get\-Object\-Float\-Parameter}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Object\-Float\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Object\-Float\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{{\bf simx\-Int}}]{parameter\-I\-D, }
+\item[{{\bf simx\-Float} $\ast$}]{parameter\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a18c917b154e1fc85777d170a59745a5a}
+\hypertarget{ext_api_8h_a66257857dd7d7b8cd2acb3db52656c8f}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Object\-Group\-Data@{simx\-Get\-Object\-Group\-Data}}
+\index{simx\-Get\-Object\-Group\-Data@{simx\-Get\-Object\-Group\-Data}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Object\-Group\-Data}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Object\-Group\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Type, }
+\item[{{\bf simx\-Int}}]{data\-Type, }
+\item[{{\bf simx\-Int} $\ast$}]{handles\-Count, }
+\item[{{\bf simx\-Int} $\ast$$\ast$}]{handles, }
+\item[{{\bf simx\-Int} $\ast$}]{int\-Data\-Count, }
+\item[{{\bf simx\-Int} $\ast$$\ast$}]{int\-Data, }
+\item[{{\bf simx\-Int} $\ast$}]{float\-Data\-Count, }
+\item[{{\bf simx\-Float} $\ast$$\ast$}]{float\-Data, }
+\item[{{\bf simx\-Int} $\ast$}]{string\-Data\-Count, }
+\item[{{\bf simx\-Char} $\ast$$\ast$}]{string\-Data, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a66257857dd7d7b8cd2acb3db52656c8f}
+\hypertarget{ext_api_8h_ae2c3b5ea5407956d88edabd80e39bc7d}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Object\-Handle@{simx\-Get\-Object\-Handle}}
+\index{simx\-Get\-Object\-Handle@{simx\-Get\-Object\-Handle}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Object\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Object\-Handle (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{object\-Name, }
+\item[{{\bf simx\-Int} $\ast$}]{handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ae2c3b5ea5407956d88edabd80e39bc7d}
+\hypertarget{ext_api_8h_a38710cbf150b4fdda61888024bc4ee46}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Object\-Int\-Parameter@{simx\-Get\-Object\-Int\-Parameter}}
+\index{simx\-Get\-Object\-Int\-Parameter@{simx\-Get\-Object\-Int\-Parameter}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Object\-Int\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Object\-Int\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{{\bf simx\-Int}}]{parameter\-I\-D, }
+\item[{{\bf simx\-Int} $\ast$}]{parameter\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a38710cbf150b4fdda61888024bc4ee46}
+\hypertarget{ext_api_8h_a4fc54910ec82246ab349c0fd1d450f4c}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Object\-Orientation@{simx\-Get\-Object\-Orientation}}
+\index{simx\-Get\-Object\-Orientation@{simx\-Get\-Object\-Orientation}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Object\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Object\-Orientation (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{{\bf simx\-Int}}]{relative\-To\-Object\-Handle, }
+\item[{{\bf simx\-Float} $\ast$}]{euler\-Angles, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a4fc54910ec82246ab349c0fd1d450f4c}
+\hypertarget{ext_api_8h_abd1a9c53eced33331711762ff304fd58}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Object\-Parent@{simx\-Get\-Object\-Parent}}
+\index{simx\-Get\-Object\-Parent@{simx\-Get\-Object\-Parent}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Object\-Parent}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Object\-Parent (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{child\-Object\-Handle, }
+\item[{{\bf simx\-Int} $\ast$}]{parent\-Object\-Handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_abd1a9c53eced33331711762ff304fd58}
+\hypertarget{ext_api_8h_af854d99ee1d7840343c40eaddef0a7f0}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Object\-Position@{simx\-Get\-Object\-Position}}
+\index{simx\-Get\-Object\-Position@{simx\-Get\-Object\-Position}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Object\-Position}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Object\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{{\bf simx\-Int}}]{relative\-To\-Object\-Handle, }
+\item[{{\bf simx\-Float} $\ast$}]{position, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_af854d99ee1d7840343c40eaddef0a7f0}
+\hypertarget{ext_api_8h_af16a2c26c4b5efc3dbab4d48304a3731}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Objects@{simx\-Get\-Objects}}
+\index{simx\-Get\-Objects@{simx\-Get\-Objects}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Objects}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Objects (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Type, }
+\item[{{\bf simx\-Int} $\ast$}]{object\-Count, }
+\item[{{\bf simx\-Int} $\ast$$\ast$}]{object\-Handles, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_af16a2c26c4b5efc3dbab4d48304a3731}
+\hypertarget{ext_api_8h_a54a1782a88e76582bea326066d52ee36}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Object\-Selection@{simx\-Get\-Object\-Selection}}
+\index{simx\-Get\-Object\-Selection@{simx\-Get\-Object\-Selection}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Object\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Object\-Selection (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int} $\ast$$\ast$}]{object\-Handles, }
+\item[{{\bf simx\-Int} $\ast$}]{object\-Count, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a54a1782a88e76582bea326066d52ee36}
+\hypertarget{ext_api_8h_a0a3bf42bac51f9d1a3f53bc93607c0fc}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Object\-Velocity@{simx\-Get\-Object\-Velocity}}
+\index{simx\-Get\-Object\-Velocity@{simx\-Get\-Object\-Velocity}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Object\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Object\-Velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{{\bf simx\-Float} $\ast$}]{linear\-Velocity, }
+\item[{{\bf simx\-Float} $\ast$}]{angular\-Velocity, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a0a3bf42bac51f9d1a3f53bc93607c0fc}
+\hypertarget{ext_api_8h_a7c8005b2a6e38a633dab023f4bb4b849}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Out\-Message\-Info@{simx\-Get\-Out\-Message\-Info}}
+\index{simx\-Get\-Out\-Message\-Info@{simx\-Get\-Out\-Message\-Info}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Out\-Message\-Info}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Out\-Message\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{info\-Type, }
+\item[{{\bf simx\-Int} $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a7c8005b2a6e38a633dab023f4bb4b849}
+\hypertarget{ext_api_8h_adc22701c2f99f0106edeec758665a8a7}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Ping\-Time@{simx\-Get\-Ping\-Time}}
+\index{simx\-Get\-Ping\-Time@{simx\-Get\-Ping\-Time}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Ping\-Time}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Ping\-Time (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int} $\ast$}]{ping\-Time}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_adc22701c2f99f0106edeec758665a8a7}
+\hypertarget{ext_api_8h_a675f71f1e8a8216aa9eb62459cd79eea}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-String\-Parameter@{simx\-Get\-String\-Parameter}}
+\index{simx\-Get\-String\-Parameter@{simx\-Get\-String\-Parameter}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-String\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-String\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{param\-Identifier, }
+\item[{{\bf simx\-Char} $\ast$$\ast$}]{param\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a675f71f1e8a8216aa9eb62459cd79eea}
+\hypertarget{ext_api_8h_afb0369ac6659537bc4d51f688c71ea76}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-String\-Signal@{simx\-Get\-String\-Signal}}
+\index{simx\-Get\-String\-Signal@{simx\-Get\-String\-Signal}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-String\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-String\-Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{{\bf simx\-U\-Char} $\ast$$\ast$}]{signal\-Value, }
+\item[{{\bf simx\-Int} $\ast$}]{signal\-Length, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_afb0369ac6659537bc4d51f688c71ea76}
+\hypertarget{ext_api_8h_a353a7cf43442840af0ddb5bdde794607}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-U\-I\-Button\-Property@{simx\-Get\-U\-I\-Button\-Property}}
+\index{simx\-Get\-U\-I\-Button\-Property@{simx\-Get\-U\-I\-Button\-Property}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-U\-I\-Button\-Property}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-U\-I\-Button\-Property (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{ui\-Handle, }
+\item[{{\bf simx\-Int}}]{ui\-Button\-I\-D, }
+\item[{{\bf simx\-Int} $\ast$}]{prop, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a353a7cf43442840af0ddb5bdde794607}
+\hypertarget{ext_api_8h_ad77400e7086119a6c2fa82227dd4d73a}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-U\-I\-Event\-Button@{simx\-Get\-U\-I\-Event\-Button}}
+\index{simx\-Get\-U\-I\-Event\-Button@{simx\-Get\-U\-I\-Event\-Button}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-U\-I\-Event\-Button}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-U\-I\-Event\-Button (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{ui\-Handle, }
+\item[{{\bf simx\-Int} $\ast$}]{ui\-Event\-Button\-I\-D, }
+\item[{{\bf simx\-Int} $\ast$}]{aux\-Values, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ad77400e7086119a6c2fa82227dd4d73a}
+\hypertarget{ext_api_8h_a551340152d28595e77d32d0b9a5bb7ef}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-U\-I\-Handle@{simx\-Get\-U\-I\-Handle}}
+\index{simx\-Get\-U\-I\-Handle@{simx\-Get\-U\-I\-Handle}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-U\-I\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-U\-I\-Handle (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{ui\-Name, }
+\item[{{\bf simx\-Int} $\ast$}]{handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a551340152d28595e77d32d0b9a5bb7ef}
+\hypertarget{ext_api_8h_abb875286b0304981c54411406b16f405}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-U\-I\-Slider@{simx\-Get\-U\-I\-Slider}}
+\index{simx\-Get\-U\-I\-Slider@{simx\-Get\-U\-I\-Slider}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-U\-I\-Slider}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-U\-I\-Slider (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{ui\-Handle, }
+\item[{{\bf simx\-Int}}]{ui\-Button\-I\-D, }
+\item[{{\bf simx\-Int} $\ast$}]{position, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_abb875286b0304981c54411406b16f405}
+\hypertarget{ext_api_8h_a7c25ae520b92031fa3fbcc20092f7685}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Vision\-Sensor\-Depth\-Buffer@{simx\-Get\-Vision\-Sensor\-Depth\-Buffer}}
+\index{simx\-Get\-Vision\-Sensor\-Depth\-Buffer@{simx\-Get\-Vision\-Sensor\-Depth\-Buffer}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Vision\-Sensor\-Depth\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Vision\-Sensor\-Depth\-Buffer (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{sensor\-Handle, }
+\item[{{\bf simx\-Int} $\ast$}]{resolution, }
+\item[{{\bf simx\-Float} $\ast$$\ast$}]{buffer, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a7c25ae520b92031fa3fbcc20092f7685}
+\hypertarget{ext_api_8h_a33cfd89cf377ea515f697732b535e143}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Get\-Vision\-Sensor\-Image@{simx\-Get\-Vision\-Sensor\-Image}}
+\index{simx\-Get\-Vision\-Sensor\-Image@{simx\-Get\-Vision\-Sensor\-Image}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Get\-Vision\-Sensor\-Image}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Get\-Vision\-Sensor\-Image (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{sensor\-Handle, }
+\item[{{\bf simx\-Int} $\ast$}]{resolution, }
+\item[{{\bf simx\-U\-Char} $\ast$$\ast$}]{image, }
+\item[{{\bf simx\-U\-Char}}]{options, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a33cfd89cf377ea515f697732b535e143}
+\hypertarget{ext_api_8h_a9c682e49f2c4ee98fc05fd2b7edbe7d9}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Joint\-Get\-Force@{simx\-Joint\-Get\-Force}}
+\index{simx\-Joint\-Get\-Force@{simx\-Joint\-Get\-Force}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Joint\-Get\-Force}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Joint\-Get\-Force (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{joint\-Handle, }
+\item[{{\bf simx\-Float} $\ast$}]{force, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a9c682e49f2c4ee98fc05fd2b7edbe7d9}
+\hypertarget{ext_api_8h_aba004fe8c4230080573cf6a84609cc4c}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Load\-Model@{simx\-Load\-Model}}
+\index{simx\-Load\-Model@{simx\-Load\-Model}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Load\-Model}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Load\-Model (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{model\-Path\-And\-Name, }
+\item[{{\bf simx\-U\-Char}}]{options, }
+\item[{{\bf simx\-Int} $\ast$}]{base\-Handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_aba004fe8c4230080573cf6a84609cc4c}
+\hypertarget{ext_api_8h_a334778d7372013cf32278c35cfb1e401}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Load\-Scene@{simx\-Load\-Scene}}
+\index{simx\-Load\-Scene@{simx\-Load\-Scene}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Load\-Scene}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Load\-Scene (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{scene\-Path\-And\-Name, }
+\item[{{\bf simx\-U\-Char}}]{options, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a334778d7372013cf32278c35cfb1e401}
+\hypertarget{ext_api_8h_a0c14eaf2751f64cb99cc09ca40f690d1}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Load\-U\-I@{simx\-Load\-U\-I}}
+\index{simx\-Load\-U\-I@{simx\-Load\-U\-I}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Load\-U\-I}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Load\-U\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{ui\-Path\-And\-Name, }
+\item[{{\bf simx\-U\-Char}}]{options, }
+\item[{{\bf simx\-Int} $\ast$}]{count, }
+\item[{{\bf simx\-Int} $\ast$$\ast$}]{ui\-Handles, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a0c14eaf2751f64cb99cc09ca40f690d1}
+\hypertarget{ext_api_8h_a181af0b7b6fcd3f95842fc5d146dce81}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Pause\-Communication@{simx\-Pause\-Communication}}
+\index{simx\-Pause\-Communication@{simx\-Pause\-Communication}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Pause\-Communication}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Pause\-Communication (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-U\-Char}}]{pause}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a181af0b7b6fcd3f95842fc5d146dce81}
+\hypertarget{ext_api_8h_aa26c076bd8b7220e5986f40567b0a243}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Pause\-Simulation@{simx\-Pause\-Simulation}}
+\index{simx\-Pause\-Simulation@{simx\-Pause\-Simulation}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Pause\-Simulation}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Pause\-Simulation (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_aa26c076bd8b7220e5986f40567b0a243}
+\hypertarget{ext_api_8h_a433f3a57228fb5b0416746febcbceca0}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Query@{simx\-Query}}
+\index{simx\-Query@{simx\-Query}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Query}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Query (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{const {\bf simx\-U\-Char} $\ast$}]{signal\-Value, }
+\item[{{\bf simx\-Int}}]{signal\-Length, }
+\item[{const {\bf simx\-Char} $\ast$}]{ret\-Signal\-Name, }
+\item[{{\bf simx\-U\-Char} $\ast$$\ast$}]{ret\-Signal\-Value, }
+\item[{{\bf simx\-Int} $\ast$}]{ret\-Signal\-Length, }
+\item[{{\bf simx\-Int}}]{time\-Out\-In\-Ms}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a433f3a57228fb5b0416746febcbceca0}
+\hypertarget{ext_api_8h_a7a043b50b10c706144f5feca70ee0ff3}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Read\-Collision@{simx\-Read\-Collision}}
+\index{simx\-Read\-Collision@{simx\-Read\-Collision}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Read\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Read\-Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{collision\-Object\-Handle, }
+\item[{{\bf simx\-U\-Char} $\ast$}]{collision\-State, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a7a043b50b10c706144f5feca70ee0ff3}
+\hypertarget{ext_api_8h_ab90ecb33d809b9cc76fa3d705ed27ef4}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Read\-Distance@{simx\-Read\-Distance}}
+\index{simx\-Read\-Distance@{simx\-Read\-Distance}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Read\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Read\-Distance (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{distance\-Object\-Handle, }
+\item[{{\bf simx\-Float} $\ast$}]{minimum\-Distance, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ab90ecb33d809b9cc76fa3d705ed27ef4}
+\hypertarget{ext_api_8h_ace3ba1e1784863e91b612eedc8f68c6a}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Read\-Force\-Sensor@{simx\-Read\-Force\-Sensor}}
+\index{simx\-Read\-Force\-Sensor@{simx\-Read\-Force\-Sensor}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Read\-Force\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Read\-Force\-Sensor (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{force\-Sensor\-Handle, }
+\item[{{\bf simx\-U\-Char} $\ast$}]{state, }
+\item[{{\bf simx\-Float} $\ast$}]{force\-Vector, }
+\item[{{\bf simx\-Float} $\ast$}]{torque\-Vector, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ace3ba1e1784863e91b612eedc8f68c6a}
+\hypertarget{ext_api_8h_a9b28fe7f6137f494fe70c99b9a921293}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Read\-Proximity\-Sensor@{simx\-Read\-Proximity\-Sensor}}
+\index{simx\-Read\-Proximity\-Sensor@{simx\-Read\-Proximity\-Sensor}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Read\-Proximity\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Read\-Proximity\-Sensor (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{sensor\-Handle, }
+\item[{{\bf simx\-U\-Char} $\ast$}]{detection\-State, }
+\item[{{\bf simx\-Float} $\ast$}]{detected\-Point, }
+\item[{{\bf simx\-Int} $\ast$}]{detected\-Object\-Handle, }
+\item[{{\bf simx\-Float} $\ast$}]{detected\-Surface\-Normal\-Vector, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a9b28fe7f6137f494fe70c99b9a921293}
+\hypertarget{ext_api_8h_ab5b5b691c129977c493d487bd8cd48c2}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Read\-String\-Stream@{simx\-Read\-String\-Stream}}
+\index{simx\-Read\-String\-Stream@{simx\-Read\-String\-Stream}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Read\-String\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Read\-String\-Stream (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{{\bf simx\-U\-Char} $\ast$$\ast$}]{signal\-Value, }
+\item[{{\bf simx\-Int} $\ast$}]{signal\-Length, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ab5b5b691c129977c493d487bd8cd48c2}
+\hypertarget{ext_api_8h_a89f81d7d0d27a9c502458e4b310b414b}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Read\-Vision\-Sensor@{simx\-Read\-Vision\-Sensor}}
+\index{simx\-Read\-Vision\-Sensor@{simx\-Read\-Vision\-Sensor}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Read\-Vision\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Read\-Vision\-Sensor (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{sensor\-Handle, }
+\item[{{\bf simx\-U\-Char} $\ast$}]{detection\-State, }
+\item[{{\bf simx\-Float} $\ast$$\ast$}]{aux\-Values, }
+\item[{{\bf simx\-Int} $\ast$$\ast$}]{aux\-Values\-Count, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a89f81d7d0d27a9c502458e4b310b414b}
+\hypertarget{ext_api_8h_a58878800f03e84ca8b5e2d4048c57d6c}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Release\-Buffer@{simx\-Release\-Buffer}}
+\index{simx\-Release\-Buffer@{simx\-Release\-Buffer}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Release\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Void} simx\-Release\-Buffer (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-U\-Char} $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a58878800f03e84ca8b5e2d4048c57d6c}
+\hypertarget{ext_api_8h_a1d80e223044e1e3f5439c168cf02d744}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Remove\-Object@{simx\-Remove\-Object}}
+\index{simx\-Remove\-Object@{simx\-Remove\-Object}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Remove\-Object}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Remove\-Object (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a1d80e223044e1e3f5439c168cf02d744}
+\hypertarget{ext_api_8h_a1d223af40c6754cb5d0b6dd272edc4a5}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Remove\-U\-I@{simx\-Remove\-U\-I}}
+\index{simx\-Remove\-U\-I@{simx\-Remove\-U\-I}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Remove\-U\-I}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Remove\-U\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{ui\-Handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a1d223af40c6754cb5d0b6dd272edc4a5}
+\hypertarget{ext_api_8h_ad265d209c443469823315897bd4b97df}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Array\-Parameter@{simx\-Set\-Array\-Parameter}}
+\index{simx\-Set\-Array\-Parameter@{simx\-Set\-Array\-Parameter}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Array\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Array\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{param\-Identifier, }
+\item[{const {\bf simx\-Float} $\ast$}]{param\-Values, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ad265d209c443469823315897bd4b97df}
+\hypertarget{ext_api_8h_a365801024c91e785eed0f2074807832b}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Boolean\-Parameter@{simx\-Set\-Boolean\-Parameter}}
+\index{simx\-Set\-Boolean\-Parameter@{simx\-Set\-Boolean\-Parameter}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Boolean\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Boolean\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{param\-Identifier, }
+\item[{{\bf simx\-U\-Char}}]{param\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a365801024c91e785eed0f2074807832b}
+\hypertarget{ext_api_8h_ad6940058bac12c27af680d2aaf5db13e}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Floating\-Parameter@{simx\-Set\-Floating\-Parameter}}
+\index{simx\-Set\-Floating\-Parameter@{simx\-Set\-Floating\-Parameter}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Floating\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Floating\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{param\-Identifier, }
+\item[{{\bf simx\-Float}}]{param\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ad6940058bac12c27af680d2aaf5db13e}
+\hypertarget{ext_api_8h_a6674046ce12e475e1c5da4f5c3d65961}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Float\-Signal@{simx\-Set\-Float\-Signal}}
+\index{simx\-Set\-Float\-Signal@{simx\-Set\-Float\-Signal}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Float\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Float\-Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{{\bf simx\-Float}}]{signal\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a6674046ce12e475e1c5da4f5c3d65961}
+\hypertarget{ext_api_8h_a5ef34ab73e8a45b1f2451d447450bc92}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Integer\-Parameter@{simx\-Set\-Integer\-Parameter}}
+\index{simx\-Set\-Integer\-Parameter@{simx\-Set\-Integer\-Parameter}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Integer\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Integer\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{param\-Identifier, }
+\item[{{\bf simx\-Int}}]{param\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a5ef34ab73e8a45b1f2451d447450bc92}
+\hypertarget{ext_api_8h_a71107ed12aae713652dce57f6b6d366e}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Integer\-Signal@{simx\-Set\-Integer\-Signal}}
+\index{simx\-Set\-Integer\-Signal@{simx\-Set\-Integer\-Signal}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Integer\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Integer\-Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{{\bf simx\-Int}}]{signal\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a71107ed12aae713652dce57f6b6d366e}
+\hypertarget{ext_api_8h_aa379b99eee42323823f85bb5655ef447}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Joint\-Force@{simx\-Set\-Joint\-Force}}
+\index{simx\-Set\-Joint\-Force@{simx\-Set\-Joint\-Force}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Joint\-Force}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Joint\-Force (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{joint\-Handle, }
+\item[{{\bf simx\-Float}}]{force, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_aa379b99eee42323823f85bb5655ef447}
+\hypertarget{ext_api_8h_a6e0bea6a30fd767c929509660d6112a5}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Joint\-Position@{simx\-Set\-Joint\-Position}}
+\index{simx\-Set\-Joint\-Position@{simx\-Set\-Joint\-Position}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Joint\-Position}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Joint\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{joint\-Handle, }
+\item[{{\bf simx\-Float}}]{position, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a6e0bea6a30fd767c929509660d6112a5}
+\hypertarget{ext_api_8h_a3da22c2602c9e94fce46b1bfd122557b}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Joint\-Target\-Position@{simx\-Set\-Joint\-Target\-Position}}
+\index{simx\-Set\-Joint\-Target\-Position@{simx\-Set\-Joint\-Target\-Position}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Joint\-Target\-Position}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Joint\-Target\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{joint\-Handle, }
+\item[{{\bf simx\-Float}}]{target\-Position, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a3da22c2602c9e94fce46b1bfd122557b}
+\hypertarget{ext_api_8h_a8d7b89565d4459851749a52e7b791663}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Joint\-Target\-Velocity@{simx\-Set\-Joint\-Target\-Velocity}}
+\index{simx\-Set\-Joint\-Target\-Velocity@{simx\-Set\-Joint\-Target\-Velocity}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Joint\-Target\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Joint\-Target\-Velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{joint\-Handle, }
+\item[{{\bf simx\-Float}}]{target\-Velocity, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a8d7b89565d4459851749a52e7b791663}
+\hypertarget{ext_api_8h_acfb016b71e1a1b0e402dae614aae4231}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Model\-Property@{simx\-Set\-Model\-Property}}
+\index{simx\-Set\-Model\-Property@{simx\-Set\-Model\-Property}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Model\-Property}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Model\-Property (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{{\bf simx\-Int}}]{prop, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_acfb016b71e1a1b0e402dae614aae4231}
+\hypertarget{ext_api_8h_a8d4d2c80491c6a6b8ab5aa70c529bb18}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Object\-Float\-Parameter@{simx\-Set\-Object\-Float\-Parameter}}
+\index{simx\-Set\-Object\-Float\-Parameter@{simx\-Set\-Object\-Float\-Parameter}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Object\-Float\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Object\-Float\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{{\bf simx\-Int}}]{parameter\-I\-D, }
+\item[{{\bf simx\-Float}}]{parameter\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a8d4d2c80491c6a6b8ab5aa70c529bb18}
+\hypertarget{ext_api_8h_a9d2b78efea2f924f805eea8fbe84325a}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Object\-Int\-Parameter@{simx\-Set\-Object\-Int\-Parameter}}
+\index{simx\-Set\-Object\-Int\-Parameter@{simx\-Set\-Object\-Int\-Parameter}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Object\-Int\-Parameter}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Object\-Int\-Parameter (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{{\bf simx\-Int}}]{parameter\-I\-D, }
+\item[{{\bf simx\-Int}}]{parameter\-Value, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a9d2b78efea2f924f805eea8fbe84325a}
+\hypertarget{ext_api_8h_ac4a989b4282bebdb5aed1f2c92543bf6}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Object\-Orientation@{simx\-Set\-Object\-Orientation}}
+\index{simx\-Set\-Object\-Orientation@{simx\-Set\-Object\-Orientation}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Object\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Object\-Orientation (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{{\bf simx\-Int}}]{relative\-To\-Object\-Handle, }
+\item[{const {\bf simx\-Float} $\ast$}]{euler\-Angles, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ac4a989b4282bebdb5aed1f2c92543bf6}
+\hypertarget{ext_api_8h_af37214dc11d5b619d1d3cbc8eb41948e}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Object\-Parent@{simx\-Set\-Object\-Parent}}
+\index{simx\-Set\-Object\-Parent@{simx\-Set\-Object\-Parent}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Object\-Parent}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Object\-Parent (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{{\bf simx\-Int}}]{parent\-Object, }
+\item[{{\bf simx\-U\-Char}}]{keep\-In\-Place, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_af37214dc11d5b619d1d3cbc8eb41948e}
+\hypertarget{ext_api_8h_a1edc11093200a1ac859847bc220ec27f}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Object\-Position@{simx\-Set\-Object\-Position}}
+\index{simx\-Set\-Object\-Position@{simx\-Set\-Object\-Position}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Object\-Position}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Object\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{{\bf simx\-Int}}]{relative\-To\-Object\-Handle, }
+\item[{const {\bf simx\-Float} $\ast$}]{position, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a1edc11093200a1ac859847bc220ec27f}
+\hypertarget{ext_api_8h_ad915526219e435a5b6cc80dd9b8b40af}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Object\-Selection@{simx\-Set\-Object\-Selection}}
+\index{simx\-Set\-Object\-Selection@{simx\-Set\-Object\-Selection}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Object\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Object\-Selection (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Int} $\ast$}]{object\-Handles, }
+\item[{{\bf simx\-Int}}]{object\-Count, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ad915526219e435a5b6cc80dd9b8b40af}
+\hypertarget{ext_api_8h_aceffe83d72c782721e37fe5f9c6674f2}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Spherical\-Joint\-Matrix@{simx\-Set\-Spherical\-Joint\-Matrix}}
+\index{simx\-Set\-Spherical\-Joint\-Matrix@{simx\-Set\-Spherical\-Joint\-Matrix}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Spherical\-Joint\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Spherical\-Joint\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{joint\-Handle, }
+\item[{{\bf simx\-Float} $\ast$}]{matrix, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_aceffe83d72c782721e37fe5f9c6674f2}
+\hypertarget{ext_api_8h_a2aa65d78032679a075752b922610dbec}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-String\-Signal@{simx\-Set\-String\-Signal}}
+\index{simx\-Set\-String\-Signal@{simx\-Set\-String\-Signal}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-String\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-String\-Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{const {\bf simx\-U\-Char} $\ast$}]{signal\-Value, }
+\item[{{\bf simx\-Int}}]{signal\-Length, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a2aa65d78032679a075752b922610dbec}
+\hypertarget{ext_api_8h_ac26680d5d7a479f79490547e422360ef}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-U\-I\-Button\-Label@{simx\-Set\-U\-I\-Button\-Label}}
+\index{simx\-Set\-U\-I\-Button\-Label@{simx\-Set\-U\-I\-Button\-Label}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-U\-I\-Button\-Label}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-U\-I\-Button\-Label (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{ui\-Handle, }
+\item[{{\bf simx\-Int}}]{ui\-Button\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{up\-State\-Label, }
+\item[{const {\bf simx\-Char} $\ast$}]{down\-State\-Label, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ac26680d5d7a479f79490547e422360ef}
+\hypertarget{ext_api_8h_a5cbb390c549353a28ca154d5896a64aa}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-U\-I\-Button\-Property@{simx\-Set\-U\-I\-Button\-Property}}
+\index{simx\-Set\-U\-I\-Button\-Property@{simx\-Set\-U\-I\-Button\-Property}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-U\-I\-Button\-Property}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-U\-I\-Button\-Property (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{ui\-Handle, }
+\item[{{\bf simx\-Int}}]{ui\-Button\-I\-D, }
+\item[{{\bf simx\-Int}}]{prop, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a5cbb390c549353a28ca154d5896a64aa}
+\hypertarget{ext_api_8h_af5bc1609d373f29c92932aa8b6902faf}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-U\-I\-Slider@{simx\-Set\-U\-I\-Slider}}
+\index{simx\-Set\-U\-I\-Slider@{simx\-Set\-U\-I\-Slider}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-U\-I\-Slider}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-U\-I\-Slider (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{ui\-Handle, }
+\item[{{\bf simx\-Int}}]{ui\-Button\-I\-D, }
+\item[{{\bf simx\-Int}}]{position, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_af5bc1609d373f29c92932aa8b6902faf}
+\hypertarget{ext_api_8h_ac77fb94bfa16740a83a381f2800e0079}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Set\-Vision\-Sensor\-Image@{simx\-Set\-Vision\-Sensor\-Image}}
+\index{simx\-Set\-Vision\-Sensor\-Image@{simx\-Set\-Vision\-Sensor\-Image}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Set\-Vision\-Sensor\-Image}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Set\-Vision\-Sensor\-Image (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{sensor\-Handle, }
+\item[{{\bf simx\-U\-Char} $\ast$}]{image, }
+\item[{{\bf simx\-Int}}]{buffer\-Size, }
+\item[{{\bf simx\-U\-Char}}]{options, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ac77fb94bfa16740a83a381f2800e0079}
+\hypertarget{ext_api_8h_af8e78f3b4698eb09fe31f59c46a4848f}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Start@{simx\-Start}}
+\index{simx\-Start@{simx\-Start}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Start}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Start (
+\begin{DoxyParamCaption}
+\item[{const {\bf simx\-Char} $\ast$}]{connection\-Address, }
+\item[{{\bf simx\-Int}}]{connection\-Port, }
+\item[{{\bf simx\-U\-Char}}]{wait\-Until\-Connected, }
+\item[{{\bf simx\-U\-Char}}]{do\-Not\-Reconnect\-Once\-Disconnected, }
+\item[{{\bf simx\-Int}}]{time\-Out\-In\-Ms, }
+\item[{{\bf simx\-Int}}]{comm\-Thread\-Cycle\-In\-Ms}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_af8e78f3b4698eb09fe31f59c46a4848f}
+\hypertarget{ext_api_8h_a0a5aaad500ed97992f72d6b6b18b90ed}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Start\-Simulation@{simx\-Start\-Simulation}}
+\index{simx\-Start\-Simulation@{simx\-Start\-Simulation}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Start\-Simulation}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Start\-Simulation (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a0a5aaad500ed97992f72d6b6b18b90ed}
+\hypertarget{ext_api_8h_aba781c23bfffe69b4e130e9be69239b8}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Stop\-Simulation@{simx\-Stop\-Simulation}}
+\index{simx\-Stop\-Simulation@{simx\-Stop\-Simulation}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Stop\-Simulation}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Stop\-Simulation (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_aba781c23bfffe69b4e130e9be69239b8}
+\hypertarget{ext_api_8h_a0a80c37ef777948657a62b728d9431df}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Synchronous@{simx\-Synchronous}}
+\index{simx\-Synchronous@{simx\-Synchronous}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Synchronous}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Synchronous (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-U\-Char}}]{enable}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a0a80c37ef777948657a62b728d9431df}
+\hypertarget{ext_api_8h_af09861c15a7b5017d37807def9529f12}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Synchronous\-Trigger@{simx\-Synchronous\-Trigger}}
+\index{simx\-Synchronous\-Trigger@{simx\-Synchronous\-Trigger}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Synchronous\-Trigger}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Synchronous\-Trigger (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_af09861c15a7b5017d37807def9529f12}
+\hypertarget{ext_api_8h_ab3b832d46c5823b6928d5d007778c1ab}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Transfer\-File@{simx\-Transfer\-File}}
+\index{simx\-Transfer\-File@{simx\-Transfer\-File}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Transfer\-File}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Transfer\-File (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{file\-Path\-And\-Name, }
+\item[{const {\bf simx\-Char} $\ast$}]{file\-Name\-\_\-server\-Side, }
+\item[{{\bf simx\-Int}}]{time\-Out, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_ab3b832d46c5823b6928d5d007778c1ab}
+\hypertarget{ext_api_8h_a1b9c1eda4379002c3315097533ce473f}{\index{ext\-Api.\-h@{ext\-Api.\-h}!simx\-Write\-String\-Stream@{simx\-Write\-String\-Stream}}
+\index{simx\-Write\-String\-Stream@{simx\-Write\-String\-Stream}!extApi.h@{ext\-Api.\-h}}
+\subsubsection[{simx\-Write\-String\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Write\-String\-Stream (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{signal\-Name, }
+\item[{const {\bf simx\-U\-Char} $\ast$}]{signal\-Value, }
+\item[{{\bf simx\-Int}}]{signal\-Length, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_8h_a1b9c1eda4379002c3315097533ce473f}

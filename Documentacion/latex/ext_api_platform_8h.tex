@@ -1,0 +1,369 @@
+\hypertarget{ext_api_platform_8h}{\section{V\-R\-E\-P/remote\-Api/ext\-Api\-Platform.h File Reference}
+\label{ext_api_platform_8h}\index{V\-R\-E\-P/remote\-Api/ext\-Api\-Platform.\-h@{V\-R\-E\-P/remote\-Api/ext\-Api\-Platform.\-h}}
+}
+{\ttfamily \#include $<$stdint.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ext_api_platform_8h_ab6e84687d3835edfd2a5e24a0cfbbabb}{S\-O\-C\-K\-E\-T\-\_\-\-M\-A\-X\-\_\-\-P\-A\-C\-K\-E\-T\-\_\-\-S\-I\-Z\-E}~1300 /$\ast$ in bytes. Keep between 200 and 30000 $\ast$/
+\item 
+\#define \hyperlink{ext_api_platform_8h_a6082c9aa6b05756e86fcab2c4d1a9b31}{S\-O\-C\-K\-E\-T\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H}~6 /$\ast$ W\-O\-R\-D0=1 (to detect endianness), W\-O\-R\-D1=packet\-Size, W\-O\-R\-D2=packets\-Left\-To\-Read $\ast$/
+\item 
+\#define \hyperlink{ext_api_platform_8h_aafa7bf51da907ed0afab37ff8bbf4abe}{S\-O\-C\-K\-E\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-R\-E\-A\-D}~10000 /$\ast$ in ms $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef char \hyperlink{ext_api_platform_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char}
+\item 
+typedef uint8\-\_\-t \hyperlink{ext_api_platform_8h_a75ddf0bb110d75f00cb6d4d51a71133f}{simx\-U\-Char}
+\item 
+typedef int16\-\_\-t \hyperlink{ext_api_platform_8h_a3e7004d3d2c9c6e0c01735fbd8b01851}{simx\-Short}
+\item 
+typedef uint16\-\_\-t \hyperlink{ext_api_platform_8h_abe740cae3fd2a6eec57b5adf6586fce3}{simx\-U\-Short}
+\item 
+typedef int32\-\_\-t \hyperlink{ext_api_platform_8h_a33ee1b6e133e145b0fa9dfe01e4b4d2c}{simx\-Int}
+\item 
+typedef uint32\-\_\-t \hyperlink{ext_api_platform_8h_ab60e5a24fa6c22b4f401e3872d6a3dfb}{simx\-U\-Int}
+\item 
+typedef float \hyperlink{ext_api_platform_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float}
+\item 
+typedef double \hyperlink{ext_api_platform_8h_a42593f501a9325aeb9730e7dd973d75c}{simx\-Double}
+\item 
+typedef void \hyperlink{ext_api_platform_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ext_api_8h_aa4b6043af107fc84b9b32b8bb436293d}{simx\-Short} \hyperlink{ext_api_platform_8h_a53372d80e2437d241d3831bbf09551a1}{ext\-Api\-\_\-endian\-Conversion\-Short} (\hyperlink{ext_api_8h_aa4b6043af107fc84b9b32b8bb436293d}{simx\-Short} short\-Value)
+\item 
+\hyperlink{ext_api_8h_a9121e76e9a374d7ab2941fa84cae9b2d}{simx\-U\-Short} \hyperlink{ext_api_platform_8h_aa3a4960cdcb852a68ce6d55b1182ff54}{ext\-Api\-\_\-endian\-Conversion\-U\-Short} (\hyperlink{ext_api_8h_a9121e76e9a374d7ab2941fa84cae9b2d}{simx\-U\-Short} short\-Value)
+\item 
+\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_platform_8h_a31eede90e2a9d23574e09a92ec626d9b}{ext\-Api\-\_\-endian\-Conversion\-Int} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} int\-Value)
+\item 
+\hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} \hyperlink{ext_api_platform_8h_a57d59ede423db5ef0d4ba94d818e3459}{ext\-Api\-\_\-endian\-Conversion\-Float} (\hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} float\-Value)
+\item 
+\hyperlink{ext_api_8h_a42593f501a9325aeb9730e7dd973d75c}{simx\-Double} \hyperlink{ext_api_platform_8h_a318fdd8c51873f8f261aee3b9e8582dd}{ext\-Api\-\_\-endian\-Conversion\-Double} (\hyperlink{ext_api_8h_a42593f501a9325aeb9730e7dd973d75c}{simx\-Double} float\-Value)
+\item 
+\hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$ \hyperlink{ext_api_platform_8h_a01476683f124c90fd8955898a63752da}{ext\-Api\-\_\-allocate\-Buffer} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} buffer\-Size)
+\item 
+\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_platform_8h_ada561dfab99bba410fb79f824c89e8d4}{ext\-Api\-\_\-release\-Buffer} (\hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$buffer)
+\item 
+\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_platform_8h_a0ff4df327a3747971fd663a9902e4420}{ext\-Api\-\_\-create\-Mutexes} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D)
+\item 
+\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_platform_8h_a67008b0a4380579c99c3ade4b93c45c1}{ext\-Api\-\_\-delete\-Mutexes} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D)
+\item 
+\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_platform_8h_ad8acf16580444bfcd40c07e5fb342f85}{ext\-Api\-\_\-lock\-Resources} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D)
+\item 
+\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_platform_8h_a858ff89e6f07ac05bf4a9ab9828cca8e}{ext\-Api\-\_\-unlock\-Resources} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D)
+\item 
+\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_platform_8h_a7834e37816378b6903cdf885615c8034}{ext\-Api\-\_\-lock\-Send\-Start} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D)
+\item 
+\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_platform_8h_a624fcaa2b568ae8a12e6e91744b04df7}{ext\-Api\-\_\-unlock\-Send\-Start} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D)
+\item 
+\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_platform_8h_ab2500e647bdc61a4ba72128b8a203fce}{ext\-Api\-\_\-create\-Global\-Mutex} ()
+\item 
+\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_platform_8h_a13eb01d753236e7afd30e45911882082}{ext\-Api\-\_\-delete\-Global\-Mutex} ()
+\item 
+\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_platform_8h_a23347bce7228948603cec19fee5e6c01}{ext\-Api\-\_\-global\-Simple\-Lock} ()
+\item 
+\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_platform_8h_ae7a9eb43dfd059cda96e5259555e3b1a}{ext\-Api\-\_\-global\-Simple\-Unlock} ()
+\item 
+\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_platform_8h_a915a300a3aac8128d8451c26c8eacf1e}{ext\-Api\-\_\-get\-Time\-In\-Ms} ()
+\item 
+\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_platform_8h_a61e044d8e6d5fea90947540ebe55b92c}{ext\-Api\-\_\-get\-Time\-Diff\-In\-Ms} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} last\-Time)
+\item 
+\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_platform_8h_a34b23107daa304fbc1357d8c177c063f}{ext\-Api\-\_\-init\-Rand} ()
+\item 
+\hyperlink{ext_api_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{simx\-Float} \hyperlink{ext_api_platform_8h_a2fe7c304c555bcd1d511f8104286b055}{ext\-Api\-\_\-rand} ()
+\item 
+\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_platform_8h_ab48366fe799ea73fc2650c65f463c7d3}{ext\-Api\-\_\-sleep\-Ms} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} ms)
+\item 
+\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_platform_8h_a385771ea61682609251bc86beb69449f}{ext\-Api\-\_\-switch\-Thread} ()
+\item 
+\hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} \hyperlink{ext_api_platform_8h_a2fcd30322b227427c7092a48cac7d78a}{ext\-Api\-\_\-are\-Strings\-Same} (const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$str1, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$str2)
+\item 
+\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_platform_8h_ab6136b9c73ac12f692dfabe8e3fa0759}{ext\-Api\-\_\-get\-String\-Length} (const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$str)
+\item 
+\hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$ \hyperlink{ext_api_platform_8h_a59aed17e565e299ee7ee50f12b5c1e87}{ext\-Api\-\_\-read\-File} (const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$file\-Name, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$len)
+\item 
+\hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} \hyperlink{ext_api_platform_8h_a7bf74930bce5320ccb9cf2bd5a0e57a5}{ext\-Api\-\_\-launch\-Thread} (S\-I\-M\-X\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-R\-E\-T\-\_\-\-T\-Y\-P\-E($\ast$start\-Address)(\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} $\ast$))
+\item 
+\hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} \hyperlink{ext_api_platform_8h_a521b711492091d41f6d82c7047c6c27a}{ext\-Api\-\_\-connect\-To\-Server\-\_\-socket} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$the\-Connection\-Address, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} the\-Connection\-Port)
+\item 
+\hyperlink{ext_api_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{simx\-Void} \hyperlink{ext_api_platform_8h_a13e9fa7a1843e2ca48fcc594139d8464}{ext\-Api\-\_\-clean\-Up\-\_\-socket} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D)
+\item 
+\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_platform_8h_aac199802575731257d42f698f2c68255}{ext\-Api\-\_\-send\-\_\-socket} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$data, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} data\-Length)
+\item 
+\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_platform_8h_a32ef869d0262f9c8866c076461b0b0fc}{ext\-Api\-\_\-recv\-\_\-socket} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_ad909852348c171200cf2d3a69a5d1d10}{simx\-U\-Char} $\ast$data, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} max\-Data\-Length)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ext_api_platform_8h_a6082c9aa6b05756e86fcab2c4d1a9b31}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!S\-O\-C\-K\-E\-T\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H@{S\-O\-C\-K\-E\-T\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H}}
+\index{S\-O\-C\-K\-E\-T\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H@{S\-O\-C\-K\-E\-T\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{S\-O\-C\-K\-E\-T\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-O\-C\-K\-E\-T\-\_\-\-H\-E\-A\-D\-E\-R\-\_\-\-L\-E\-N\-G\-T\-H~6 /$\ast$ W\-O\-R\-D0=1 (to detect endianness), W\-O\-R\-D1=packet\-Size, W\-O\-R\-D2=packets\-Left\-To\-Read $\ast$/}}\label{ext_api_platform_8h_a6082c9aa6b05756e86fcab2c4d1a9b31}
+\hypertarget{ext_api_platform_8h_ab6e84687d3835edfd2a5e24a0cfbbabb}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!S\-O\-C\-K\-E\-T\-\_\-\-M\-A\-X\-\_\-\-P\-A\-C\-K\-E\-T\-\_\-\-S\-I\-Z\-E@{S\-O\-C\-K\-E\-T\-\_\-\-M\-A\-X\-\_\-\-P\-A\-C\-K\-E\-T\-\_\-\-S\-I\-Z\-E}}
+\index{S\-O\-C\-K\-E\-T\-\_\-\-M\-A\-X\-\_\-\-P\-A\-C\-K\-E\-T\-\_\-\-S\-I\-Z\-E@{S\-O\-C\-K\-E\-T\-\_\-\-M\-A\-X\-\_\-\-P\-A\-C\-K\-E\-T\-\_\-\-S\-I\-Z\-E}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{S\-O\-C\-K\-E\-T\-\_\-\-M\-A\-X\-\_\-\-P\-A\-C\-K\-E\-T\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-O\-C\-K\-E\-T\-\_\-\-M\-A\-X\-\_\-\-P\-A\-C\-K\-E\-T\-\_\-\-S\-I\-Z\-E~1300 /$\ast$ in bytes. Keep between 200 and 30000 $\ast$/}}\label{ext_api_platform_8h_ab6e84687d3835edfd2a5e24a0cfbbabb}
+\hypertarget{ext_api_platform_8h_aafa7bf51da907ed0afab37ff8bbf4abe}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!S\-O\-C\-K\-E\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-R\-E\-A\-D@{S\-O\-C\-K\-E\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-R\-E\-A\-D}}
+\index{S\-O\-C\-K\-E\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-R\-E\-A\-D@{S\-O\-C\-K\-E\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-R\-E\-A\-D}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{S\-O\-C\-K\-E\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-R\-E\-A\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-O\-C\-K\-E\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T\-\_\-\-R\-E\-A\-D~10000 /$\ast$ in ms $\ast$/}}\label{ext_api_platform_8h_aafa7bf51da907ed0afab37ff8bbf4abe}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ext_api_platform_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!simx\-Char@{simx\-Char}}
+\index{simx\-Char@{simx\-Char}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{simx\-Char}]{\setlength{\rightskip}{0pt plus 5cm}typedef char {\bf simx\-Char}}}\label{ext_api_platform_8h_a1108f4e598a778dd82fcadf92ad9ed4f}
+\hypertarget{ext_api_platform_8h_a42593f501a9325aeb9730e7dd973d75c}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!simx\-Double@{simx\-Double}}
+\index{simx\-Double@{simx\-Double}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{simx\-Double}]{\setlength{\rightskip}{0pt plus 5cm}typedef double {\bf simx\-Double}}}\label{ext_api_platform_8h_a42593f501a9325aeb9730e7dd973d75c}
+\hypertarget{ext_api_platform_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!simx\-Float@{simx\-Float}}
+\index{simx\-Float@{simx\-Float}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{simx\-Float}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf simx\-Float}}}\label{ext_api_platform_8h_ab66440c1b6d7d3afa5ac47a9002eb35a}
+\hypertarget{ext_api_platform_8h_a33ee1b6e133e145b0fa9dfe01e4b4d2c}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!simx\-Int@{simx\-Int}}
+\index{simx\-Int@{simx\-Int}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{simx\-Int}]{\setlength{\rightskip}{0pt plus 5cm}typedef int32\-\_\-t {\bf simx\-Int}}}\label{ext_api_platform_8h_a33ee1b6e133e145b0fa9dfe01e4b4d2c}
+\hypertarget{ext_api_platform_8h_a3e7004d3d2c9c6e0c01735fbd8b01851}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!simx\-Short@{simx\-Short}}
+\index{simx\-Short@{simx\-Short}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{simx\-Short}]{\setlength{\rightskip}{0pt plus 5cm}typedef int16\-\_\-t {\bf simx\-Short}}}\label{ext_api_platform_8h_a3e7004d3d2c9c6e0c01735fbd8b01851}
+\hypertarget{ext_api_platform_8h_a75ddf0bb110d75f00cb6d4d51a71133f}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!simx\-U\-Char@{simx\-U\-Char}}
+\index{simx\-U\-Char@{simx\-U\-Char}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{simx\-U\-Char}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint8\-\_\-t {\bf simx\-U\-Char}}}\label{ext_api_platform_8h_a75ddf0bb110d75f00cb6d4d51a71133f}
+\hypertarget{ext_api_platform_8h_ab60e5a24fa6c22b4f401e3872d6a3dfb}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!simx\-U\-Int@{simx\-U\-Int}}
+\index{simx\-U\-Int@{simx\-U\-Int}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{simx\-U\-Int}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint32\-\_\-t {\bf simx\-U\-Int}}}\label{ext_api_platform_8h_ab60e5a24fa6c22b4f401e3872d6a3dfb}
+\hypertarget{ext_api_platform_8h_abe740cae3fd2a6eec57b5adf6586fce3}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!simx\-U\-Short@{simx\-U\-Short}}
+\index{simx\-U\-Short@{simx\-U\-Short}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{simx\-U\-Short}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint16\-\_\-t {\bf simx\-U\-Short}}}\label{ext_api_platform_8h_abe740cae3fd2a6eec57b5adf6586fce3}
+\hypertarget{ext_api_platform_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!simx\-Void@{simx\-Void}}
+\index{simx\-Void@{simx\-Void}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{simx\-Void}]{\setlength{\rightskip}{0pt plus 5cm}typedef void {\bf simx\-Void}}}\label{ext_api_platform_8h_a5057bd5d3d9fd1ef7d7cdb733e7a8c4e}
+
+
+\subsection{Function Documentation}
+\hypertarget{ext_api_platform_8h_a01476683f124c90fd8955898a63752da}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-allocate\-Buffer@{ext\-Api\-\_\-allocate\-Buffer}}
+\index{ext\-Api\-\_\-allocate\-Buffer@{ext\-Api\-\_\-allocate\-Buffer}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-allocate\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-U\-Char}$\ast$ ext\-Api\-\_\-allocate\-Buffer (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{buffer\-Size}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a01476683f124c90fd8955898a63752da}
+\hypertarget{ext_api_platform_8h_a2fcd30322b227427c7092a48cac7d78a}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-are\-Strings\-Same@{ext\-Api\-\_\-are\-Strings\-Same}}
+\index{ext\-Api\-\_\-are\-Strings\-Same@{ext\-Api\-\_\-are\-Strings\-Same}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-are\-Strings\-Same}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-U\-Char} ext\-Api\-\_\-are\-Strings\-Same (
+\begin{DoxyParamCaption}
+\item[{const {\bf simx\-Char} $\ast$}]{str1, }
+\item[{const {\bf simx\-Char} $\ast$}]{str2}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a2fcd30322b227427c7092a48cac7d78a}
+\hypertarget{ext_api_platform_8h_a13e9fa7a1843e2ca48fcc594139d8464}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-clean\-Up\-\_\-socket@{ext\-Api\-\_\-clean\-Up\-\_\-socket}}
+\index{ext\-Api\-\_\-clean\-Up\-\_\-socket@{ext\-Api\-\_\-clean\-Up\-\_\-socket}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-clean\-Up\-\_\-socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Void} ext\-Api\-\_\-clean\-Up\-\_\-socket (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a13e9fa7a1843e2ca48fcc594139d8464}
+\hypertarget{ext_api_platform_8h_a521b711492091d41f6d82c7047c6c27a}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-connect\-To\-Server\-\_\-socket@{ext\-Api\-\_\-connect\-To\-Server\-\_\-socket}}
+\index{ext\-Api\-\_\-connect\-To\-Server\-\_\-socket@{ext\-Api\-\_\-connect\-To\-Server\-\_\-socket}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-connect\-To\-Server\-\_\-socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-U\-Char} ext\-Api\-\_\-connect\-To\-Server\-\_\-socket (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{the\-Connection\-Address, }
+\item[{{\bf simx\-Int}}]{the\-Connection\-Port}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a521b711492091d41f6d82c7047c6c27a}
+\hypertarget{ext_api_platform_8h_ab2500e647bdc61a4ba72128b8a203fce}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-create\-Global\-Mutex@{ext\-Api\-\_\-create\-Global\-Mutex}}
+\index{ext\-Api\-\_\-create\-Global\-Mutex@{ext\-Api\-\_\-create\-Global\-Mutex}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-create\-Global\-Mutex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Void} ext\-Api\-\_\-create\-Global\-Mutex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_ab2500e647bdc61a4ba72128b8a203fce}
+\hypertarget{ext_api_platform_8h_a0ff4df327a3747971fd663a9902e4420}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-create\-Mutexes@{ext\-Api\-\_\-create\-Mutexes}}
+\index{ext\-Api\-\_\-create\-Mutexes@{ext\-Api\-\_\-create\-Mutexes}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-create\-Mutexes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Void} ext\-Api\-\_\-create\-Mutexes (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a0ff4df327a3747971fd663a9902e4420}
+\hypertarget{ext_api_platform_8h_a13eb01d753236e7afd30e45911882082}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-delete\-Global\-Mutex@{ext\-Api\-\_\-delete\-Global\-Mutex}}
+\index{ext\-Api\-\_\-delete\-Global\-Mutex@{ext\-Api\-\_\-delete\-Global\-Mutex}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-delete\-Global\-Mutex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Void} ext\-Api\-\_\-delete\-Global\-Mutex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a13eb01d753236e7afd30e45911882082}
+\hypertarget{ext_api_platform_8h_a67008b0a4380579c99c3ade4b93c45c1}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-delete\-Mutexes@{ext\-Api\-\_\-delete\-Mutexes}}
+\index{ext\-Api\-\_\-delete\-Mutexes@{ext\-Api\-\_\-delete\-Mutexes}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-delete\-Mutexes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Void} ext\-Api\-\_\-delete\-Mutexes (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a67008b0a4380579c99c3ade4b93c45c1}
+\hypertarget{ext_api_platform_8h_a318fdd8c51873f8f261aee3b9e8582dd}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-endian\-Conversion\-Double@{ext\-Api\-\_\-endian\-Conversion\-Double}}
+\index{ext\-Api\-\_\-endian\-Conversion\-Double@{ext\-Api\-\_\-endian\-Conversion\-Double}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-endian\-Conversion\-Double}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Double} ext\-Api\-\_\-endian\-Conversion\-Double (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Double}}]{float\-Value}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a318fdd8c51873f8f261aee3b9e8582dd}
+\hypertarget{ext_api_platform_8h_a57d59ede423db5ef0d4ba94d818e3459}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-endian\-Conversion\-Float@{ext\-Api\-\_\-endian\-Conversion\-Float}}
+\index{ext\-Api\-\_\-endian\-Conversion\-Float@{ext\-Api\-\_\-endian\-Conversion\-Float}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-endian\-Conversion\-Float}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Float} ext\-Api\-\_\-endian\-Conversion\-Float (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Float}}]{float\-Value}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a57d59ede423db5ef0d4ba94d818e3459}
+\hypertarget{ext_api_platform_8h_a31eede90e2a9d23574e09a92ec626d9b}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-endian\-Conversion\-Int@{ext\-Api\-\_\-endian\-Conversion\-Int}}
+\index{ext\-Api\-\_\-endian\-Conversion\-Int@{ext\-Api\-\_\-endian\-Conversion\-Int}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-endian\-Conversion\-Int}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Int} ext\-Api\-\_\-endian\-Conversion\-Int (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{int\-Value}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a31eede90e2a9d23574e09a92ec626d9b}
+\hypertarget{ext_api_platform_8h_a53372d80e2437d241d3831bbf09551a1}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-endian\-Conversion\-Short@{ext\-Api\-\_\-endian\-Conversion\-Short}}
+\index{ext\-Api\-\_\-endian\-Conversion\-Short@{ext\-Api\-\_\-endian\-Conversion\-Short}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-endian\-Conversion\-Short}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Short} ext\-Api\-\_\-endian\-Conversion\-Short (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Short}}]{short\-Value}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a53372d80e2437d241d3831bbf09551a1}
+\hypertarget{ext_api_platform_8h_aa3a4960cdcb852a68ce6d55b1182ff54}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-endian\-Conversion\-U\-Short@{ext\-Api\-\_\-endian\-Conversion\-U\-Short}}
+\index{ext\-Api\-\_\-endian\-Conversion\-U\-Short@{ext\-Api\-\_\-endian\-Conversion\-U\-Short}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-endian\-Conversion\-U\-Short}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-U\-Short} ext\-Api\-\_\-endian\-Conversion\-U\-Short (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-U\-Short}}]{short\-Value}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_aa3a4960cdcb852a68ce6d55b1182ff54}
+\hypertarget{ext_api_platform_8h_ab6136b9c73ac12f692dfabe8e3fa0759}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-get\-String\-Length@{ext\-Api\-\_\-get\-String\-Length}}
+\index{ext\-Api\-\_\-get\-String\-Length@{ext\-Api\-\_\-get\-String\-Length}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-get\-String\-Length}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Int} ext\-Api\-\_\-get\-String\-Length (
+\begin{DoxyParamCaption}
+\item[{const {\bf simx\-Char} $\ast$}]{str}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_ab6136b9c73ac12f692dfabe8e3fa0759}
+\hypertarget{ext_api_platform_8h_a61e044d8e6d5fea90947540ebe55b92c}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-get\-Time\-Diff\-In\-Ms@{ext\-Api\-\_\-get\-Time\-Diff\-In\-Ms}}
+\index{ext\-Api\-\_\-get\-Time\-Diff\-In\-Ms@{ext\-Api\-\_\-get\-Time\-Diff\-In\-Ms}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-get\-Time\-Diff\-In\-Ms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Int} ext\-Api\-\_\-get\-Time\-Diff\-In\-Ms (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{last\-Time}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a61e044d8e6d5fea90947540ebe55b92c}
+\hypertarget{ext_api_platform_8h_a915a300a3aac8128d8451c26c8eacf1e}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-get\-Time\-In\-Ms@{ext\-Api\-\_\-get\-Time\-In\-Ms}}
+\index{ext\-Api\-\_\-get\-Time\-In\-Ms@{ext\-Api\-\_\-get\-Time\-In\-Ms}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-get\-Time\-In\-Ms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Int} ext\-Api\-\_\-get\-Time\-In\-Ms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a915a300a3aac8128d8451c26c8eacf1e}
+\hypertarget{ext_api_platform_8h_a23347bce7228948603cec19fee5e6c01}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-global\-Simple\-Lock@{ext\-Api\-\_\-global\-Simple\-Lock}}
+\index{ext\-Api\-\_\-global\-Simple\-Lock@{ext\-Api\-\_\-global\-Simple\-Lock}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-global\-Simple\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Void} ext\-Api\-\_\-global\-Simple\-Lock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a23347bce7228948603cec19fee5e6c01}
+\hypertarget{ext_api_platform_8h_ae7a9eb43dfd059cda96e5259555e3b1a}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-global\-Simple\-Unlock@{ext\-Api\-\_\-global\-Simple\-Unlock}}
+\index{ext\-Api\-\_\-global\-Simple\-Unlock@{ext\-Api\-\_\-global\-Simple\-Unlock}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-global\-Simple\-Unlock}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Void} ext\-Api\-\_\-global\-Simple\-Unlock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_ae7a9eb43dfd059cda96e5259555e3b1a}
+\hypertarget{ext_api_platform_8h_a34b23107daa304fbc1357d8c177c063f}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-init\-Rand@{ext\-Api\-\_\-init\-Rand}}
+\index{ext\-Api\-\_\-init\-Rand@{ext\-Api\-\_\-init\-Rand}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-init\-Rand}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Void} ext\-Api\-\_\-init\-Rand (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a34b23107daa304fbc1357d8c177c063f}
+\hypertarget{ext_api_platform_8h_a7bf74930bce5320ccb9cf2bd5a0e57a5}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-launch\-Thread@{ext\-Api\-\_\-launch\-Thread}}
+\index{ext\-Api\-\_\-launch\-Thread@{ext\-Api\-\_\-launch\-Thread}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-launch\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-U\-Char} ext\-Api\-\_\-launch\-Thread (
+\begin{DoxyParamCaption}
+\item[{S\-I\-M\-X\-\_\-\-T\-H\-R\-E\-A\-D\-\_\-\-R\-E\-T\-\_\-\-T\-Y\-P\-E($\ast$)({\bf simx\-Void} $\ast$)}]{start\-Address}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a7bf74930bce5320ccb9cf2bd5a0e57a5}
+\hypertarget{ext_api_platform_8h_ad8acf16580444bfcd40c07e5fb342f85}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-lock\-Resources@{ext\-Api\-\_\-lock\-Resources}}
+\index{ext\-Api\-\_\-lock\-Resources@{ext\-Api\-\_\-lock\-Resources}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-lock\-Resources}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Void} ext\-Api\-\_\-lock\-Resources (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_ad8acf16580444bfcd40c07e5fb342f85}
+\hypertarget{ext_api_platform_8h_a7834e37816378b6903cdf885615c8034}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-lock\-Send\-Start@{ext\-Api\-\_\-lock\-Send\-Start}}
+\index{ext\-Api\-\_\-lock\-Send\-Start@{ext\-Api\-\_\-lock\-Send\-Start}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-lock\-Send\-Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Void} ext\-Api\-\_\-lock\-Send\-Start (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a7834e37816378b6903cdf885615c8034}
+\hypertarget{ext_api_platform_8h_a2fe7c304c555bcd1d511f8104286b055}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-rand@{ext\-Api\-\_\-rand}}
+\index{ext\-Api\-\_\-rand@{ext\-Api\-\_\-rand}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-rand}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Float} ext\-Api\-\_\-rand (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a2fe7c304c555bcd1d511f8104286b055}
+\hypertarget{ext_api_platform_8h_a59aed17e565e299ee7ee50f12b5c1e87}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-read\-File@{ext\-Api\-\_\-read\-File}}
+\index{ext\-Api\-\_\-read\-File@{ext\-Api\-\_\-read\-File}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-read\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-U\-Char}$\ast$ ext\-Api\-\_\-read\-File (
+\begin{DoxyParamCaption}
+\item[{const {\bf simx\-Char} $\ast$}]{file\-Name, }
+\item[{{\bf simx\-Int} $\ast$}]{len}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a59aed17e565e299ee7ee50f12b5c1e87}
+\hypertarget{ext_api_platform_8h_a32ef869d0262f9c8866c076461b0b0fc}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-recv\-\_\-socket@{ext\-Api\-\_\-recv\-\_\-socket}}
+\index{ext\-Api\-\_\-recv\-\_\-socket@{ext\-Api\-\_\-recv\-\_\-socket}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-recv\-\_\-socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Int} ext\-Api\-\_\-recv\-\_\-socket (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-U\-Char} $\ast$}]{data, }
+\item[{{\bf simx\-Int}}]{max\-Data\-Length}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a32ef869d0262f9c8866c076461b0b0fc}
+\hypertarget{ext_api_platform_8h_ada561dfab99bba410fb79f824c89e8d4}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-release\-Buffer@{ext\-Api\-\_\-release\-Buffer}}
+\index{ext\-Api\-\_\-release\-Buffer@{ext\-Api\-\_\-release\-Buffer}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-release\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Void} ext\-Api\-\_\-release\-Buffer (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-U\-Char} $\ast$}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_ada561dfab99bba410fb79f824c89e8d4}
+\hypertarget{ext_api_platform_8h_aac199802575731257d42f698f2c68255}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-send\-\_\-socket@{ext\-Api\-\_\-send\-\_\-socket}}
+\index{ext\-Api\-\_\-send\-\_\-socket@{ext\-Api\-\_\-send\-\_\-socket}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-send\-\_\-socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Int} ext\-Api\-\_\-send\-\_\-socket (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-U\-Char} $\ast$}]{data, }
+\item[{{\bf simx\-Int}}]{data\-Length}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_aac199802575731257d42f698f2c68255}
+\hypertarget{ext_api_platform_8h_ab48366fe799ea73fc2650c65f463c7d3}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-sleep\-Ms@{ext\-Api\-\_\-sleep\-Ms}}
+\index{ext\-Api\-\_\-sleep\-Ms@{ext\-Api\-\_\-sleep\-Ms}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-sleep\-Ms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Void} ext\-Api\-\_\-sleep\-Ms (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{ms}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_ab48366fe799ea73fc2650c65f463c7d3}
+\hypertarget{ext_api_platform_8h_a385771ea61682609251bc86beb69449f}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-switch\-Thread@{ext\-Api\-\_\-switch\-Thread}}
+\index{ext\-Api\-\_\-switch\-Thread@{ext\-Api\-\_\-switch\-Thread}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-switch\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Void} ext\-Api\-\_\-switch\-Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a385771ea61682609251bc86beb69449f}
+\hypertarget{ext_api_platform_8h_a858ff89e6f07ac05bf4a9ab9828cca8e}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-unlock\-Resources@{ext\-Api\-\_\-unlock\-Resources}}
+\index{ext\-Api\-\_\-unlock\-Resources@{ext\-Api\-\_\-unlock\-Resources}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-unlock\-Resources}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Void} ext\-Api\-\_\-unlock\-Resources (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a858ff89e6f07ac05bf4a9ab9828cca8e}
+\hypertarget{ext_api_platform_8h_a624fcaa2b568ae8a12e6e91744b04df7}{\index{ext\-Api\-Platform.\-h@{ext\-Api\-Platform.\-h}!ext\-Api\-\_\-unlock\-Send\-Start@{ext\-Api\-\_\-unlock\-Send\-Start}}
+\index{ext\-Api\-\_\-unlock\-Send\-Start@{ext\-Api\-\_\-unlock\-Send\-Start}!extApiPlatform.h@{ext\-Api\-Platform.\-h}}
+\subsubsection[{ext\-Api\-\_\-unlock\-Send\-Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf simx\-Void} ext\-Api\-\_\-unlock\-Send\-Start (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{ext_api_platform_8h_a624fcaa2b568ae8a12e6e91744b04df7}

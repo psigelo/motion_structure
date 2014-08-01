@@ -1,0 +1,27 @@
+digraph "_waitUntilMessageArrived"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="_waitUntilMessageArrived",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="extApi_getTimeInMs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_platform_8c.html#a915a300a3aac8128d8451c26c8eacf1e"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="extApi_lockResources",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_platform_8c.html#ad8acf16580444bfcd40c07e5fb342f85"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="_simpleLock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_platform_8c.html#af55c00f32f997391a5ac17db423df304"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="extApi_switchThread",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_platform_8c.html#a385771ea61682609251bc86beb69449f"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="extApi_sleepMs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_platform_8c.html#ab48366fe799ea73fc2650c65f463c7d3"];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="_simpleUnlock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_platform_8c.html#a9930a20c9af1b0df18f220200ed8ac54"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="extApi_unlockResources",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_platform_8c.html#a858ff89e6f07ac05bf4a9ab9828cca8e"];
+  Node8 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="extApi_getTimeDiffInMs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_platform_8c.html#a61e044d8e6d5fea90947540ebe55b92c"];
+  Node9 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

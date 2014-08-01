@@ -1,0 +1,19 @@
+digraph "Motor::Motor"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Motor::Motor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="rotx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cinematica_8hpp.html#a2263d84fe00fce29bad904b5b069d2ab",tooltip="rotx(double x) Es una matriz de rotacion en el eje x que puede ser estudiada bajo el tópico matrices ..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="roty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cinematica_8hpp.html#a1063cf031b38857ae0abbdf923135613",tooltip="roty(double x) Es una matriz de rotacion en el eje y que puede ser estudiada bajo el tópico matrices ..."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="rotz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cinematica_8hpp.html#a1cdd39401de5aaec1ea83de449c9fddd",tooltip="rotx(double x) Es una matriz de rotacion en el eje z que puede ser estudiada bajo el tópico matrices ..."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="traslacionx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cinematica_8hpp.html#aa04b738357f9b663a4a1556f6690a8f9",tooltip="traslacionx(double x) Es una matriz de traslación sólo en el eje x estudiada bajo el tópico de matric..."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="traslaciony",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cinematica_8hpp.html#a865d41cc5946cbf2f7b3f197561f905c",tooltip="traslacionx(double y) Es una matriz de traslación sólo en el eje y estudiada bajo el tópico de matric..."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="traslacionz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cinematica_8hpp.html#a76d146c2062eabe5a007272aeb8803d6",tooltip="traslacionx(double z) Es una matriz de traslación sólo en el eje z estudiada bajo el tópico de matric..."];
+}

@@ -1,0 +1,219 @@
+\hypertarget{cinematica_8cpp}{\section{src/cinematica.cpp File Reference}
+\label{cinematica_8cpp}\index{src/cinematica.\-cpp@{src/cinematica.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}cinematica.\-hpp\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cinematica_8cpp_a02bf1b3ab0a6d16b2b467a42c7822adf}{C\-I\-N\-E\-M\-A\-T\-I\-C\-A\-\_\-\-C\-P\-P}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+mat \hyperlink{cinematica_8cpp_a2263d84fe00fce29bad904b5b069d2ab}{rotx} (double x)
+\begin{DoxyCompactList}\small\item\em \hyperlink{cinematica_8hpp_a2263d84fe00fce29bad904b5b069d2ab}{rotx(double x)} Es una matriz de rotacion en el eje x que puede ser estudiada bajo el tópico matrices de rotacion. \end{DoxyCompactList}\item 
+mat \hyperlink{cinematica_8cpp_a1063cf031b38857ae0abbdf923135613}{roty} (double x)
+\begin{DoxyCompactList}\small\item\em \hyperlink{cinematica_8hpp_a1063cf031b38857ae0abbdf923135613}{roty(double x)} Es una matriz de rotacion en el eje y que puede ser estudiada bajo el tópico matrices de rotacion. \end{DoxyCompactList}\item 
+mat \hyperlink{cinematica_8cpp_a1cdd39401de5aaec1ea83de449c9fddd}{rotz} (double x)
+\begin{DoxyCompactList}\small\item\em \hyperlink{cinematica_8hpp_a2263d84fe00fce29bad904b5b069d2ab}{rotx(double x)} Es una matriz de rotacion en el eje z que puede ser estudiada bajo el tópico matrices de rotacion. \end{DoxyCompactList}\item 
+mat \hyperlink{cinematica_8cpp_acdc16012e781c5323778767333faf915}{traslacion} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em \hyperlink{cinematica_8hpp_acdc16012e781c5323778767333faf915}{traslacion(double x,double y,double z)} Es una matriz de traslación estudiada bajo el tópico de matrices de rotación. 1 0 0 x 0 1 0 y 0 0 1 z 0 0 0 1 \end{DoxyCompactList}\item 
+mat \hyperlink{cinematica_8cpp_a1c02ccaa08fe31ba3cce4883611fa016}{traslacion} (vector$<$ double $>$ xyz)
+\begin{DoxyCompactList}\small\item\em \hyperlink{cinematica_8hpp_a1c02ccaa08fe31ba3cce4883611fa016}{traslacion(vector $<$double$>$ xyz)} Es una matriz de traslación estudiada bajo el tópico de matrices de rotación. 1 0 0 xyz.\-at(0) 0 1 0 xyz.\-at(1) 0 0 1 xyz.\-at(2) 0 0 0 1 \end{DoxyCompactList}\item 
+mat \hyperlink{cinematica_8cpp_aa04b738357f9b663a4a1556f6690a8f9}{traslacionx} (double x)
+\begin{DoxyCompactList}\small\item\em \hyperlink{cinematica_8hpp_aa04b738357f9b663a4a1556f6690a8f9}{traslacionx(double x)} Es una matriz de traslación sólo en el eje x estudiada bajo el tópico de matrices de rotación. 1 0 0 x 0 1 0 0 0 0 1 0 0 0 0 1 \end{DoxyCompactList}\item 
+mat \hyperlink{cinematica_8cpp_a865d41cc5946cbf2f7b3f197561f905c}{traslaciony} (double y)
+\begin{DoxyCompactList}\small\item\em \hyperlink{cinematica_8hpp_aa04b738357f9b663a4a1556f6690a8f9}{traslacionx(double y)} Es una matriz de traslación sólo en el eje y estudiada bajo el tópico de matrices de rotación. 1 0 0 y 0 1 0 0 0 0 1 0 0 0 0 1 \end{DoxyCompactList}\item 
+mat \hyperlink{cinematica_8cpp_a76d146c2062eabe5a007272aeb8803d6}{traslacionz} (double z)
+\begin{DoxyCompactList}\small\item\em \hyperlink{cinematica_8hpp_aa04b738357f9b663a4a1556f6690a8f9}{traslacionx(double z)} Es una matriz de traslación sólo en el eje z estudiada bajo el tópico de matrices de rotación. 1 0 0 z 0 1 0 0 0 0 1 0 0 0 0 1 \end{DoxyCompactList}\item 
+double \hyperlink{cinematica_8cpp_ad33668ed5ae1098486138b20221476dc}{distancia} (vector$<$ double $>$ xyz\-\_\-ini, vector$<$ double $>$ xyz\-\_\-fin)
+\begin{DoxyCompactList}\small\item\em Calcula de distancia entre dos vectores en R$^\wedge$3. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{cinematica_8cpp_ad3a91c58654c8aec4e56e5f6adc7ff06}{vector\-\_\-pendiente} (vector$<$ double $>$ xyz\-\_\-ini, vector$<$ double $>$ xyz\-\_\-fin)
+\begin{DoxyCompactList}\small\item\em Calcula el vector unitario que uno el punto inicial con el punto final. \end{DoxyCompactList}\item 
+double \hyperlink{cinematica_8cpp_acc24d45e018a1345fccf1c1447856380}{acondicionar\-\_\-angulos} (double angulo)
+\begin{DoxyCompactList}\small\item\em transforma el angulo al intervalo \mbox{[}0 , 2\-Pi\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{cinematica_8cpp_a02bf1b3ab0a6d16b2b467a42c7822adf}{\index{cinematica.\-cpp@{cinematica.\-cpp}!C\-I\-N\-E\-M\-A\-T\-I\-C\-A\-\_\-\-C\-P\-P@{C\-I\-N\-E\-M\-A\-T\-I\-C\-A\-\_\-\-C\-P\-P}}
+\index{C\-I\-N\-E\-M\-A\-T\-I\-C\-A\-\_\-\-C\-P\-P@{C\-I\-N\-E\-M\-A\-T\-I\-C\-A\-\_\-\-C\-P\-P}!cinematica.cpp@{cinematica.\-cpp}}
+\subsubsection[{C\-I\-N\-E\-M\-A\-T\-I\-C\-A\-\_\-\-C\-P\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-I\-N\-E\-M\-A\-T\-I\-C\-A\-\_\-\-C\-P\-P}}\label{cinematica_8cpp_a02bf1b3ab0a6d16b2b467a42c7822adf}
+
+
+\subsection{Function Documentation}
+\hypertarget{cinematica_8cpp_acc24d45e018a1345fccf1c1447856380}{\index{cinematica.\-cpp@{cinematica.\-cpp}!acondicionar\-\_\-angulos@{acondicionar\-\_\-angulos}}
+\index{acondicionar\-\_\-angulos@{acondicionar\-\_\-angulos}!cinematica.cpp@{cinematica.\-cpp}}
+\subsubsection[{acondicionar\-\_\-angulos}]{\setlength{\rightskip}{0pt plus 5cm}double acondicionar\-\_\-angulos (
+\begin{DoxyParamCaption}
+\item[{double}]{angulo}
+\end{DoxyParamCaption}
+)}}\label{cinematica_8cpp_acc24d45e018a1345fccf1c1447856380}
+
+
+transforma el angulo al intervalo \mbox{[}0 , 2\-Pi\mbox{]} 
+
+\hypertarget{cinematica_8cpp_ad33668ed5ae1098486138b20221476dc}{\index{cinematica.\-cpp@{cinematica.\-cpp}!distancia@{distancia}}
+\index{distancia@{distancia}!cinematica.cpp@{cinematica.\-cpp}}
+\subsubsection[{distancia}]{\setlength{\rightskip}{0pt plus 5cm}double distancia (
+\begin{DoxyParamCaption}
+\item[{vector$<$ double $>$}]{xyz\-\_\-ini, }
+\item[{vector$<$ double $>$}]{xyz\-\_\-fin}
+\end{DoxyParamCaption}
+)}}\label{cinematica_8cpp_ad33668ed5ae1098486138b20221476dc}
+
+
+Calcula de distancia entre dos vectores en R$^\wedge$3. 
+
+\hypertarget{cinematica_8cpp_a2263d84fe00fce29bad904b5b069d2ab}{\index{cinematica.\-cpp@{cinematica.\-cpp}!rotx@{rotx}}
+\index{rotx@{rotx}!cinematica.cpp@{cinematica.\-cpp}}
+\subsubsection[{rotx}]{\setlength{\rightskip}{0pt plus 5cm}mat rotx (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}}\label{cinematica_8cpp_a2263d84fe00fce29bad904b5b069d2ab}
+
+
+\hyperlink{cinematica_8hpp_a2263d84fe00fce29bad904b5b069d2ab}{rotx(double x)} Es una matriz de rotacion en el eje x que puede ser estudiada bajo el tópico matrices de rotacion. 
+
+1 0 0 0 0 cos(x) -\/sin(x) 0 0 sin(x) cos(x) 0 0 0 0 1
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & es el ángulo con que se va a rotar. \\
+\hline
+\end{DoxyParams}
+\hypertarget{cinematica_8cpp_a1063cf031b38857ae0abbdf923135613}{\index{cinematica.\-cpp@{cinematica.\-cpp}!roty@{roty}}
+\index{roty@{roty}!cinematica.cpp@{cinematica.\-cpp}}
+\subsubsection[{roty}]{\setlength{\rightskip}{0pt plus 5cm}mat roty (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}}\label{cinematica_8cpp_a1063cf031b38857ae0abbdf923135613}
+
+
+\hyperlink{cinematica_8hpp_a1063cf031b38857ae0abbdf923135613}{roty(double x)} Es una matriz de rotacion en el eje y que puede ser estudiada bajo el tópico matrices de rotacion. 
+
+cos(x) 0 sin(x) 0 0 1 0 0 -\/sin(x) 0 cos(x) 0 0 0 0 1
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & es el ángulo con que se va a rotar. \\
+\hline
+\end{DoxyParams}
+\hypertarget{cinematica_8cpp_a1cdd39401de5aaec1ea83de449c9fddd}{\index{cinematica.\-cpp@{cinematica.\-cpp}!rotz@{rotz}}
+\index{rotz@{rotz}!cinematica.cpp@{cinematica.\-cpp}}
+\subsubsection[{rotz}]{\setlength{\rightskip}{0pt plus 5cm}mat rotz (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}}\label{cinematica_8cpp_a1cdd39401de5aaec1ea83de449c9fddd}
+
+
+\hyperlink{cinematica_8hpp_a2263d84fe00fce29bad904b5b069d2ab}{rotx(double x)} Es una matriz de rotacion en el eje z que puede ser estudiada bajo el tópico matrices de rotacion. 
+
+cos(x) -\/sin(x) 0 0 sin(x) cos(x) 0 0 0 0 1 0 0 0 0 1
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & es el ángulo con que se va a rotar. \\
+\hline
+\end{DoxyParams}
+\hypertarget{cinematica_8cpp_acdc16012e781c5323778767333faf915}{\index{cinematica.\-cpp@{cinematica.\-cpp}!traslacion@{traslacion}}
+\index{traslacion@{traslacion}!cinematica.cpp@{cinematica.\-cpp}}
+\subsubsection[{traslacion}]{\setlength{\rightskip}{0pt plus 5cm}mat traslacion (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{double}]{z}
+\end{DoxyParamCaption}
+)}}\label{cinematica_8cpp_acdc16012e781c5323778767333faf915}
+
+
+\hyperlink{cinematica_8hpp_acdc16012e781c5323778767333faf915}{traslacion(double x,double y,double z)} Es una matriz de traslación estudiada bajo el tópico de matrices de rotación. 1 0 0 x 0 1 0 y 0 0 1 z 0 0 0 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (double} & x,double y,double z) corresponden a las componentes del vector de traslación. \\
+\hline
+\end{DoxyParams}
+\hypertarget{cinematica_8cpp_a1c02ccaa08fe31ba3cce4883611fa016}{\index{cinematica.\-cpp@{cinematica.\-cpp}!traslacion@{traslacion}}
+\index{traslacion@{traslacion}!cinematica.cpp@{cinematica.\-cpp}}
+\subsubsection[{traslacion}]{\setlength{\rightskip}{0pt plus 5cm}mat traslacion (
+\begin{DoxyParamCaption}
+\item[{vector$<$ double $>$}]{xyz}
+\end{DoxyParamCaption}
+)}}\label{cinematica_8cpp_a1c02ccaa08fe31ba3cce4883611fa016}
+
+
+\hyperlink{cinematica_8hpp_a1c02ccaa08fe31ba3cce4883611fa016}{traslacion(vector $<$double$>$ xyz)} Es una matriz de traslación estudiada bajo el tópico de matrices de rotación. 1 0 0 xyz.\-at(0) 0 1 0 xyz.\-at(1) 0 0 1 xyz.\-at(2) 0 0 0 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (vector} & $<$double$>$ xyz) corresponde al vector de traslación. \\
+\hline
+\end{DoxyParams}
+\hypertarget{cinematica_8cpp_aa04b738357f9b663a4a1556f6690a8f9}{\index{cinematica.\-cpp@{cinematica.\-cpp}!traslacionx@{traslacionx}}
+\index{traslacionx@{traslacionx}!cinematica.cpp@{cinematica.\-cpp}}
+\subsubsection[{traslacionx}]{\setlength{\rightskip}{0pt plus 5cm}mat traslacionx (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}}\label{cinematica_8cpp_aa04b738357f9b663a4a1556f6690a8f9}
+
+
+\hyperlink{cinematica_8hpp_aa04b738357f9b663a4a1556f6690a8f9}{traslacionx(double x)} Es una matriz de traslación sólo en el eje x estudiada bajo el tópico de matrices de rotación. 1 0 0 x 0 1 0 0 0 0 1 0 0 0 0 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (double} & x) corresponden la componente x de la traslacion. \\
+\hline
+\end{DoxyParams}
+\hypertarget{cinematica_8cpp_a865d41cc5946cbf2f7b3f197561f905c}{\index{cinematica.\-cpp@{cinematica.\-cpp}!traslaciony@{traslaciony}}
+\index{traslaciony@{traslaciony}!cinematica.cpp@{cinematica.\-cpp}}
+\subsubsection[{traslaciony}]{\setlength{\rightskip}{0pt plus 5cm}mat traslaciony (
+\begin{DoxyParamCaption}
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}}\label{cinematica_8cpp_a865d41cc5946cbf2f7b3f197561f905c}
+
+
+\hyperlink{cinematica_8hpp_aa04b738357f9b663a4a1556f6690a8f9}{traslacionx(double y)} Es una matriz de traslación sólo en el eje y estudiada bajo el tópico de matrices de rotación. 1 0 0 y 0 1 0 0 0 0 1 0 0 0 0 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (double} & y) corresponden la componente y de la traslacion. \\
+\hline
+\end{DoxyParams}
+\hypertarget{cinematica_8cpp_a76d146c2062eabe5a007272aeb8803d6}{\index{cinematica.\-cpp@{cinematica.\-cpp}!traslacionz@{traslacionz}}
+\index{traslacionz@{traslacionz}!cinematica.cpp@{cinematica.\-cpp}}
+\subsubsection[{traslacionz}]{\setlength{\rightskip}{0pt plus 5cm}mat traslacionz (
+\begin{DoxyParamCaption}
+\item[{double}]{z}
+\end{DoxyParamCaption}
+)}}\label{cinematica_8cpp_a76d146c2062eabe5a007272aeb8803d6}
+
+
+\hyperlink{cinematica_8hpp_aa04b738357f9b663a4a1556f6690a8f9}{traslacionx(double z)} Es una matriz de traslación sólo en el eje z estudiada bajo el tópico de matrices de rotación. 1 0 0 z 0 1 0 0 0 0 1 0 0 0 0 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em (double} & z) corresponden la componente z de la traslacion. \\
+\hline
+\end{DoxyParams}
+\hypertarget{cinematica_8cpp_ad3a91c58654c8aec4e56e5f6adc7ff06}{\index{cinematica.\-cpp@{cinematica.\-cpp}!vector\-\_\-pendiente@{vector\-\_\-pendiente}}
+\index{vector\-\_\-pendiente@{vector\-\_\-pendiente}!cinematica.cpp@{cinematica.\-cpp}}
+\subsubsection[{vector\-\_\-pendiente}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ vector\-\_\-pendiente (
+\begin{DoxyParamCaption}
+\item[{vector$<$ double $>$}]{xyz\-\_\-ini, }
+\item[{vector$<$ double $>$}]{xyz\-\_\-fin}
+\end{DoxyParamCaption}
+)}}\label{cinematica_8cpp_ad3a91c58654c8aec4e56e5f6adc7ff06}
+
+
+Calcula el vector unitario que uno el punto inicial con el punto final. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xyz\-\_\-ini} & punto inicial xyz\-\_\-fin\-:punto final. \\
+\hline
+\end{DoxyParams}

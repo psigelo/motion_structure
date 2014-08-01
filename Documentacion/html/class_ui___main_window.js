@@ -1,0 +1,26 @@
+var class_ui___main_window =
+[
+    [ "retranslateUi", "class_ui___main_window.html#a097dd160c3534a204904cb374412c618", null ],
+    [ "setupUi", "class_ui___main_window.html#acf4a0872c4c77d8f43a2ec66ed849b58", null ],
+    [ "actionConectorRotacional", "class_ui___main_window.html#a930c8685d6cf6b7bda6264eedbb05076", null ],
+    [ "actionConectorTranslacional", "class_ui___main_window.html#a24126fcd6cef35a2a515a20a7a16dfec", null ],
+    [ "actionMotorRotacional", "class_ui___main_window.html#a001c088d0b54f83119a6f036032303ae", null ],
+    [ "actionMotorTranslacional", "class_ui___main_window.html#a0092ec0757cfff7e42af2f26499e643d", null ],
+    [ "botonEliminar", "class_ui___main_window.html#a76639ddaaaf44f4a320888260cb5cc51", null ],
+    [ "botonFinalizar", "class_ui___main_window.html#aff1d12c698d66bdc8cbaba000ed903c1", null ],
+    [ "botonModificar", "class_ui___main_window.html#adbef6b25bd889b44e80e137ac1427ccb", null ],
+    [ "centralWidget", "class_ui___main_window.html#a30075506c2116c3ed4ff25e07ae75f81", null ],
+    [ "horizontalLayout", "class_ui___main_window.html#acd6fdc9ebacc4b25b834162380d75ce8", null ],
+    [ "horizontalLayout_2", "class_ui___main_window.html#a80867018070156432923d0266cc9fe25", null ],
+    [ "label", "class_ui___main_window.html#ad9c89133780f28e6efa2ec17ceb9cff5", null ],
+    [ "label_2", "class_ui___main_window.html#a2e2516d755e4dd53fc905dabddf2738a", null ],
+    [ "listadoComponentes", "class_ui___main_window.html#ac79ae486ca255cf94a11582f0571169c", null ],
+    [ "menuAgregarConector", "class_ui___main_window.html#ac287b4474eb6609d9bdb42cc7c40dd64", null ],
+    [ "menuAgregarMotor", "class_ui___main_window.html#a84843358c658fd83aeae248934086166", null ],
+    [ "menuBar", "class_ui___main_window.html#a2be1c24ec9adfca18e1dcc951931457f", null ],
+    [ "nombreText", "class_ui___main_window.html#aa827386dfe7cc92ef98c3075e3265d20", null ],
+    [ "statusBar", "class_ui___main_window.html#a50fa481337604bcc8bf68de18ab16ecd", null ],
+    [ "toolBar", "class_ui___main_window.html#ab84dc49349f514d7b7d3fe8e78de069b", null ],
+    [ "verticalLayout", "class_ui___main_window.html#aecd96a04789fcfec3f98d80390ad8184", null ],
+    [ "verticalLayoutWidget", "class_ui___main_window.html#a805d415fff07a22a85219e1f22f2da28", null ]
+];

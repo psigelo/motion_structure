@@ -28,7 +28,7 @@ MainWindow::~MainWindow()
 }
 
 /**
- * Llamado cuando se clcikea el botón "motor rotacional". Cambia las variables de editando a motor y llama al dialog rotacional.
+ \brief Llamado cuando se clcikea el botón "motor rotacional". Cambia las variables de editando a motor y llama al dialog rotacional.
  */
 void MainWindow::on_actionMotorRotacional_triggered()
 {
@@ -40,7 +40,7 @@ void MainWindow::on_actionMotorRotacional_triggered()
     actualizarComponentes();
 }
 /**
- * Llamado cuando se clickea el botón "motor translacional". Cambia las variables de editando a motor y llama al dialog translacional.
+ \brief Llamado cuando se clickea el botón "motor translacional". Cambia las variables de editando a motor y llama al dialog translacional.
  */
 
 void MainWindow::on_actionMotorTranslacional_triggered()
@@ -53,7 +53,7 @@ void MainWindow::on_actionMotorTranslacional_triggered()
 }
 
 /**
- * Llamado cuando se clickea el botón "conector rotacional". Cambia las variables de editando a conector y llama al dialog respectivo.
+ \brief Llamado cuando se clickea el botón "conector rotacional". Cambia las variables de editando a conector y llama al dialog respectivo.
  */
 void MainWindow::on_actionConectorRotacional_triggered()
 {
@@ -65,7 +65,7 @@ void MainWindow::on_actionConectorRotacional_triggered()
 }
 
 /**
- * Llamado cuando se clickea el botón "conector rotacional". Cambia las variables de editando a conector y llama al dialog respectivo.
+ \brief Llamado cuando se clickea el botón "conector rotacional". Cambia las variables de editando a conector y llama al dialog respectivo.
  */
 void MainWindow::on_actionConectorTranslacional_triggered()
 {
@@ -77,8 +77,8 @@ void MainWindow::on_actionConectorTranslacional_triggered()
 }
 
 /**
- * Elimina una componente agregada en específico.
- * La componente que es borrada es la que está seleccionada en el widget listadoComponentes.
+ \brief Elimina una componente agregada en específico.
+ \brief La componente que es borrada es la que está seleccionada en el widget listadoComponentes.
  */
 void MainWindow::on_botonEliminar_clicked()
 {
@@ -92,7 +92,7 @@ void MainWindow::on_botonEliminar_clicked()
 }
 
 /**
- *  Método a ser llamado cada vez que se haga una modificación en la cantidad de componentes.
+ \brief  Método a ser llamado cada vez que se haga una modificación en la cantidad de componentes.
  */
 void MainWindow::actualizarComponentes()
 {
@@ -106,7 +106,7 @@ void MainWindow::actualizarComponentes()
 
 
 /**
- *  Llama a la ventana de edición de componente (sea esta translacional o rotacional)
+ \brief  Llama a la ventana de edición de componente (sea esta translacional o rotacional)
  */
 void MainWindow::on_botonModificar_clicked()
 {
@@ -123,8 +123,8 @@ void MainWindow::on_botonModificar_clicked()
 }
 
 /**
- * Método que es llamado al finalizar el proceso. Genera el archivo de salida con la configuración guardada.
- * Guarda toda la información guardada en el vector de estructuras y además lee el input para el nombre del archivo a generar.
+ \brief Método que es llamado al finalizar el proceso. Genera el archivo de salida con la configuración guardada.
+  Guarda toda la información guardada en el vector de estructuras y además lee el input para el nombre del archivo a generar.
  */
 using namespace std;
 void MainWindow::on_botonFinalizar_clicked()

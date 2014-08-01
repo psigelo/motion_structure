@@ -1,0 +1,36 @@
+digraph "_getCommandPointer_"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="_getCommandPointer_",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="_exec_null",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_8c.html#aa4d6e3e9f9ac23ef988b261edd0f1e7f"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="simxSynchronousTrigger",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_8h.html#af09861c15a7b5017d37807def9529f12"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="simxSynchronous",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_8h.html#a0a80c37ef777948657a62b728d9431df"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="simxGetLastErrors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_8h.html#a265b9b6d5f02dc1ef8d3f456de6ba14f"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="simxCloseScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_8h.html#a5be48e4f55358dc8d590b4a5dbc5d40a"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="simxGetObjectSelection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_8h.html#a54a1782a88e76582bea326066d52ee36"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="simxCustomGetObjectCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_custom_8h.html#a6b8e3e5248f60b265adfbaf84df5e314"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="_exec_null_buffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_8c.html#a6e5bbe1e829dc2e96f74de0273e580fd"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="simxCreateDummy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_8h.html#a82649f82fdb3aeab83e5de1be27975a2"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="mtlb_simxCreateDummy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_8h.html#adc92fb4bcf2faaf19790dca5c8150afe"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="_removeCommandReply_null",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ext_api_8c.html#ac569d534306369b3033e87a52c8f2e5f"];
+  Node12 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

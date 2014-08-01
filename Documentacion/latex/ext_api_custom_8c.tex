@@ -1,0 +1,73 @@
+\hypertarget{ext_api_custom_8c}{\section{V\-R\-E\-P/remote\-Api/ext\-Api\-Custom.c File Reference}
+\label{ext_api_custom_8c}\index{V\-R\-E\-P/remote\-Api/ext\-Api\-Custom.\-c@{V\-R\-E\-P/remote\-Api/ext\-Api\-Custom.\-c}}
+}
+{\ttfamily \#include \char`\"{}ext\-Api\-Custom.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ext\-Api.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ext\-Api\-Internal.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ext\-Api\-Custom\-Const.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_custom_8c_a6b8e3e5248f60b265adfbaf84df5e314}{simx\-Custom\-Get\-Object\-Count} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$object\-Count, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_custom_8c_a3aa189891df9259773dd511c54d13d20}{simx\-Custom\-Get\-Object\-Type} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$object\-Type, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_custom_8c_a6a7cee899716fcf527c28120bd20210d}{simx\-Custom\-Set\-Object\-Name} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} object\-Handle, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$object\-Name, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_custom_8c_a3e0ef8fc77c9ec1a007497595e05dc8b}{simx\-Custom\-Get\-U\-I\-Button\-Label} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} ui\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} button\-I\-D, \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$$\ast$label, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\item 
+E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} \hyperlink{ext_api_custom_8c_a9c84918103557476db2b1cf5ad188af6}{simx\-Custom\-Get\-Script\-Handle} (\hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} client\-I\-D, const \hyperlink{ext_api_8h_a1108f4e598a778dd82fcadf92ad9ed4f}{simx\-Char} $\ast$object\-Name, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} $\ast$script\-Handle, \hyperlink{ext_api_8h_a73b5c754660b3a7b438466f472f971a8}{simx\-Int} operation\-Mode)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{ext_api_custom_8c_a6b8e3e5248f60b265adfbaf84df5e314}{\index{ext\-Api\-Custom.\-c@{ext\-Api\-Custom.\-c}!simx\-Custom\-Get\-Object\-Count@{simx\-Custom\-Get\-Object\-Count}}
+\index{simx\-Custom\-Get\-Object\-Count@{simx\-Custom\-Get\-Object\-Count}!extApiCustom.c@{ext\-Api\-Custom.\-c}}
+\subsubsection[{simx\-Custom\-Get\-Object\-Count}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Custom\-Get\-Object\-Count (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int} $\ast$}]{object\-Count, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_custom_8c_a6b8e3e5248f60b265adfbaf84df5e314}
+\hypertarget{ext_api_custom_8c_a3aa189891df9259773dd511c54d13d20}{\index{ext\-Api\-Custom.\-c@{ext\-Api\-Custom.\-c}!simx\-Custom\-Get\-Object\-Type@{simx\-Custom\-Get\-Object\-Type}}
+\index{simx\-Custom\-Get\-Object\-Type@{simx\-Custom\-Get\-Object\-Type}!extApiCustom.c@{ext\-Api\-Custom.\-c}}
+\subsubsection[{simx\-Custom\-Get\-Object\-Type}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Custom\-Get\-Object\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{{\bf simx\-Int} $\ast$}]{object\-Type, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_custom_8c_a3aa189891df9259773dd511c54d13d20}
+\hypertarget{ext_api_custom_8c_a9c84918103557476db2b1cf5ad188af6}{\index{ext\-Api\-Custom.\-c@{ext\-Api\-Custom.\-c}!simx\-Custom\-Get\-Script\-Handle@{simx\-Custom\-Get\-Script\-Handle}}
+\index{simx\-Custom\-Get\-Script\-Handle@{simx\-Custom\-Get\-Script\-Handle}!extApiCustom.c@{ext\-Api\-Custom.\-c}}
+\subsubsection[{simx\-Custom\-Get\-Script\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Custom\-Get\-Script\-Handle (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{const {\bf simx\-Char} $\ast$}]{object\-Name, }
+\item[{{\bf simx\-Int} $\ast$}]{script\-Handle, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_custom_8c_a9c84918103557476db2b1cf5ad188af6}
+\hypertarget{ext_api_custom_8c_a3e0ef8fc77c9ec1a007497595e05dc8b}{\index{ext\-Api\-Custom.\-c@{ext\-Api\-Custom.\-c}!simx\-Custom\-Get\-U\-I\-Button\-Label@{simx\-Custom\-Get\-U\-I\-Button\-Label}}
+\index{simx\-Custom\-Get\-U\-I\-Button\-Label@{simx\-Custom\-Get\-U\-I\-Button\-Label}!extApiCustom.c@{ext\-Api\-Custom.\-c}}
+\subsubsection[{simx\-Custom\-Get\-U\-I\-Button\-Label}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Custom\-Get\-U\-I\-Button\-Label (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{ui\-Handle, }
+\item[{{\bf simx\-Int}}]{button\-I\-D, }
+\item[{{\bf simx\-Char} $\ast$$\ast$}]{label, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_custom_8c_a3e0ef8fc77c9ec1a007497595e05dc8b}
+\hypertarget{ext_api_custom_8c_a6a7cee899716fcf527c28120bd20210d}{\index{ext\-Api\-Custom.\-c@{ext\-Api\-Custom.\-c}!simx\-Custom\-Set\-Object\-Name@{simx\-Custom\-Set\-Object\-Name}}
+\index{simx\-Custom\-Set\-Object\-Name@{simx\-Custom\-Set\-Object\-Name}!extApiCustom.c@{ext\-Api\-Custom.\-c}}
+\subsubsection[{simx\-Custom\-Set\-Object\-Name}]{\setlength{\rightskip}{0pt plus 5cm}E\-X\-T\-A\-P\-I\-\_\-\-D\-L\-L\-E\-X\-P\-O\-R\-T {\bf simx\-Int} simx\-Custom\-Set\-Object\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf simx\-Int}}]{client\-I\-D, }
+\item[{{\bf simx\-Int}}]{object\-Handle, }
+\item[{const {\bf simx\-Char} $\ast$}]{object\-Name, }
+\item[{{\bf simx\-Int}}]{operation\-Mode}
+\end{DoxyParamCaption}
+)}}\label{ext_api_custom_8c_a6a7cee899716fcf527c28120bd20210d}
