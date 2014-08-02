@@ -1,3 +1,6 @@
+#ifndef MOTOR_HPP
+#define MOTOR_HPP
+
 #include <armadillo>
 #include <iostream>
 #include "cinematica.hpp"
@@ -68,3 +71,5 @@ class Motor{
 		*/
 		double	get_direction_value			();
 };
+
+#endif

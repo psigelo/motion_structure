@@ -1,3 +1,7 @@
+#ifndef MOTION_STRUCTURE_CPP
+#define MOTION_STRUCTURE_CPP
+
+
 #include "motion_structure.hpp"
 
 #define DELTA_DERIVATIVE_FOR_JACOBIAN 0.000001
@@ -332,3 +336,4 @@ void Motion_structure::load(char * path){
 
 	}
 }
+#endif

@@ -1,3 +1,6 @@
+#ifndef MOVEMENT_HPP
+#define MOVEMENT_HPP
+
 #include <vector>
 
 
@@ -58,3 +61,5 @@ class Movement{
 		vector < vector <double> > 	list_motor_velocities;
 		double 						time_between_two_points_millisecons;
 };
+
+#endif

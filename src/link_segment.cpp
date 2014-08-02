@@ -1,3 +1,5 @@
+#ifndef LINK_SEGMENT_CPP
+#define LINK_SEGMENT_CPP
 
 #include "link_segment.hpp"
 
@@ -14,3 +16,4 @@ mat Link_segment::get_matrix(){
 
 
 
+#endif

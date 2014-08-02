@@ -1,3 +1,6 @@
+#ifndef MOTION_STRUCTURE_HPP
+#define MOTION_STRUCTURE_HPP
+
 #include <stdio.h>
 #include <iostream>
 #include <vector>
@@ -163,3 +166,4 @@ class Motion_structure{
 
 
 
+#endif

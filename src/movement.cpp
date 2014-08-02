@@ -1,3 +1,6 @@
+#ifndef MOVEMENT_CPP
+#define MOVEMENT_CPP
+
 #include "movement.hpp"
 
 Movement::Movement(){
@@ -46,3 +49,4 @@ void Movement::set_time_between_two_points_millisecons(double tiempo_total_del_m
 int Movement::get_time_between_tw0_points_millisecons(){
 	return (int)time_between_two_points_millisecons;
 }
+#endif

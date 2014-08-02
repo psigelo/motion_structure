@@ -21,8 +21,21 @@ una vez instalado armadillo y dentro de esta carpeta se debe compilar.
 
 ```
 $ make
+$ sudo make install
 ```
-Con esto está listo para usarse el programa.
+
+Desde ahora para compilar un programa que use las librerías del proyecto en la compilación se debe agregar los flags:
+
+```
+-lmotionstructure -larmadillo
+```
+
+Y para obtener todas las herramientas se debe incluir los headers del proyecto:
+
+```
+#include <motionstructure>
+```
+
 
 
 Ejecución del programa de muestra.
@@ -36,10 +49,10 @@ Para la ejecución del programa de muestra se tienen los siguentes archivos:
 
 ```
 carpeta experiment:
-	- brazo.cpp: Corresponde al experimento en el cual se mueve un brazo hecho en el simulador VREP.
-	- vrep_scene.ttt: Es una escena en el simulador VREP lista para su uso con el programa de pruebas.
-carpeta config:
-	-brazo_vrep.txt: Posee la configuracion de la estructura robótica ya realizada en la interfaz de usuario.
+	-BrazoVREP:
+		- brazo.cpp: Corresponde al experimento en el cual se mueve un brazo hecho en el simulador VREP.
+		- vrep_scene.ttt: Es una escena en el simulador VREP lista para su uso con el programa de pruebas.
+		- brazo_vrep.txt: Posee la configuracion de la estructura robótica ya realizada en la interfaz de usuario.
 ```
 
 
@@ -50,14 +63,14 @@ primero se debe abrir vrep y cargar la escena que está en la carpeta experiment
 
 1) abrir vrep: puede abrirse desde terminal con ./vrep.sh sin la necesidad de la instalación de vrep en el sistema.
 2) Dentro de vrep:
-	2.1) File -> open scene -> buscar la escena que está en la carpeta experiments de motion_structure.
+	2.1) File -> open scene -> buscar la escena que debería estar en la ruta RUTA_MOTION_STRUCTURE/experiments/BrazoVREP/vrep_scene.ttt.
 
 
-Luego desde un terminal situado en la carpeta motion_structure ejecutar:
+Luego desde un terminal situado en la carpeta RUTA_MOTION_STRUCTURE/experiments/BrazoVREP/ ejecutar:
 
 ```
-$ make brazo
-$ make runBrazo
+$ make
+$ make run
 ```
 
 Seguir los pasos que serán impresos por terminal.

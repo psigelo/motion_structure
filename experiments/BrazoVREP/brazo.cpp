@@ -3,8 +3,9 @@
 #include <stdlib.h>
 #include <iostream>
 #include <vector>
-#include "motion_structure.hpp"
 
+#include <motionstructure> // Librería del proyecto.
+//#include <motionstructure_headers/motion_structure.hpp>
 
 extern "C" {
     #include "extApi.h"
@@ -20,7 +21,7 @@ int main(int argc,char* argv[])
 	int portNb=19997;
 	int error;
 	vector <double> xyz;
-	int clientID = simxStart((simxChar*)"127.0.0.1",19997,true,true,2000,5);
+	int clientID = simxStart((simxChar*)"127.0.0.1",portNb,true,true,2000,5);
 	cerr << clientID << endl;
 
 

@@ -1,3 +1,6 @@
+#ifndef MOTOR_CPP
+#define MOTOR_CPP
+
 #include "motor.hpp"
 
 
@@ -33,3 +36,4 @@ mat Motor::calculate_matrix(double angle){
 double Motor::get_direction_value(){
 	return (direction)?1.0:-1.0;
 }
+#endif

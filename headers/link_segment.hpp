@@ -1,3 +1,6 @@
+#ifndef LINK_SEGMENT_HPP
+#define LINK_SEGMENT_HPP
+
 #include <armadillo>
 
 using namespace arma;
@@ -21,3 +24,5 @@ class Link_segment{ // lista de segmentos
 		*/
 		void 	set_matrix 	(mat matrix);
 };
+
+#endif

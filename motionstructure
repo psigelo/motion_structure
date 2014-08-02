@@ -1,0 +1,5 @@
+#include "motionstructure_headers/motion_structure.hpp"
+#include "motionstructure_headers/cinematica.hpp"
+#include "motionstructure_headers/motor.hpp"
+#include "motionstructure_headers/link_segment.hpp"
+#include "motionstructure_headers/movement.hpp"

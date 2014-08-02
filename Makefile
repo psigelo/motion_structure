@@ -1,9 +1,9 @@
-VPATH = ./src ./headers ./objects ./VREP/remoteApi ./VREP/include ./experiments
+VPATH = ./src ./headers ./objects
 CC = g++ -O3
-CFLAGS = -g -Wall -I./headers -I./objects -I./src -I./VREP/remoteApi -I./VREP/include -I./experiments
+CFLAGS = -g -Wall -fPIC -I./headers -I./objects -I./src 
 
 all: motion_structure.o cinematica.o motor.o movement.o link_segment.o
-
+	@echo "Ready"
 
 test: test.cpp motion_structure.o cinematica.o motor.o movement.o link_segment.o
 	mkdir -p bin
@@ -30,16 +30,17 @@ link_segment.o: ./src/link_segment.cpp
 	$(CC) $(CFLAGS) -c ./src/link_segment.cpp -o ./objects/link_segment.o 
 
 clean:
-	rm -f ./objects/*.o ./executables/* ./bin/* 
-	rm -Rf ./Documentacion
-	rm -Rf build*
+	rm -Rf build* ./objects ./executables ./bin ./Documentacion
+	cd experiments/BrazoVREP/; make clean
 
 doc:
 	doxygen Doxyfile
 
-brazo: brazo.cpp motion_structure.o cinematica.o movement.o link_segment.o motor.o
-	@mkdir -p bin
-	$(CC) $(CFLAGS) -DNON_MATLAB_PARSING -DMAX_EXT_API_CONNECTIONS=255 ./experiments/brazo.cpp  ./objects/motion_structure.o ./objects/cinematica.o ./objects/movement.o ./objects/link_segment.o ./objects/motor.o ./VREP/remoteApi/extApi.o ./VREP/remoteApi/extApiPlatform.o -o ./bin/brazo  -larmadillo -lpthread
-
-runBrazo: 
-	./bin/brazo ./config/brazo_vrep.txt
+install:
+	g++ -shared -Wl,-soname,libmotionstructure.so.1 -o libmotionstructure.so.1.0 ./objects/motion_structure.o ./objects/movement.o ./objects/cinematica.o ./objects/motor.o ./objects/link_segment.o 
+	ln -sf libmotionstructure.so.1.0 libmotionstructure.so
+	ln -sf libmotionstructure.so.1.0 libmotionstructure.so.1
+	mv libmotionstructure.so.1.0 libmotionstructure.so libmotionstructure.so.1 /usr/lib
+	mkdir -p /usr/include/motionstructure_headers/
+	cp ./headers/* /usr/include/motionstructure_headers/
+	cp motionstructure /usr/include
