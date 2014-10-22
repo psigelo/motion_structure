@@ -5,12 +5,11 @@
 
 
 
-
-void Link_segment::set_matrix(mat matrix){
+void Link_segment::set_matrix(RotMatrix matrix){
 	this->matrix = matrix;
 }
 
-mat Link_segment::get_matrix(){
+RotMatrix Link_segment::get_matrix(){
 	return matrix;
 }
 

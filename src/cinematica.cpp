@@ -76,6 +76,8 @@ mat traslacionz(double z){
 	return A;
 }
 
+
+
 double 	distancia(vector <double> xyz_ini, vector <double> xyz_fin){
 	return sqrt(pow(xyz_ini.at(0) - xyz_fin.at(0),2) + pow(xyz_ini.at(1) - xyz_fin.at(1),2) + pow(xyz_ini.at(2) - xyz_fin.at(2),2));
 }

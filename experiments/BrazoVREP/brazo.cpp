@@ -22,7 +22,7 @@ int main(int argc,char* argv[])
 	int error;
 	vector <double> xyz;
 	int clientID = simxStart((simxChar*)"127.0.0.1",portNb,true,true,2000,5);
-	cerr << clientID << endl;
+	//cerr << clientID << endl;
 
 
 	//===================================================================
@@ -76,8 +76,11 @@ int main(int argc,char* argv[])
 
 
 			//========================================================================
+
 			Movement movimiento;
-			movimiento = estructura->move_delta_xyz_position(xyz,velocidad);
+			cerr << "entro a move delta xyz" << endl;
+			estructura->move_delta_xyz_position(xyz,velocidad, &movimiento);
+			cerr << "salio de move delta xyz" << endl;
 			tiempo_entre_puntos = movimiento.get_time_between_tw0_points_millisecons();
 			//=========================================================================
 

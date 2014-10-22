@@ -1,5 +1,7 @@
 #include "motionstructure_headers/motion_structure.hpp"
-#include "motionstructure_headers/cinematica.hpp"
 #include "motionstructure_headers/motor.hpp"
 #include "motionstructure_headers/link_segment.hpp"
 #include "motionstructure_headers/movement.hpp"
+#include "motionstructure_headers/RotMatrix.hpp"
+#include "motionstructure_headers/mathematicTools.hpp"
+#include "motionstructure_headers/solverLinear.hpp"

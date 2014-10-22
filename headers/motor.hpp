@@ -1,9 +1,8 @@
 #ifndef MOTOR_HPP
 #define MOTOR_HPP
 
-#include <armadillo>
 #include <iostream>
-#include "cinematica.hpp"
+#include "RotMatrix.hpp"
 
 using namespace arma;
 using namespace std;
@@ -21,9 +20,9 @@ class Motor{
 	private:
 		int 		id;
 		double 		angle;
-		mat 		current_matrix; // Rotational matrix 4x4
+		RotMatrix	matrix; // No es para usarse directamente.
 		bool		direction;
-		mat 		(*rotational_function)(double); 		
+		RotMatrix &	(*rotational_function)(double); 		
 	public:
 		/**
 
@@ -32,44 +31,44 @@ class Motor{
 		/**
 			\brief Obtiene la ID del motor.
 		*/
-		int 	get_id						();
+		int 	getId						();
 		/**
 			\brief Setea la ID del motor.
 		*/
-		void 	set_id 						(int id);
+		void 	setId 						(int id);
 		/**
 			\brief Obtiene el ángulo actual del motor
 		*/
-		double 	get_angle 					();
+		double 	getAngle 					();
 		/**
 			\brief Setea el ángulo actual del Motor
 		*/
-		void 	set_angle 					(double angle);
+		void 	setAngle 					(double angle);
 		/**
 			\brief obtiene la dirección del motor según regla de la mano derecha, true: sigue regla de la mano derecha.        false: otro caso.
 		*/
-		bool	get_direction 				();
+		bool	getDirection 				();
 		/**
 			\brief Setea la dirección del motor, en caso de setearlo true entonces los angulos crecen según regla de la mano derecha.
 		*/
-		void 	set_direction 				(bool dir);
+		void 	setDirection 				(bool dir);
 		/**
 			\brief calcula la matriz de rotación acosiada a la posición del motor.
 		*/
-		void 	calculate_current_matrix 	();
+		void 	calculateCurrentMatrix 		();
 		/**
 			\brief Obtiene la matriz rotacional asociada al motor.
 		*/
-		mat 	get_current_matrix 			();
+		RotMatrix &	getCurrentMatrix 		();
 		/**
 			\brief calcula y retorna la matriz rotacional del motor en el ángulo introducido.
 			\param angle: el ángulo del motor.
 		*/
-		mat 	calculate_matrix 			(double angle);
+		RotMatrix & calculateMatrix 		(double angle);
 		/**
 			\biref ontiene la dirección del motor en numeros: +1 si sigue regla de la mano derecha, -1 en caso contrario. 
 		*/
-		double	get_direction_value			();
+		double	getDirectionValue			();
 };
 
 #endif

@@ -9,18 +9,25 @@ Motor::Motor(int id, bool direction, double angle, MotorType motor_type){
 	this->angle = angle;
 	this->direction = direction;
 
-	if(motor_type == ROTX)
+
+	if(motor_type == ROTX){
 		rotational_function = rotx;
-	else if (motor_type == ROTY)
+	}
+	else if (motor_type == ROTY){
 		rotational_function = roty;
-	else if (motor_type == ROTZ)
+	}
+	else if (motor_type == ROTZ){
 		rotational_function = rotz;
-	else if(motor_type == TRASX)
-		rotational_function = traslacionx;
-	else if (motor_type == TRASY)
-		rotational_function = traslaciony;
-	else if (motor_type == TRASZ)
-		rotational_function = traslacionz;
+	}
+	else if(motor_type == TRASX){
+		rotational_function = traslationx;
+	}
+	else if (motor_type == TRASY){
+		rotational_function = traslationy;
+	}
+	else if (motor_type == TRASZ){
+		rotational_function = traslationz;
+	}
 	else{
 		cerr << "In function Motor::Motor :::: the type of the motor is incorrect" << endl;
 		exit(1);
@@ -28,12 +35,12 @@ Motor::Motor(int id, bool direction, double angle, MotorType motor_type){
 }
 
 
-mat Motor::calculate_matrix(double angle){
-	return (*rotational_function)(angle);
+RotMatrix & Motor::calculateMatrix(double angle){
+	return (*rotational_function)(getDirectionValue()*angle);
 }
 
 
-double Motor::get_direction_value(){
+double Motor::getDirectionValue(){
 	return (direction)?1.0:-1.0;
 }
 #endif

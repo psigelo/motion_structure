@@ -4,17 +4,19 @@
 #include <stdio.h>
 #include <iostream>
 #include <vector>
-#include <armadillo> 
-#include "cinematica.hpp"
+//#include <armadillo> 
+//#include "cinematica.hpp"
 #include "movement.hpp"
 #include "link_segment.hpp"
 #include "motor.hpp"
+#include "mathematicTools.hpp"
+#include "RotMatrix.hpp"
+#include "solverLinear.hpp"
 // if you want compile you need install armadillo library
 // armadillo is easy to install, please see http://arma.sourceforge.net/
 // After of the installation, in the Makefile you have to use -larmadillo flag to compile.
 
 using namespace std;
-using namespace arma;
 
 
 class Motion_structure{
@@ -116,7 +118,7 @@ class Motion_structure{
 		/**
 			\brief Obtiene la matriz rotcacional final después de el calculo.
 		*/
-		mat 				get_current_matrix			(); // Obtain the current matrix whitout calculate, from the memory.
+		RotMatrix			get_current_matrix			(); // Obtain the current matrix whitout calculate, from the memory.
 		/**
 			\brief calcula la matriz de rotación según los angulos que tengan seteados en el momento cada motor.
 		*/
@@ -124,7 +126,7 @@ class Motion_structure{
 		/**
 			\brief obtiene la matriz de rotación según los angulos que tengan seteados en el momento cada motor.
 		*/
-		mat 				calculate_position 			(vector <double> angles);
+		RotMatrix			calculate_position 			(vector <double> angles);
 		/**
 			\brief calcula la posición y guarda el estado en variables internas.
 		*/
@@ -132,13 +134,13 @@ class Motion_structure{
 		/**
 			\brief Obtiene todos los movimientos necesarios para mover la estructura a la posición xyz deseada.
 		*/
-		Movement 			move_to_xyz_position		(vector <double> xyz_position, double velocity);
+		void 	 			move_to_xyz_position		(vector <double> xyz_position, double velocity, Movement * _movement);
 		/**
 			\brief Obtiene todos los movimientos necesarios para mover la estructura en xyz desde la posición actual.
 		*/
-		Movement			move_delta_xyz_position		(vector <double> delta_xyz_position, double velocity);
+		void				move_delta_xyz_position		(vector <double> delta_xyz_position, double velocity, Movement * _movement);
 		
-		mat 				jacobiano_motores			();
+		void			jacobiano_motores			(double jacobiano[]);
 		/**
 			\brief imprime la posición actual en coordenadas cartesianas.
 		*/
@@ -158,8 +160,7 @@ class Motion_structure{
 		vector < Link_segment > link_segment;
 		vector < Motor > 		motors;
 		vector < double >		order;
-		mat 					current_position_matrix; // Rotational matrix 4x4 
-		mat 					matrix_initial_angles;
+		RotMatrix				current_position_matrix; // Rotational matrix 4x4 
 		vector <double>			current_xyz_position;
 };
 

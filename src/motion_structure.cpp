@@ -35,7 +35,7 @@ int Motion_structure::get_motors_amount(){
 void Motion_structure::add_translation_structure(vector <double> xyz){
 	order.push_back(LINK_SEGMENT);
 	Link_segment lksg;
-	lksg.set_matrix(traslacion(xyz));
+	lksg.set_matrix(traslation(xyz));
 	link_segment.push_back(lksg);
 	calculate_position_set_values(current_angles);
 }
@@ -109,18 +109,19 @@ void Motion_structure::add_traslational_motor_z(int motor_id, bool direction, do
 	current_angles.push_back(initial_angle);
 	current_position_matrix = calculate_position(current_angles);
 }
-mat Motion_structure::calculate_position(vector <double> angles){
+
+RotMatrix Motion_structure::calculate_position(vector <double> angles){
 	int motors_counter(0);
 	int segment_counter(0);
-	mat result = mat(4,4);
-	result.eye(); // Result is an identity matrix 4x4.
+	double identity[16] = {1.0,0.0,0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0};
+	RotMatrix result(identity);
 	for (int i = 0; i < (int)order.size(); ++i)
 	{;
 		if(order[i] == 0){
 			result = result*( link_segment.at(segment_counter++).get_matrix() ); 
 		}
 		else if(order[i] == 1){
-			result = result*(motors.at(motors_counter).calculate_matrix(motors.at(motors_counter).get_direction_value()*angles.at(motors_counter)));
+			result = result*(motors.at(motors_counter).calculateMatrix(angles.at(motors_counter)));
 			motors_counter++;
 		}
 		else{
@@ -134,15 +135,15 @@ mat Motion_structure::calculate_position(vector <double> angles){
 void Motion_structure::calculate_position_set_values(vector <double> angles){
 	int motors_counter(0);
 	int segment_counter(0);
-	mat result = mat(4,4);
-	result.eye(); // Result is an identity matrix 4x4.
+	double identity[16] = {1.0,0.0,0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0};
+	RotMatrix result(identity);
 	for (int i = 0; i < (int)order.size(); ++i)
 	{
 		if(order[i] == 0){
 			result = result*( link_segment.at(segment_counter++).get_matrix() ); 
 		}
 		else if(order[i] == 1){
-			result = result*(motors.at(motors_counter).calculate_matrix(angles.at(motors_counter)));
+			result = result*(motors.at(motors_counter).calculateMatrix(angles.at(motors_counter)));
 			motors_counter++;
 		}
 		else{
@@ -151,87 +152,91 @@ void Motion_structure::calculate_position_set_values(vector <double> angles){
 		}
 	}
 	current_position_matrix = result;
-	current_xyz_position.at(0) = current_position_matrix(0,3);
-	current_xyz_position.at(1) = current_position_matrix(1,3);
-	current_xyz_position.at(2) = current_position_matrix(2,3); 
+	double * xyz = current_position_matrix.get_xyz();
+	current_xyz_position.at(0) = xyz[0];
+	current_xyz_position.at(1) = xyz[1];
+	current_xyz_position.at(2) = xyz[2]; 
 }
 
-mat Motion_structure::get_current_matrix			(){
+RotMatrix Motion_structure::get_current_matrix			(){
 	return current_position_matrix;
 }
 
-Movement Motion_structure::move_to_xyz_position	(vector <double> xyz_position, double velocity){
-	Movement result = Movement();
+void Motion_structure::move_to_xyz_position	(vector <double> xyz_position, double velocity, Movement * _movement){
+	cerr << "1" << endl;
 	vector <double> angulos_movement(motors_amount);
 	vector <double> velocity_movement(motors_amount);
-	mat M_angulos_proximos(motors_amount,1); 
-	mat M_velocidades_motores;
-	mat M_jacobiano;
-	mat M_velocidad;
-	mat M_pendiente;
-	vector <double> pendiente;
+
+	double jacobiano[3*motors_amount];
+
+	double angulosProximos[motors_amount];
+	double * pendiente;
+	double velocidad[3];
+	double deltaXYZ[3];
+	double velocidadMotores[motors_amount];
 	double distance;
 	distance		= distancia 		(current_xyz_position, xyz_position);
 	pendiente 		= vector_pendiente 	(current_xyz_position, xyz_position);
-	M_pendiente << pendiente.at(0) << endr
-				<< pendiente.at(1) << endr
-				<< pendiente.at(2) << endr;	
-	M_velocidad << pendiente.at(0)*velocity << endr
-				<< pendiente.at(1)*velocity << endr 
-				<< pendiente.at(2)*velocity << endr;
-	for(int i=0; i< motors_amount; i++){
-		M_angulos_proximos.at(i) = current_angles.at(i);
-	}
+	velocidad[0] = pendiente[0]*velocity;
+	velocidad[1] = pendiente[1]*velocity;
+	velocidad[2] = pendiente[2]*velocity;
+	deltaXYZ[0]  = pendiente[0]*motion_resolution;
+	deltaXYZ[1]  = pendiente[1]*motion_resolution;
+	deltaXYZ[2]  = pendiente[2]*motion_resolution;
 
+	cerr << "2" << endl;
+	for(int i=0; i< motors_amount; i++)
+		angulosProximos[i] = current_angles.at(i);
+	
+	cerr << "3" << endl;
 	double i=0.0;
 	while(i < distance){ 
-		M_jacobiano 			=  jacobiano_motores();
-		M_angulos_proximos 		=  solve(M_jacobiano,(M_pendiente*motion_resolution)) + M_angulos_proximos;
-		M_velocidades_motores 	=  solve(M_jacobiano,M_velocidad);
+		cerr << "3.1" << endl;
+		jacobiano_motores(jacobiano);
+		cerr << "3.2" << endl;
+		choleskySolver(motors_amount, jacobiano, deltaXYZ, angulosProximos, velocidad, velocidadMotores ) ; // juntar los dos calculos en una sola expresion
+		cerr << "3.3" << endl;
 		for(int j=0; j < motors_amount; j++){
-		    angulos_movement.at(j)  = acondicionar_angulos(M_angulos_proximos(j,0));
-		    velocity_movement.at(j) = fabs(M_velocidades_motores(j,0));
+		    angulos_movement.at(j)  = acondicionar_angulos(angulosProximos[j]);
+		    velocity_movement.at(j) = fabs(velocidadMotores[j]);
 		}
-		result.add_to_list_motor_angle_positions(angulos_movement);
-		result.add_to_list_motor_velocities(velocity_movement);
+		cerr << "3.4" << endl;
+		_movement->add_to_list_motor_angle_positions(angulos_movement);
+		_movement->add_to_list_motor_velocities(velocity_movement);
 		current_angles 			= angulos_movement;
-		current_position_matrix = calculate_position(current_angles);
+		calculate_position_set_values(current_angles);
 		i = i + motion_resolution; 
+		cerr << "3.5" << endl;
 	}	
-
-	result.set_time_between_two_points_millisecons( (distance/velocity)*1000.0 ); 
-    return result;
-
+		
+	_movement->set_time_between_two_points_millisecons( (distance/velocity)*1000.0 ); 
 }
-
-Movement Motion_structure::move_delta_xyz_position	(vector <double> delta_xyz_position, double velocity){
+void Motion_structure::move_delta_xyz_position	(vector <double> delta_xyz_position, double velocity, Movement * _movement){
 	vector < double > real_position;
 	real_position.push_back(current_xyz_position.at(0) +  delta_xyz_position.at(0));
 	real_position.push_back(current_xyz_position.at(1) +  delta_xyz_position.at(1));
 	real_position.push_back(current_xyz_position.at(2) +  delta_xyz_position.at(2));
-	
-	return move_to_xyz_position	(real_position, velocity);
+	return move_to_xyz_position	(real_position, velocity, _movement);
 }
 
 
+/*
+	Ver si la idea de back propagation de redes neuronales puede ser usada aca para hacer menos calculos 
 
-mat Motion_structure::jacobiano_motores(){
-	mat punta_result_dt[ motors_amount ];
-	mat d_punta_result_dt[ motors_amount ];
-	mat jacobiano(3, motors_amount);
-	for(int i = 0; i < (int)current_angles.size(); i++){
-
-		current_angles.at(i) 	= current_angles.at(i) + DELTA_DERIVATIVE_FOR_JACOBIAN;
-		punta_result_dt[i] 		= calculate_position(current_angles);
-		d_punta_result_dt[i] 	= (punta_result_dt[i]- current_position_matrix)/DELTA_DERIVATIVE_FOR_JACOBIAN;
-		current_angles.at(i) 	= current_angles.at(i) - DELTA_DERIVATIVE_FOR_JACOBIAN;
+	IDEA a implementar: para calcular la derivada de la ultimo motor solo se requiere variar el ultimo motor luego 
+	la mayor parte del calculo ya esta hecho .... (es imitar backpropagation ... tomara tiempo
+	programarlo pero puede ser mucho mas optimo)
+*/
+void Motion_structure::jacobiano_motores(double jacobiano[]){
+	double * punta_result_dt;
+	for(int i = 0; i < motors_amount; i++){
+		current_angles.at(i) += DELTA_DERIVATIVE_FOR_JACOBIAN;
+		punta_result_dt 		= calculate_position(current_angles).get_xyz();
+		current_angles.at(i) -= DELTA_DERIVATIVE_FOR_JACOBIAN;
+		jacobiano[i] = (punta_result_dt[0] - current_xyz_position.at(0))/DELTA_DERIVATIVE_FOR_JACOBIAN;
+		jacobiano[motors_amount + i] = (punta_result_dt[1] - current_xyz_position.at(1))/DELTA_DERIVATIVE_FOR_JACOBIAN;
+		jacobiano[2*motors_amount + i] = (punta_result_dt[2] - current_xyz_position.at(2))/DELTA_DERIVATIVE_FOR_JACOBIAN;
 	}
-	for(int i = 0; i < (int)current_angles.size(); i++){
-		for(int j=0; j < 3; j++){
-			jacobiano(j,i) = d_punta_result_dt[i](j,3);
-		}
-	}
-	return jacobiano;
 }
 
 
