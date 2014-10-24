@@ -63,6 +63,7 @@ int main(int argc,char* argv[])
 			if(quit == 'q')break;
 
 			cout << "\nIngrese la variacion de la position X" << endl;
+			//fscanf(stdin, "%f %f %f %f", &xyz.at(0),&xyz.at(1),&xyz.at(2), &velocidad);
 			cin >> xyz.at(0);
 			cout << "\nusted ingreso " << xyz.at(0) << endl;
 			cout << "\nIngrese la variacion de la position Y" << endl;

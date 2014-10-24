@@ -1,8 +1,8 @@
 VPATH = ./src ./headers ./objects
-CC = g++ -O3
+CC = g++ -O3 -std=c++11
 CFLAGS = -g -Wall -fPIC -I./headers -I./objects -I./src 
 
-all: motion_structure.o cinematica.o motor.o movement.o link_segment.o
+all: motion_structure.o cinematica.o motor.o movement.o link_segment.o dynamixelAX12Utils.o dynamixelAX12.o serial.o
 	@echo "Ready"
 
 test: test.cpp motion_structure.o cinematica.o motor.o movement.o link_segment.o
@@ -29,12 +29,29 @@ link_segment.o: ./src/link_segment.cpp
 	mkdir -p objects
 	$(CC) $(CFLAGS) -c ./src/link_segment.cpp -o ./objects/link_segment.o 
 
+dynamixelAX12.o: dynamixelAX12.cpp
+	mkdir -p objects
+	$(CC) $(CFLAGS) -c ./src/dynamixelAX12.cpp -o ./objects/dynamixelAX12.o 
+
+dynamixelAX12Utils.o: dynamixelAX12Utils.cpp
+	mkdir -p objects
+	$(CC) $(CFLAGS) -c ./src/dynamixelAX12Utils.cpp -o ./objects/dynamixelAX12Utils.o
+
+serial.o: serial.c
+	mkdir -p objects
+	gcc $(CFLAGS) -c ./src/serial.c -o ./objects/serial.o
+
 clean:
 	rm -Rf build* ./objects ./executables ./bin ./Documentacion
 	cd experiments/BrazoVREP/; make clean
 
 doc:
 	doxygen Doxyfile
+
+prueba: brazoPruebas.cpp
+	mkdir -p bin
+	$(CC) $(CFLAGS)  ./src/brazoPruebas.cpp ./objects/motion_structure.o ./objects/cinematica.o ./objects/motor.o ./objects/movement.o ./objects/link_segment.o ./objects/dynamixelAX12Utils.o ./objects/dynamixelAX12.o ./objects/serial.o -o ./bin/test -larmadillo
+
 
 install:
 	g++ -shared -Wl,-soname,libmotionstructure.so.1 -o libmotionstructure.so.1.0 ./objects/motion_structure.o ./objects/movement.o ./objects/cinematica.o ./objects/motor.o ./objects/link_segment.o 

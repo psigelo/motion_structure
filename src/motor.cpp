@@ -4,6 +4,8 @@
 #include "motor.hpp"
 
 
+Motor::Motor(){}
+
 Motor::Motor(int id, bool direction, double angle, MotorType motor_type){
 	this->id = id;
 	this->angle = angle;
@@ -36,4 +38,14 @@ mat Motor::calculate_matrix(double angle){
 double Motor::get_direction_value(){
 	return (direction)?1.0:-1.0;
 }
+
+int Motor::getMotorId(){
+	return id;
+}
+
+void Motor::move( double position, double velocidad ){
+	cerr << "ERROR::motor::move:: do not exist a movement to do." << endl;
+	exit(1);
+}
+
 #endif

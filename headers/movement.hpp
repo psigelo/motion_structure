@@ -2,7 +2,7 @@
 #define MOVEMENT_HPP
 
 #include <vector>
-
+#include "motor.hpp"
 
 using namespace std;
 
@@ -52,6 +52,15 @@ class Movement{
 		*/
 		int 				get_time_between_tw0_points_millisecons(									);
 
+		void 				set_correspond_motors_ids				(			int * _motorIds			);
+
+		void 				really_move_to_position_from_list		( 			int positionInList 		);
+		void 				set_reference_to_motors					( vector <Motor*> & _referenceToMotors );
+
+		void 				print_stats								(									);
+		void 				print_all								(									);
+
+
 
 	
 	private:
@@ -60,6 +69,8 @@ class Movement{
 		vector < vector <double> > 	list_motor_angle_positions;
 		vector < vector <double> > 	list_motor_velocities;
 		double 						time_between_two_points_millisecons;
+		int *						motorIds;
+		vector < Motor * >		 		referenceToMotors;
 };
 
 #endif

@@ -9,6 +9,7 @@
 #include "movement.hpp"
 #include "link_segment.hpp"
 #include "motor.hpp"
+#include "dynamixelAX12.hpp"
 // if you want compile you need install armadillo library
 // armadillo is easy to install, please see http://arma.sourceforge.net/
 // After of the installation, in the Makefile you have to use -larmadillo flag to compile.
@@ -149,6 +150,16 @@ class Motion_structure{
 		*/
 		void				load						(char * path);
 
+
+		int 				* getCorrespondMotorIds		(	);
+		vector < Motor * > & 	getReferenceToMotors		(	);
+
+
+		void add_rotational_dynamixelAx12_x(int motor_id, bool direction, double initial_angle, int fd);
+		void add_rotational_dynamixelAx12_y(int motor_id, bool direction, double initial_angle, int fd);
+		void add_rotational_dynamixelAx12_z(int motor_id, bool direction, double initial_angle, int fd);
+
+
 	
 	private:
 		int						motors_amount;
@@ -156,7 +167,7 @@ class Motion_structure{
 		vector <double> 		current_angles;
 		double					motion_resolution;
 		vector < Link_segment > link_segment;
-		vector < Motor > 		motors;
+		vector < Motor * > 		motors;
 		vector < double >		order;
 		mat 					current_position_matrix; // Rotational matrix 4x4 
 		mat 					matrix_initial_angles;

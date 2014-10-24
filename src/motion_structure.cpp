@@ -63,7 +63,8 @@ void Motion_structure::add_rotation_z(double angle){
 }
 void Motion_structure::add_rotational_motor_x(int motor_id, bool direction, double initial_angle){
 	order.push_back(MOTOR);
-	motors.push_back(Motor(motor_id, direction, initial_angle, ROTX));
+	Motor * motor = new Motor(motor_id, direction, initial_angle, ROTX);
+	motors.push_back(motor);
 	motors_amount++;
 	initial_angles.push_back(initial_angle);
 	current_angles.push_back(initial_angle);
@@ -71,7 +72,8 @@ void Motion_structure::add_rotational_motor_x(int motor_id, bool direction, doub
 }
 void Motion_structure::add_rotational_motor_y(int motor_id, bool direction, double initial_angle){
 	order.push_back(MOTOR);
-	motors.push_back(Motor(motor_id, direction, initial_angle, ROTY));
+	Motor * motor = new Motor(motor_id, direction, initial_angle, ROTY);
+	motors.push_back(motor);
 	motors_amount++;
 	initial_angles.push_back(initial_angle);
 	current_angles.push_back(initial_angle);
@@ -79,7 +81,8 @@ void Motion_structure::add_rotational_motor_y(int motor_id, bool direction, doub
 }
 void Motion_structure::add_rotational_motor_z(int motor_id, bool direction, double initial_angle){
 	order.push_back(MOTOR);
-	motors.push_back(Motor(motor_id, direction, initial_angle, ROTZ));
+	Motor * motor = new Motor(motor_id, direction, initial_angle, ROTZ);
+	motors.push_back(motor);
 	motors_amount++;
 	initial_angles.push_back(initial_angle);
 	current_angles.push_back(initial_angle);
@@ -87,7 +90,8 @@ void Motion_structure::add_rotational_motor_z(int motor_id, bool direction, doub
 }
 void Motion_structure::add_traslational_motor_x(int motor_id, bool direction, double initial_angle){
 	order.push_back(MOTOR);
-	motors.push_back(Motor(motor_id, direction, initial_angle, TRASX));
+	Motor * motor = new Motor(motor_id, direction, initial_angle, TRASX);
+	motors.push_back(motor);
 	motors_amount++;
 	initial_angles.push_back(initial_angle);
 	current_angles.push_back(initial_angle);
@@ -95,7 +99,8 @@ void Motion_structure::add_traslational_motor_x(int motor_id, bool direction, do
 }
 void Motion_structure::add_traslational_motor_y(int motor_id, bool direction, double initial_angle){
 	order.push_back(MOTOR);
-	motors.push_back(Motor(motor_id, direction, initial_angle, TRASY));
+	Motor * motor = new Motor(motor_id, direction, initial_angle, TRASY);
+	motors.push_back(motor);
 	motors_amount++;
 	initial_angles.push_back(initial_angle);
 	current_angles.push_back(initial_angle);
@@ -103,12 +108,61 @@ void Motion_structure::add_traslational_motor_y(int motor_id, bool direction, do
 }
 void Motion_structure::add_traslational_motor_z(int motor_id, bool direction, double initial_angle){
 	order.push_back(MOTOR);
-	motors.push_back(Motor(motor_id, direction, initial_angle, TRASZ));
+	Motor * motor = new Motor(motor_id, direction, initial_angle, TRASZ);
+	motors.push_back(motor);
 	motors_amount++;
 	initial_angles.push_back(initial_angle);
 	current_angles.push_back(initial_angle);
 	current_position_matrix = calculate_position(current_angles);
 }
+
+
+
+
+
+
+
+
+
+
+/*
+
+	POR TEMA DE APUROS SE REPLICARAN LAS MISMAS FUNCIONES DE ARRIBA PERO PARA DYNAMIXEL-
+	LA IDEA ES LOGGRAR UN MEJOR ENFOQUE EN OTRA VERSIÓN.
+
+*/
+
+void Motion_structure::add_rotational_dynamixelAx12_x(int motor_id, bool direction, double initial_angle, int fd){
+	order.push_back(MOTOR);
+	dynamixelAX12 * motor = new dynamixelAX12(motor_id, direction, initial_angle, ROTX,fd);
+	motors.push_back(motor);
+	motors_amount++;
+	initial_angles.push_back(initial_angle);
+	current_angles.push_back(initial_angle);
+	calculate_position_set_values(current_angles);
+}
+void Motion_structure::add_rotational_dynamixelAx12_y(int motor_id, bool direction, double initial_angle, int fd){
+	order.push_back(MOTOR);
+	dynamixelAX12 * motor = new dynamixelAX12(motor_id, direction, initial_angle, ROTY,fd);
+	motors.push_back(motor);
+	motors_amount++;
+	initial_angles.push_back(initial_angle);
+	current_angles.push_back(initial_angle);
+	calculate_position_set_values(current_angles);
+}
+void Motion_structure::add_rotational_dynamixelAx12_z(int motor_id, bool direction, double initial_angle, int fd){
+	order.push_back(MOTOR);
+	dynamixelAX12 * motor = new dynamixelAX12(motor_id, direction, initial_angle, ROTZ,fd);
+	motors.push_back(motor);
+	motors_amount++;
+	initial_angles.push_back(initial_angle);
+	current_angles.push_back(initial_angle);
+	calculate_position_set_values(current_angles);
+}
+
+
+
+
 mat Motion_structure::calculate_position(vector <double> angles){
 	int motors_counter(0);
 	int segment_counter(0);
@@ -120,7 +174,7 @@ mat Motion_structure::calculate_position(vector <double> angles){
 			result = result*( link_segment.at(segment_counter++).get_matrix() ); 
 		}
 		else if(order[i] == 1){
-			result = result*(motors.at(motors_counter).calculate_matrix(motors.at(motors_counter).get_direction_value()*angles.at(motors_counter)));
+			result = result*(motors.at(motors_counter)->calculate_matrix(motors.at(motors_counter)->get_direction_value()*angles.at(motors_counter)));
 			motors_counter++;
 		}
 		else{
@@ -142,7 +196,7 @@ void Motion_structure::calculate_position_set_values(vector <double> angles){
 			result = result*( link_segment.at(segment_counter++).get_matrix() ); 
 		}
 		else if(order[i] == 1){
-			result = result*(motors.at(motors_counter).calculate_matrix(angles.at(motors_counter)));
+			result = result*(motors.at(motors_counter)->calculate_matrix(angles.at(motors_counter)));
 			motors_counter++;
 		}
 		else{
@@ -199,9 +253,10 @@ Movement Motion_structure::move_to_xyz_position	(vector <double> xyz_position, d
 		i = i + motion_resolution; 
 	}	
 
-	result.set_time_between_two_points_millisecons( (distance/velocity)*1000.0 ); 
+	result.set_time_between_two_points_millisecons( (distance/velocity)*1000.0 );
+	result.set_reference_to_motors( getReferenceToMotors() );
+	
     return result;
-
 }
 
 Movement Motion_structure::move_delta_xyz_position	(vector <double> delta_xyz_position, double velocity){
@@ -209,7 +264,6 @@ Movement Motion_structure::move_delta_xyz_position	(vector <double> delta_xyz_po
 	real_position.push_back(current_xyz_position.at(0) +  delta_xyz_position.at(0));
 	real_position.push_back(current_xyz_position.at(1) +  delta_xyz_position.at(1));
 	real_position.push_back(current_xyz_position.at(2) +  delta_xyz_position.at(2));
-	
 	return move_to_xyz_position	(real_position, velocity);
 }
 
@@ -241,11 +295,8 @@ void Motion_structure::print_current_xyz_position(){
 
 
 void Motion_structure::load(char * path){
-
 	int id = 1;
 
-
-	
 	FILE * fle = fopen(path, "r");
 	int amount_of_elements;
 	if(fscanf(fle, "%d \n", &amount_of_elements)  == EOF){cerr << "Motion_structure::load::error al cargar estructura" << endl;exit(1);}
@@ -336,4 +387,24 @@ void Motion_structure::load(char * path){
 
 	}
 }
+
+
+
+int * Motion_structure::getCorrespondMotorIds(){
+	unsigned int motorsAmount = motors.size();
+	int * resultado = (int *)malloc(sizeof(int)*motorsAmount);
+	for (unsigned int i = 0; i < motorsAmount; ++i)
+	{
+		resultado[i] = motors.at(i)->getMotorId();
+	}
+	return resultado;
+}
+
+vector < Motor * > & Motion_structure::getReferenceToMotors(){
+	return motors;
+}
+
+
+
+
 #endif

@@ -18,17 +18,19 @@ enum MotorType{
 };
 
 class Motor{
-	private:
+	protected:
 		int 		id;
-		double 		angle;
-		mat 		current_matrix; // Rotational matrix 4x4
 		bool		direction;
+		double 		angle;
+	private:
+		mat 		current_matrix; // Rotational matrix 4x4
 		mat 		(*rotational_function)(double); 		
 	public:
 		/**
 
 		*/
 		Motor(int id, bool direction, double angle, MotorType type);
+		Motor();
 		/**
 			\brief Obtiene la ID del motor.
 		*/
@@ -70,6 +72,10 @@ class Motor{
 			\biref ontiene la dirección del motor en numeros: +1 si sigue regla de la mano derecha, -1 en caso contrario. 
 		*/
 		double	get_direction_value			();
+
+		virtual void move( double position, double velocidad );
+
+		int getMotorId();
 };
 
 #endif

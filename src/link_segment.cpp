@@ -3,9 +3,6 @@
 
 #include "link_segment.hpp"
 
-
-
-
 void Link_segment::set_matrix(mat matrix){
 	this->matrix = matrix;
 }
@@ -13,7 +10,5 @@ void Link_segment::set_matrix(mat matrix){
 mat Link_segment::get_matrix(){
 	return matrix;
 }
-
-
 
 #endif
